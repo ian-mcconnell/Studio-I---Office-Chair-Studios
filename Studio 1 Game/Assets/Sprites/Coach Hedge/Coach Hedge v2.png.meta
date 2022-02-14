@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 19dbdcdf7668abd44be9bb37f81b29f9
+guid: f99461b57c2d58c44a240c8f1eceed9a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6713538684918799723
-    second: test_char_0
+      213: 1818800158001927115
+    second: Coach Hedge v2_0
   - first:
-      213: -6054122289981727722
-    second: test_char_1
+      213: -7426730510217277585
+    second: Coach Hedge v2_1
+  - first:
+      213: 2685347016434058677
+    second: Coach Hedge v2_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,7 +56,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 3, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -93,17 +96,29 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: test_char_0
+      name: Coach Hedge v2_0
       rect:
         serializedVersion: 2
         x: 56
-        y: 292
-        width: 116
-        height: 188
+        y: 256
+        width: 128
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +126,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 592629bc228b4d2a0800000000000000
-      internalID: -6713538684918799723
+      spriteID: bc311277b1dad3910800000000000000
+      internalID: 1818800158001927115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: test_char_1
+      name: Coach Hedge v2_1
       rect:
         serializedVersion: 2
-        x: 56
-        y: 36
-        width: 116
-        height: 184
+        x: 312
+        y: 256
+        width: 128
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +147,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61c5dd67adf6bfba0800000000000000
-      internalID: -6054122289981727722
+      spriteID: f6f81ff03f3fee890800000000000000
+      internalID: -7426730510217277585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coach Hedge v2_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 128
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5053542e4444520800000000000000
+      internalID: 2685347016434058677
       vertices: []
       indices: 
       edges: []

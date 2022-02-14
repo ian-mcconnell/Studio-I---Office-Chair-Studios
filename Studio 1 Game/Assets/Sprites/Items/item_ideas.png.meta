@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 19dbdcdf7668abd44be9bb37f81b29f9
+guid: 4681b969e91675041864f59743f4dfe2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6713538684918799723
-    second: test_char_0
+      213: -4893716750722507780
+    second: item_ideas_0
   - first:
-      213: -6054122289981727722
-    second: test_char_1
+      213: -6397599630920454491
+    second: item_ideas_1
+  - first:
+      213: 8680787664890451335
+    second: item_ideas_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,7 +56,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 3, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -97,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: test_char_0
+      name: item_ideas_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 292
-        width: 116
-        height: 188
+        x: 4
+        y: 136
+        width: 120
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +114,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 592629bc228b4d2a0800000000000000
-      internalID: -6713538684918799723
+      spriteID: cfb5ec11b86061cb0800000000000000
+      internalID: -4893716750722507780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: test_char_1
+      name: item_ideas_1
       rect:
         serializedVersion: 2
-        x: 56
-        y: 36
-        width: 116
-        height: 184
+        x: 140
+        y: 172
+        width: 104
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +135,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61c5dd67adf6bfba0800000000000000
-      internalID: -6054122289981727722
+      spriteID: 5aee0d718092737a0800000000000000
+      internalID: -6397599630920454491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_ideas_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 72
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7855360736a587870800000000000000
+      internalID: 8680787664890451335
       vertices: []
       indices: 
       edges: []
@@ -141,7 +165,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 13c5211d4e3d6994a92eb02948a4d2d3
     internalID: 0
     vertices: []
     indices: 

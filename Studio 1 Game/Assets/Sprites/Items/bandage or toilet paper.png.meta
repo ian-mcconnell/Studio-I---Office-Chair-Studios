@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 19dbdcdf7668abd44be9bb37f81b29f9
+guid: 8dbff6c32081a7f44b4bae8acc0727ef
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6713538684918799723
-    second: test_char_0
+      213: -5998631700474526024
+    second: bandage or toilet paper_0
   - first:
-      213: -6054122289981727722
-    second: test_char_1
+      213: -1279319141509298144
+    second: bandage or toilet paper_1
+  - first:
+      213: -2254910509351285852
+    second: bandage or toilet paper_2
+  - first:
+      213: -4610379932040125943
+    second: bandage or toilet paper_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,7 +59,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 3, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -93,47 +99,101 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: test_char_0
+      name: bandage or toilet paper_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 292
+        x: 4
+        y: 136
         width: 116
-        height: 188
+        height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 592629bc228b4d2a0800000000000000
-      internalID: -6713538684918799723
+      spriteID: 8b681d2204490cca0800000000000000
+      internalID: -5998631700474526024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: test_char_1
+      name: bandage or toilet paper_1
       rect:
         serializedVersion: 2
-        x: 56
-        y: 36
+        x: 132
+        y: 136
         width: 116
-        height: 184
+        height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61c5dd67adf6bfba0800000000000000
-      internalID: -6054122289981727722
+      spriteID: 0280bf7d402fe3ee0800000000000000
+      internalID: -1279319141509298144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandage or toilet paper_2
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab42d9b6d2f4b0e0800000000000000
+      internalID: -2254910509351285852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bandage or toilet paper_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 4
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902a82fe0e3a400c0800000000000000
+      internalID: -4610379932040125943
       vertices: []
       indices: 
       edges: []
@@ -141,7 +201,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: d249e711540f34f41be50cac755b3bf8
     internalID: 0
     vertices: []
     indices: 

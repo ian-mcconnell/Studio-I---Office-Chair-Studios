@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 19dbdcdf7668abd44be9bb37f81b29f9
+guid: 0eeccb705825f64469c0b89ae6d732c7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6713538684918799723
-    second: test_char_0
+      213: -3969974867964012148
+    second: Lilith running animation left_0
   - first:
-      213: -6054122289981727722
-    second: test_char_1
+      213: 3729608800454785644
+    second: Lilith running animation left_1
+  - first:
+      213: 1800098975371953152
+    second: Lilith running animation left_2
+  - first:
+      213: 2675273308325174123
+    second: Lilith running animation left_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,7 +59,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 3, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -93,17 +99,29 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: test_char_0
+      name: Lilith running animation left_0
       rect:
         serializedVersion: 2
-        x: 56
+        x: 96
         y: 292
-        width: 116
-        height: 188
+        width: 68
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 592629bc228b4d2a0800000000000000
-      internalID: -6713538684918799723
+      spriteID: c89d6c334e0d7e8c0800000000000000
+      internalID: -3969974867964012148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: test_char_1
+      name: Lilith running animation left_1
       rect:
         serializedVersion: 2
-        x: 56
-        y: 36
-        width: 116
-        height: 184
+        x: 324
+        y: 300
+        width: 96
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +150,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61c5dd67adf6bfba0800000000000000
-      internalID: -6054122289981727722
+      spriteID: c6a3746917b32c330800000000000000
+      internalID: 3729608800454785644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith running animation left_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 36
+        width: 68
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00407931b7c3bf810800000000000000
+      internalID: 1800098975371953152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lilith running animation left_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 44
+        width: 96
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b5ec356ea702520800000000000000
+      internalID: 2675273308325174123
       vertices: []
       indices: 
       edges: []
@@ -141,7 +201,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 10ae3c6ac6b32824abfe474ab3b81c85
     internalID: 0
     vertices: []
     indices: 
