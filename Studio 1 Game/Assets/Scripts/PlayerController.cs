@@ -14,7 +14,8 @@ public class PlayerController : MonoBehaviour
     public GameObject rightAnimation;
     public GameObject leftAnimation;
     public GameObject idleAnimation;
-    
+    public GameObject rightAttack;
+    public GameObject leftAttack;
     public bool ableToMakeADoubleJump = false; //here if we consider to add it
 
 
@@ -30,6 +31,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+       // Input.GetButtonDown("fire1");
         float hInput = Input.GetAxis("Horizontal");
         float jumpInput = Input.GetAxis("Jump");
         float vInput = Input.GetAxis("Vertical");
@@ -40,21 +42,60 @@ public class PlayerController : MonoBehaviour
         controller.Move(direction * Time.deltaTime);
         if(direction.x > 0)
         {
-            rightAnimation.SetActive(true);
-            leftAnimation.SetActive(false);
-            idleAnimation.SetActive(false);
+
+            if (Input.GetMouseButton(0) == true)
+            {
+                rightAttack.SetActive(true);
+                leftAnimation.SetActive(false);
+                rightAnimation.SetActive(false);
+                idleAnimation.SetActive(false);
+            }
+            else if(Input.GetButtonUp("Fire1") == true)
+            {
+                rightAttack.SetActive(false);
+                leftAnimation.SetActive(false);
+                rightAnimation.SetActive(false);
+                idleAnimation.SetActive(false);
+            }
+            else
+            {
+                rightAnimation.SetActive(true);
+                leftAnimation.SetActive(false);
+                idleAnimation.SetActive(false);
+            }
+
         }
         else if(direction.x < 0)
         {
-            leftAnimation.SetActive(true);
-            rightAnimation.SetActive(false);
-            idleAnimation.SetActive(false);
+
+            if (Input.GetMouseButton(0) == true)
+            {
+                leftAttack.SetActive(true);
+                leftAnimation.SetActive(false);
+                rightAnimation.SetActive(false);
+                idleAnimation.SetActive(false);
+            }
+            else if (Input.GetButtonUp("Fire1") == true)
+            {
+                leftAttack.SetActive(false);
+                leftAnimation.SetActive(false);
+                rightAnimation.SetActive(false);
+                idleAnimation.SetActive(false);
+            }
+            else
+            {
+                leftAnimation.SetActive(true);
+                rightAnimation.SetActive(false);
+                idleAnimation.SetActive(false);
+            }
         }
         else
         {
             leftAnimation.SetActive(false);
             rightAnimation.SetActive(false);
             idleAnimation.SetActive(true);
+            leftAttack.SetActive(false);
+            rightAttack.SetActive(false);
         }
 
     }
