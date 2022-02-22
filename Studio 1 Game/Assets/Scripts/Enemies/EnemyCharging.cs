@@ -2,30 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyPatrolling : Enemy
+public class EnemyCharging : Enemy
 {
     public Transform[] waypoints;
     private int waypointItterator = 0;
     Transform targetWaypoint;
 
-    private PatrollingStates stateCurrent = PatrollingStates.Patrolling;
+    private ChargingStates stateCurrent = ChargingStates.Idling;
 
-    public float attackRange = 1f;
-    public float aggroRange = 5f;
+    public float aggroRange = 8f;
+    private int recoveryDelay = 3;
+    private int timeRecovering = 0;
 
-    public enum PatrollingStates
+    public enum ChargingStates
     {
-        Patrolling = 0,
-        Chasing,
-        Attacking,
+        Idling = 0,
+        Charging,
+        Recovering,
         Dead
     }
 
     protected override void Start()
     {
-        targetWaypoint = waypoints[waypointItterator % waypoints.Length];
         base.Start();
-        StatePatrollingEnter();
+        StateIdlingEnter();
     }
 
     public override void FSMProcess()
@@ -34,32 +34,31 @@ public class EnemyPatrolling : Enemy
 
         switch (stateCurrent)
         {
-            case PatrollingStates.Patrolling:
-                if (isDead) { StatePatrollingExit(); StateDeadEnter(); }
-                else if (playerDistance <= attackRange) { StatePatrollingExit(); StateAttackingEnter(); }
-                else if (playerDistance <= aggroRange) { StatePatrollingExit(); StateChasingEnter(); }
-                else { StatePatrollingRemain(); }
+            case ChargingStates.Idling:
+                if (isDead) { StateIdlingExit(); StateDeadEnter(); }
+                else if (playerDistance <= aggroRange) { StateIdlingExit(); StateChargingEnter(); }
+                else { StateIdlingRemain(); }
                 break;
 
-            case PatrollingStates.Chasing:
-                if (isDead) { StateChasingExit(); StateDeadEnter(); }
-                else if (playerDistance <= attackRange) { StateChasingExit(); StateAttackingEnter(); }
-                else { StateChasingRemain(); }
+            case ChargingStates.Charging:
+                if (isDead) { StateChargingExit(); StateDeadEnter(); }
+                else if (playerDistance <= attackRange) { StateChargingExit(); StateAttackingEnter(); }
+                else { StateChargingRemain(); }
                 break;
 
-            case PatrollingStates.Attacking:
+            case ChargingStates.Recovering:
                 if (isDead) { StateAttackingExit(); StateDeadEnter(); }
                 else if (playerDistance >= attackRange && playerDistance < aggroRange) { StateAttackingExit(); StateChasingEnter(); }
                 else { StateAttackingRemain(); }
                 break;
 
-            case PatrollingStates.Dead:
+            case ChargingStates.Dead:
                 StateDeadRemain();
                 break;
         }
     }
 
-    void StatePatrollingEnter()
+    void StateIdlingEnter()
     {
         if (Vector3.Distance(targetWaypoint.position, transform.position) <= 1f)
         {
@@ -69,7 +68,7 @@ public class EnemyPatrolling : Enemy
         base.agent.destination = targetWaypoint.position;
     }
 
-    void StatePatrollingRemain()
+    void StateIdlingRemain()
     {
         if (Vector3.Distance(targetWaypoint.position, transform.position) <= 1f)
         {
@@ -79,37 +78,37 @@ public class EnemyPatrolling : Enemy
         base.agent.destination = targetWaypoint.position;
     }
 
-    void StatePatrollingExit()
+    void StateIdlingExit()
     {
 
     }
 
-    void StateChasingEnter()
-    {
-        base.agent.destination = player.position;
-    }
-
-    void StateChasingRemain()
+    void StateChargingEnter()
     {
         base.agent.destination = player.position;
     }
 
-    void StateChasingExit()
+    void StateChargingRemain()
     {
-
+        base.agent.destination = player.position;
     }
 
-    void StateAttackingEnter()
+    void StateChargingExit()
     {
-        player.gameObject.SendMessage("ChangeHealth", -10f);
+        
     }
 
-    void StateAttackingRemain()
+    void StateRecoveringEnter()
     {
-        player.gameObject.SendMessage("ChangeHealth", -10f);
+        timeRecovering = 0;
     }
 
-    void StateAttackingExit()
+    void StateRecoveringRemain()
+    {
+        timeRecovering += 1;
+    }
+
+    void StateRecoveringExit()
     {
 
     }

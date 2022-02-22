@@ -18,6 +18,10 @@ public class PlayerController : MonoBehaviour
     public GameObject leftAttack;
     public bool ableToMakeADoubleJump = false; //here if we consider to add it
 
+    //tentative health variables
+    private float maxHealth = 4;
+    private float currentHealth = 4;
+    private bool isDead = false;
 
     // Start is called before the first frame update
     void Start()
@@ -132,5 +136,24 @@ public class PlayerController : MonoBehaviour
                 DoubleJump();
             }
         }
+    }
+
+    public virtual void ChangeHealth(float amount)
+    {
+        currentHealth += amount;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        else if (currentHealth <= 0)
+        {
+            currentHealth = 0;
+            isDead = true;
+        }
+    }
+
+    public bool GetIsDead()
+    {
+        return isDead;
     }
 }
