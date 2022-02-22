@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 434521fa4ce234743b1b822646fa81df, type: 2}
 --- !u!1 &129195231
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,7 +1213,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &727029202
 BoxCollider:
@@ -1400,6 +1400,8 @@ GameObject:
   - component: {fileID: 779075302}
   - component: {fileID: 779075301}
   - component: {fileID: 779075303}
+  - component: {fileID: 779075304}
+  - component: {fileID: 779075305}
   m_Layer: 0
   m_Name: Coach Hedge v2_2
   m_TagString: Enemy
@@ -1498,7 +1500,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779075297}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd11793d5d49cd7429f4e671693a3112, type: 3}
   m_Name: 
@@ -1532,8 +1534,43 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &779075304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779075297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce2cc2f1631981d4ea34c0c1517320ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aggroRange: 8
+--- !u!195 &779075305
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779075297}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.64
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 0
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2.28
+  m_BaseOffset: 1.14
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,7 +2291,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5193a8823b235714b906ac613cdee053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 3
 --- !u!1 &1413092273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2464,7 +2500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5193a8823b235714b906ac613cdee053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 3
 --- !u!65 &1524499043
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2492,7 +2527,7 @@ GameObject:
   - component: {fileID: 1543263311}
   m_Layer: 0
   m_Name: Lilith
-  m_TagString: Enemy
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

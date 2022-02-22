@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RulerAttack : MonoBehaviour
 {
-    public int damageAmount = 3;
+   public float damageAmount = -10f;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +20,9 @@ public class RulerAttack : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-       
-            other.GetComponent<HitDetection>().TakeDamage(damageAmount);
-        
+
+            other.gameObject.SendMessage("ChangeHealth", damageAmount);
+
         }
     }
 }
