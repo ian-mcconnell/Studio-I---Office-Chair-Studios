@@ -20,9 +20,12 @@ public class RulerAttack : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-
             other.gameObject.SendMessage("ChangeHealth", damageAmount);
 
+            //Knock back the enemy
+            //Vector3 dir = other.transform.position - transform.position;
+            //dir = -dir.normalized;
+            //GetComponent<Rigidbody>().AddForce(dir * 100f);
         }
     }
 }

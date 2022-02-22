@@ -7,7 +7,7 @@ public class EnemyCharging : Enemy
     private ChargingStates stateCurrent = ChargingStates.Idling;
 
     public float aggroRange = 8f;
-    private int recoveryDelay = 10;
+    private int recoveryDelay = 9;
     private int timeRecovering = 0;
 
     public enum ChargingStates
@@ -37,7 +37,6 @@ public class EnemyCharging : Enemy
                 break;
 
             case ChargingStates.Charging:
-                Debug.Log(Vector3.Distance(transform.position, base.agent.destination));
                 if (isDead) { StateChargingExit(); StateDeadEnter(); }
                 else if (Vector3.Distance(transform.position, base.agent.destination) <= 1.2f) { StateChargingExit(); StateRecoveringEnter(); }
                 else { StateChargingRemain(); }
