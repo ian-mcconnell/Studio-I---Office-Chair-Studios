@@ -111,11 +111,16 @@ public class EnemyCharging : Enemy
 
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            other.gameObject.SendMessage("ChangeHealth", -1f);
+            collision.gameObject.SendMessage("ChangeHealth", -1f);
+
+            //Knock back the player
+            Vector3 dir = collision.contacts[0].point - transform.position;
+            dir = -dir.normalized;
+            GetComponent<Rigidbody>().AddForce(dir * 3f);
         }
     }
 }

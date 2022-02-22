@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
-        InvokeRepeating("FSMProcess", 0f, 0.3f);
+        InvokeRepeating("FSMProcess", 0f, 0.1f);
     }
 
     public virtual void FSMProcess()
