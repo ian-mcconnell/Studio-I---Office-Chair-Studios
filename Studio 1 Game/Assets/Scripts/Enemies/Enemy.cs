@@ -6,16 +6,21 @@ using UnityEngine.AI;
 public class Enemy : MonoBehaviour
 {
 
-    NavMeshAgent agent;
+    protected NavMeshAgent agent;
 
-    private float maxHealth = 100f;
-    private float currentHealth = 100f;
-    private bool isDead = false;
-    private float playerDistance = Mathf.Infinity;
-    public Transform player;
+    protected float maxHealth;
+    protected float currentHealth;
+    protected bool isDead;
+    protected float playerDistance;
+    protected Transform player;
 
     protected virtual void Start()
     {
+        maxHealth = 100f;
+        currentHealth = maxHealth;
+        isDead = false;
+        playerDistance = Mathf.Infinity;
+
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
