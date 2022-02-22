@@ -7,6 +7,7 @@ public class EnemyCharging : Enemy
     private ChargingStates stateCurrent = ChargingStates.Idling;
 
     public float aggroRange = 8f;
+    public float locationPadding = 1.2f;
     private int recoveryDelay = 9;
     private int timeRecovering = 0;
 
@@ -38,7 +39,7 @@ public class EnemyCharging : Enemy
 
             case ChargingStates.Charging:
                 if (isDead) { StateChargingExit(); StateDeadEnter(); }
-                else if (Vector3.Distance(transform.position, base.agent.destination) <= 1.2f) { StateChargingExit(); StateRecoveringEnter(); }
+                else if (Vector3.Distance(transform.position, base.agent.destination) <= locationPadding) { StateChargingExit(); StateRecoveringEnter(); }
                 else { StateChargingRemain(); }
                 break;
 
