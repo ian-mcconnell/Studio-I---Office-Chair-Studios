@@ -138,7 +138,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public virtual void ChangeHealth(float amount)
+    public void ChangeHealth(float amount)
     {
         currentHealth += amount;
         if (currentHealth > maxHealth)

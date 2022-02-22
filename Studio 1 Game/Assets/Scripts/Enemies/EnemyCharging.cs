@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class EnemyCharging : Enemy
 {
-    public Transform[] waypoints;
-    private int waypointItterator = 0;
-    Transform targetWaypoint;
-
     private ChargingStates stateCurrent = ChargingStates.Idling;
 
     public float aggroRange = 8f;
@@ -42,14 +38,14 @@ public class EnemyCharging : Enemy
 
             case ChargingStates.Charging:
                 if (isDead) { StateChargingExit(); StateDeadEnter(); }
-                else if (playerDistance <= attackRange) { StateChargingExit(); StateAttackingEnter(); }
+                else if (Vector3.Distance(transform.position, base.agent.destination) <= 0.2f) { StateChargingExit(); StateRecoveringEnter(); }
                 else { StateChargingRemain(); }
                 break;
 
             case ChargingStates.Recovering:
-                if (isDead) { StateAttackingExit(); StateDeadEnter(); }
-                else if (playerDistance >= attackRange && playerDistance < aggroRange) { StateAttackingExit(); StateChasingEnter(); }
-                else { StateAttackingRemain(); }
+                if (isDead) { StateRecoveringExit(); StateDeadEnter(); }
+                else if (timeRecovering == recoveryDelay) { StateRecoveringExit(); StateChargingEnter(); }
+                else { StateRecoveringRemain(); }
                 break;
 
             case ChargingStates.Dead:
@@ -60,22 +56,12 @@ public class EnemyCharging : Enemy
 
     void StateIdlingEnter()
     {
-        if (Vector3.Distance(targetWaypoint.position, transform.position) <= 1f)
-        {
-            waypointItterator += 1;
-        }
-        targetWaypoint = waypoints[waypointItterator % 5];
-        base.agent.destination = targetWaypoint.position;
+        base.agent.destination = transform.position;
     }
 
     void StateIdlingRemain()
     {
-        if (Vector3.Distance(targetWaypoint.position, transform.position) <= 1f)
-        {
-            waypointItterator += 1;
-        }
-        targetWaypoint = waypoints[waypointItterator % 5];
-        base.agent.destination = targetWaypoint.position;
+        
     }
 
     void StateIdlingExit()
@@ -90,7 +76,7 @@ public class EnemyCharging : Enemy
 
     void StateChargingRemain()
     {
-        base.agent.destination = player.position;
+        
     }
 
     void StateChargingExit()
@@ -100,6 +86,7 @@ public class EnemyCharging : Enemy
 
     void StateRecoveringEnter()
     {
+        base.agent.destination = transform.position;
         timeRecovering = 0;
     }
 
@@ -122,5 +109,13 @@ public class EnemyCharging : Enemy
     void StateDeadRemain()
     {
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.SendMessage("ChangeHealth", -1f);
+        }
     }
 }
