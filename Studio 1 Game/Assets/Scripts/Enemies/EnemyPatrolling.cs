@@ -61,6 +61,7 @@ public class EnemyPatrolling : Enemy
 
     void StatePatrollingEnter()
     {
+        stateCurrent = PatrollingStates.Patrolling;
         if (Vector3.Distance(targetWaypoint.position, transform.position) <= 1f)
         {
             waypointItterator += 1;
@@ -86,6 +87,7 @@ public class EnemyPatrolling : Enemy
 
     void StateChasingEnter()
     {
+        stateCurrent = PatrollingStates.Chasing;
         base.agent.destination = player.position;
     }
 
@@ -101,6 +103,7 @@ public class EnemyPatrolling : Enemy
 
     void StateAttackingEnter()
     {
+        stateCurrent = PatrollingStates.Attacking;
         player.gameObject.SendMessage("ChangeHealth", -10f);
     }
 
@@ -116,6 +119,7 @@ public class EnemyPatrolling : Enemy
 
     void StateDeadEnter()
     {
+        stateCurrent = PatrollingStates.Dead;
         base.agent.destination = transform.position;
         Destroy(gameObject, 3f);
     }

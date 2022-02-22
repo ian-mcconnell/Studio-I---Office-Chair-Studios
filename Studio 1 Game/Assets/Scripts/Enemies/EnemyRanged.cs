@@ -16,7 +16,6 @@ public class EnemyRanged : Enemy
     public enum RangedStates
     {
         Patrolling = 0,
-        Chasing,
         Attacking,
         Dead
     }
@@ -37,19 +36,11 @@ public class EnemyRanged : Enemy
             case RangedStates.Patrolling:
                 if (isDead) { StatePatrollingExit(); StateDeadEnter(); }
                 else if (playerDistance <= attackRange) { StatePatrollingExit(); StateAttackingEnter(); }
-                else if (playerDistance <= aggroRange) { StatePatrollingExit(); StateChasingEnter(); }
                 else { StatePatrollingRemain(); }
-                break;
-
-            case RangedStates.Chasing:
-                if (isDead) { StateChasingExit(); StateDeadEnter(); }
-                else if (playerDistance <= attackRange) { StateChasingExit(); StateAttackingEnter(); }
-                else { StateChasingRemain(); }
                 break;
 
             case RangedStates.Attacking:
                 if (isDead) { StateAttackingExit(); StateDeadEnter(); }
-                else if (playerDistance >= attackRange && playerDistance < aggroRange) { StateAttackingExit(); StateChasingEnter(); }
                 else { StateAttackingRemain(); }
                 break;
 
@@ -61,6 +52,7 @@ public class EnemyRanged : Enemy
 
     void StatePatrollingEnter()
     {
+        stateCurrent = RangedStates.Patrolling;
         if (Vector3.Distance(targetWaypoint.position, transform.position) <= 1f)
         {
             waypointItterator += 1;
@@ -84,23 +76,9 @@ public class EnemyRanged : Enemy
 
     }
 
-    void StateChasingEnter()
-    {
-        base.agent.destination = player.position;
-    }
-
-    void StateChasingRemain()
-    {
-        base.agent.destination = player.position;
-    }
-
-    void StateChasingExit()
-    {
-
-    }
-
     void StateAttackingEnter()
     {
+        stateCurrent = RangedStates.Attacking;
         player.gameObject.SendMessage("ChangeHealth", -10f);
     }
 
@@ -116,6 +94,7 @@ public class EnemyRanged : Enemy
 
     void StateDeadEnter()
     {
+        stateCurrent = RangedStates.Dead;
         base.agent.destination = transform.position;
         Destroy(gameObject, 3f);
     }

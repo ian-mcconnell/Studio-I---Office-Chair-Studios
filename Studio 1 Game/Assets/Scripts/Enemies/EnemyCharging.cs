@@ -7,7 +7,7 @@ public class EnemyCharging : Enemy
     private ChargingStates stateCurrent = ChargingStates.Idling;
 
     public float aggroRange = 8f;
-    private int recoveryDelay = 3;
+    private int recoveryDelay = 10;
     private int timeRecovering = 0;
 
     public enum ChargingStates
@@ -37,14 +37,15 @@ public class EnemyCharging : Enemy
                 break;
 
             case ChargingStates.Charging:
+                Debug.Log(Vector3.Distance(transform.position, base.agent.destination));
                 if (isDead) { StateChargingExit(); StateDeadEnter(); }
-                else if (Vector3.Distance(transform.position, base.agent.destination) <= 0.2f) { StateChargingExit(); StateRecoveringEnter(); }
+                else if (Vector3.Distance(transform.position, base.agent.destination) <= 1.2f) { StateChargingExit(); StateRecoveringEnter(); }
                 else { StateChargingRemain(); }
                 break;
 
             case ChargingStates.Recovering:
                 if (isDead) { StateRecoveringExit(); StateDeadEnter(); }
-                else if (timeRecovering == recoveryDelay) { StateRecoveringExit(); StateChargingEnter(); }
+                else if (timeRecovering >= recoveryDelay) { StateRecoveringExit(); StateChargingEnter(); }
                 else { StateRecoveringRemain(); }
                 break;
 
@@ -52,10 +53,12 @@ public class EnemyCharging : Enemy
                 StateDeadRemain();
                 break;
         }
+        Debug.Log(stateCurrent);
     }
 
     void StateIdlingEnter()
     {
+        stateCurrent = ChargingStates.Idling;
         base.agent.destination = transform.position;
     }
 
@@ -71,6 +74,7 @@ public class EnemyCharging : Enemy
 
     void StateChargingEnter()
     {
+        stateCurrent = ChargingStates.Charging;
         base.agent.destination = player.position;
     }
 
@@ -86,6 +90,7 @@ public class EnemyCharging : Enemy
 
     void StateRecoveringEnter()
     {
+        stateCurrent = ChargingStates.Recovering;
         base.agent.destination = transform.position;
         timeRecovering = 0;
     }
@@ -102,8 +107,9 @@ public class EnemyCharging : Enemy
 
     void StateDeadEnter()
     {
+        stateCurrent = ChargingStates.Dead;
         base.agent.destination = transform.position;
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, 2f);
     }
 
     void StateDeadRemain()
@@ -113,9 +119,9 @@ public class EnemyCharging : Enemy
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.transform.parent.CompareTag("Player"))
         {
-            collision.gameObject.SendMessage("ChangeHealth", -1f);
+            collision.gameObject.transform.parent.SendMessage("ChangeHealth", -1f);
 
             //Knock back the player
             Vector3 dir = collision.contacts[0].point - transform.position;

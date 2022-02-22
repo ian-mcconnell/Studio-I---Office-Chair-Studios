@@ -23,6 +23,9 @@ public class PlayerController : MonoBehaviour
     private float currentHealth = 4;
     private bool isDead = false;
 
+    public float invulnerabilityDuration = .3f;
+    public bool isInvulnerable = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -140,7 +143,11 @@ public class PlayerController : MonoBehaviour
 
     public void ChangeHealth(float amount)
     {
-        currentHealth += amount;
+        if (amount >= 0 || !isInvulnerable)
+        {
+            currentHealth += amount;
+        }
+
         if (currentHealth > maxHealth)
         {
             currentHealth = maxHealth;
@@ -150,10 +157,21 @@ public class PlayerController : MonoBehaviour
             currentHealth = 0;
             isDead = true;
         }
+
+        if (amount < 0)
+        {
+            isInvulnerable = true;
+            Invoke("DisableInvulnerability", invulnerabilityDuration);
+        }
     }
 
     public bool GetIsDead()
     {
         return isDead;
+    }
+
+    public void DisableInvulnerability()
+    {
+        isInvulnerable = false;
     }
 }
