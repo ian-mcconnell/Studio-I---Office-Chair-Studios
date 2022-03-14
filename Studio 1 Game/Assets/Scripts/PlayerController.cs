@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float gravity = -20;
     public Transform groundCheck;
     public LayerMask groundLayer;
+    public Animator animator;
     public GameObject rightAnimation;
     public GameObject leftAnimation;
     public GameObject idleAnimation;
@@ -30,9 +31,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
 
-        idleAnimation.SetActive(true);
-        leftAnimation.SetActive(false);
-        rightAnimation.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -49,61 +48,41 @@ public class PlayerController : MonoBehaviour
         controller.Move(direction * Time.deltaTime);
         if(direction.x > 0)
         {
-
+            animator.SetFloat("Speed",direction.x);
+            
             if (Input.GetMouseButton(0) == true)
             {
-                rightAttack.SetActive(true);
-                leftAnimation.SetActive(false);
-                rightAnimation.SetActive(false);
-                idleAnimation.SetActive(false);
+                animator.SetBool("isAttacking", true);
+
             }
             else if(Input.GetButtonUp("Fire1") == true)
             {
-                rightAttack.SetActive(false);
-                leftAnimation.SetActive(false);
-                rightAnimation.SetActive(false);
-                idleAnimation.SetActive(false);
-            }
-            else
-            {
-                rightAnimation.SetActive(true);
-                leftAnimation.SetActive(false);
-                idleAnimation.SetActive(false);
-            }
+                animator.SetBool("isAttacking", false);
 
+            }
         }
         else if(direction.x < 0)
         {
-
+            animator.SetFloat("Speed", direction.x);
+            
             if (Input.GetMouseButton(0) == true)
             {
-                leftAttack.SetActive(true);
-                leftAnimation.SetActive(false);
-                rightAnimation.SetActive(false);
-                idleAnimation.SetActive(false);
+                animator.SetBool("isAttacking", true);
+
             }
             else if (Input.GetButtonUp("Fire1") == true)
             {
-                leftAttack.SetActive(false);
-                leftAnimation.SetActive(false);
-                rightAnimation.SetActive(false);
-                idleAnimation.SetActive(false);
+                animator.SetBool("isAttacking", false);
+
             }
-            else
-            {
-                leftAnimation.SetActive(true);
-                rightAnimation.SetActive(false);
-                idleAnimation.SetActive(false);
-            }
+
         }
         else
         {
-            leftAnimation.SetActive(false);
-            rightAnimation.SetActive(false);
-            idleAnimation.SetActive(true);
-            leftAttack.SetActive(false);
-            rightAttack.SetActive(false);
+            animator.SetFloat("Speed", 0);
+
         }
+        
 
     }
     private void DoubleJump()
