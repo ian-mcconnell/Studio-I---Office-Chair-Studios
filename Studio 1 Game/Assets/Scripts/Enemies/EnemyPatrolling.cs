@@ -13,6 +13,8 @@ public class EnemyPatrolling : Enemy
     public float attackRange = 1f;
     public float aggroRange = 5f;
 
+    public int attackCooldown = 0;
+
     public enum PatrollingStates
     {
         Patrolling = 0,
@@ -44,12 +46,14 @@ public class EnemyPatrolling : Enemy
             case PatrollingStates.Chasing:
                 if (isDead) { StateChasingExit(); StateDeadEnter(); }
                 else if (playerDistance <= attackRange) { StateChasingExit(); StateAttackingEnter(); }
+                else if (playerDistance >= aggroRange) { StateChasingExit(); StatePatrollingEnter(); }
                 else { StateChasingRemain(); }
                 break;
 
             case PatrollingStates.Attacking:
                 if (isDead) { StateAttackingExit(); StateDeadEnter(); }
                 else if (playerDistance >= attackRange && playerDistance < aggroRange) { StateAttackingExit(); StateChasingEnter(); }
+                else if (playerDistance >= aggroRange) { StateAttackingExit(); StatePatrollingEnter(); }
                 else { StateAttackingRemain(); }
                 break;
 
@@ -66,7 +70,7 @@ public class EnemyPatrolling : Enemy
         {
             waypointItterator += 1;
         }
-        targetWaypoint = waypoints[waypointItterator % 5];
+        targetWaypoint = waypoints[waypointItterator % waypoints.Length];
         base.agent.destination = targetWaypoint.position;
     }
 
@@ -76,7 +80,7 @@ public class EnemyPatrolling : Enemy
         {
             waypointItterator += 1;
         }
-        targetWaypoint = waypoints[waypointItterator % 5];
+        targetWaypoint = waypoints[waypointItterator % waypoints.Length];
         base.agent.destination = targetWaypoint.position;
     }
 
@@ -104,12 +108,18 @@ public class EnemyPatrolling : Enemy
     void StateAttackingEnter()
     {
         stateCurrent = PatrollingStates.Attacking;
-        player.gameObject.SendMessage("ChangeHealth", -10f);
+        if (attackCooldown == 0)
+        {
+            //attack here
+        }
     }
 
     void StateAttackingRemain()
     {
-        player.gameObject.SendMessage("ChangeHealth", -10f);
+        if (attackCooldown == 0)
+        {
+            //attack here
+        }
     }
 
     void StateAttackingExit()
