@@ -51,16 +51,15 @@ public class EnemyRanged : Enemy
                 StateDeadRemain();
                 break;
         }
-        Debug.Log(Vector3.Distance(targetWaypoint.position, transform.position));
+        Debug.Log(Vector3.Distance(targetWaypoint.position, gameObject.transform.position));
         Debug.Log(stateCurrent);
-        Debug.DrawRay(transform.position, transform.right * attackRange, Color.red, 0.1f);
     }
 
     void StatePatrollingEnter()
     {
         stateCurrent = RangedStates.Patrolling;
         base.agent.destination = targetWaypoint.position;
-        if (Vector3.Distance(targetWaypoint.position, transform.position) <= 1.5f)
+        if (Vector3.Distance(targetWaypoint.position, transform.position) <= 12f)
         {
             waypointItterator += 1;
             targetWaypoint = waypoints[waypointItterator % waypoints.Length];
@@ -71,7 +70,7 @@ public class EnemyRanged : Enemy
 
     void StatePatrollingRemain()
     {
-        if (Vector3.Distance(targetWaypoint.position, transform.position) <= 1.5f)
+        if (Vector3.Distance(targetWaypoint.position, transform.position) <= 2f)
         {
             waypointItterator += 1;
             targetWaypoint = waypoints[waypointItterator % waypoints.Length];
