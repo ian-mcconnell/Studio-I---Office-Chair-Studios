@@ -38,6 +38,78 @@ TextureImporter:
   - first:
       213: -552111383532624022
     second: triple heart quarter damage inc_11
+  - first:
+      213: 836301006811719320
+    second: triple heart quarter damage inc_12
+  - first:
+      213: -3549785590543205687
+    second: triple heart quarter damage inc_13
+  - first:
+      213: 4320995792274867749
+    second: triple heart quarter damage inc_14
+  - first:
+      213: -5210419759864030761
+    second: triple heart quarter damage inc_15
+  - first:
+      213: -4376026343072022276
+    second: triple heart quarter damage inc_16
+  - first:
+      213: -4539489876738555786
+    second: triple heart quarter damage inc_17
+  - first:
+      213: 5411747768418037842
+    second: triple heart quarter damage inc_18
+  - first:
+      213: 5908605237715232867
+    second: triple heart quarter damage inc_19
+  - first:
+      213: 2149857216461807304
+    second: triple heart quarter damage inc_20
+  - first:
+      213: -7594635179777620597
+    second: triple heart quarter damage inc_21
+  - first:
+      213: 1104208840986878293
+    second: triple heart quarter damage inc_22
+  - first:
+      213: 2960506500777659671
+    second: triple heart quarter damage inc_23
+  - first:
+      213: -4735555212742446614
+    second: triple heart quarter damage inc_24
+  - first:
+      213: -409257860623058696
+    second: triple heart quarter damage inc_25
+  - first:
+      213: -2216898872130783561
+    second: triple heart quarter damage inc_26
+  - first:
+      213: 8779592299231479482
+    second: triple heart quarter damage inc_27
+  - first:
+      213: 8950925904757355158
+    second: triple heart quarter damage inc_28
+  - first:
+      213: -4201930099220648977
+    second: triple heart quarter damage inc_29
+  - first:
+      213: 7365093424674851971
+    second: triple heart quarter damage inc_30
+  - first:
+      213: 7994039373192728697
+    second: triple heart quarter damage inc_31
+  - first:
+      213: -9005939619040663109
+    second: triple heart quarter damage inc_32
+  - first:
+      213: -1122271779059626097
+    second: triple heart quarter damage inc_33
+  - first:
+      213: 562120234902534921
+    second: triple heart quarter damage inc_34
+  - first:
+      213: 2338785405410135625
+    second: triple heart quarter damage inc_35
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -144,7 +216,7 @@ TextureImporter:
         serializedVersion: 2
         x: 16
         y: 868
-        width: 224
+        width: 72
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -163,9 +235,9 @@ TextureImporter:
       name: triple heart quarter damage inc_1
       rect:
         serializedVersion: 2
-        x: 272
+        x: 92
         y: 868
-        width: 224
+        width: 72
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -184,9 +256,9 @@ TextureImporter:
       name: triple heart quarter damage inc_2
       rect:
         serializedVersion: 2
-        x: 528
+        x: 168
         y: 868
-        width: 224
+        width: 72
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -205,9 +277,9 @@ TextureImporter:
       name: triple heart quarter damage inc_3
       rect:
         serializedVersion: 2
-        x: 528
-        y: 612
-        width: 224
+        x: 272
+        y: 868
+        width: 72
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -226,9 +298,9 @@ TextureImporter:
       name: triple heart quarter damage inc_4
       rect:
         serializedVersion: 2
-        x: 272
-        y: 612
-        width: 224
+        x: 348
+        y: 868
+        width: 72
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -247,9 +319,9 @@ TextureImporter:
       name: triple heart quarter damage inc_5
       rect:
         serializedVersion: 2
-        x: 16
-        y: 612
-        width: 224
+        x: 424
+        y: 868
+        width: 72
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -268,9 +340,9 @@ TextureImporter:
       name: triple heart quarter damage inc_6
       rect:
         serializedVersion: 2
-        x: 16
-        y: 356
-        width: 224
+        x: 528
+        y: 868
+        width: 72
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -289,9 +361,9 @@ TextureImporter:
       name: triple heart quarter damage inc_7
       rect:
         serializedVersion: 2
-        x: 272
-        y: 356
-        width: 224
+        x: 604
+        y: 868
+        width: 72
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -310,9 +382,9 @@ TextureImporter:
       name: triple heart quarter damage inc_8
       rect:
         serializedVersion: 2
-        x: 528
-        y: 356
-        width: 224
+        x: 680
+        y: 868
+        width: 72
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -331,9 +403,9 @@ TextureImporter:
       name: triple heart quarter damage inc_9
       rect:
         serializedVersion: 2
-        x: 528
-        y: 100
-        width: 224
+        x: 16
+        y: 612
+        width: 72
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -352,9 +424,9 @@ TextureImporter:
       name: triple heart quarter damage inc_10
       rect:
         serializedVersion: 2
-        x: 272
-        y: 100
-        width: 224
+        x: 92
+        y: 612
+        width: 72
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -373,9 +445,9 @@ TextureImporter:
       name: triple heart quarter damage inc_11
       rect:
         serializedVersion: 2
-        x: 16
-        y: 100
-        width: 224
+        x: 168
+        y: 612
+        width: 72
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -386,6 +458,510 @@ TextureImporter:
       bones: []
       spriteID: a67a6143f918658f0800000000000000
       internalID: -552111383532624022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_12
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 612
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8966054b5532b9b00800000000000000
+      internalID: 836301006811719320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_13
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 612
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca3fde10d0acbec0800000000000000
+      internalID: -3549785590543205687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_14
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 612
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526408a87c247fb30800000000000000
+      internalID: 4320995792274867749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_15
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 612
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9d0aa95ded0b7b0800000000000000
+      internalID: -5210419759864030761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_16
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 612
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0c075e93b3543c0800000000000000
+      internalID: -4376026343072022276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_17
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 612
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6704483220e7001c0800000000000000
+      internalID: -4539489876738555786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 356
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250f1963ce36a1b40800000000000000
+      internalID: 5411747768418037842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_19
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 356
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368670898259ff150800000000000000
+      internalID: 5908605237715232867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_20
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 356
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce14097fb3d5dd10800000000000000
+      internalID: 2149857216461807304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_21
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 356
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b858ba6ca8f6a9690800000000000000
+      internalID: -7594635179777620597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_22
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 356
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5516edc2710f25f00800000000000000
+      internalID: 1104208840986878293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_23
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 356
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d461e1af4d51920800000000000000
+      internalID: 2960506500777659671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_24
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 356
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1bc32cf9de74eb0800000000000000
+      internalID: -4735555212742446614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_25
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 356
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8b604e426025af0800000000000000
+      internalID: -409257860623058696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_26
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 356
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b63eafa83efb31e0800000000000000
+      internalID: -2216898872130783561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_27
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 100
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6827c0ea067d970800000000000000
+      internalID: 8779592299231479482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_28
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 100
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69277e3bfa3183c70800000000000000
+      internalID: 8950925904757355158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_29
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 100
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb6ee866debfa5c0800000000000000
+      internalID: -4201930099220648977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_30
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 100
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c4f43a271163660800000000000000
+      internalID: 7365093424674851971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_31
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 100
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97093a7a47880fe60800000000000000
+      internalID: 7994039373192728697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_32
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 100
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9e67ac1a9740380800000000000000
+      internalID: -9005939619040663109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_33
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 100
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f84b353c3ec60f0800000000000000
+      internalID: -1122271779059626097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_34
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 100
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90bbc6a106d0dc700800000000000000
+      internalID: 562120234902534921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triple heart quarter damage inc_35
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 100
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ec65f4fe8057020800000000000000
+      internalID: 2338785405410135625
       vertices: []
       indices: 
       edges: []
