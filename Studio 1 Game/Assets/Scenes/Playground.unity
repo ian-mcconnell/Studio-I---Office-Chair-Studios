@@ -146,12 +146,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216149224}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.21, z: -1.88}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -18.48, y: 0, z: -1.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1049564007}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &811027376
 GameObject:
@@ -176,12 +176,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811027376}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.21, z: 1.35}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -18.48, y: 0, z: 1.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1049564007}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1049564001
 GameObject:
@@ -194,9 +194,9 @@ GameObject:
   - component: {fileID: 1049564007}
   - component: {fileID: 1049564006}
   - component: {fileID: 1049564005}
-  - component: {fileID: 1049564004}
   - component: {fileID: 1049564003}
   - component: {fileID: 1049564002}
+  - component: {fileID: 1049564004}
   m_Layer: 0
   m_Name: hall monitor v11_0 (1)
   m_TagString: Untagged
@@ -213,8 +213,8 @@ NavMeshAgent:
   m_GameObject: {fileID: 1049564001}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.35
-  m_Speed: 4.42
+  m_Radius: 0.29
+  m_Speed: 1.99
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 0
@@ -244,32 +244,19 @@ MonoBehaviour:
   attackRange: 1
   zRange: 0.5
   attackCooldown: 0
---- !u!61 &1049564004
-BoxCollider2D:
+--- !u!65 &1049564004
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1049564001}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.88, y: 1.16}
-    newSize: {x: 1.88, y: 1.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.88, y: 1.16}
-  m_EdgeRadius: 0
+  m_Size: {x: 1.88, y: 1.16, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &1049564005
 Animator:
   serializedVersion: 3
@@ -350,9 +337,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -18.48, y: 1.21, z: 0.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 811027377}
-  - {fileID: 216149225}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -504,7 +489,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
   m_Depth: 0
   m_CullingMask:
