@@ -436,6 +436,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1367310566311722433, guid: b7efc7fc081761149a79edccf984c79b, type: 3}
+      propertyPath: healthSprites.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1367310566311722433, guid: b7efc7fc081761149a79edccf984c79b, type: 3}
+      propertyPath: healthSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: -5210419759864030761, guid: f0a338bf8e2501745adba135c45b41f9, type: 3}
     - target: {fileID: 3539506597093588892, guid: b7efc7fc081761149a79edccf984c79b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
