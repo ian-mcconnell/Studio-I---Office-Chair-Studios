@@ -10,8 +10,8 @@ public class EnemyRanged : Enemy
 
     private RangedStates stateCurrent = RangedStates.Patrolling;
 
-    public float attackRange = 100f;
-    public float zRange = 1f;
+    public float attackRange = 10f;
+    public float zRange = 0.6f;
 
     public int attackCooldown = 0;
 
@@ -37,13 +37,13 @@ public class EnemyRanged : Enemy
         {
             case RangedStates.Patrolling:
                 if (isDead) { StatePatrollingExit(); StateDeadEnter(); }
-                else if (playerDistance <= attackRange && Mathf.Abs(base.player.position.z - transform.position.z) <= zRange) { StatePatrollingExit(); StateAttackingEnter(); }
+                else if (base.playerDistance <= attackRange && Mathf.Abs(base.player.position.z - transform.position.z) <= zRange) { StatePatrollingExit(); StateAttackingEnter(); }
                 else { StatePatrollingRemain(); }
                 break;
 
             case RangedStates.Attacking:
                 if (isDead) { StateAttackingExit(); StateDeadEnter(); }
-                else if (playerDistance >= attackRange || Mathf.Abs(base.player.position.z - transform.position.z) >= zRange) { StateAttackingExit(); StatePatrollingEnter(); }
+                else if (base.playerDistance >= attackRange || Mathf.Abs(Mathf.Abs(base.player.position.z) - Mathf.Abs(transform.position.z)) >= zRange) { StateAttackingExit(); StatePatrollingEnter(); }
                 else { StateAttackingRemain(); }
                 break;
 
@@ -52,7 +52,8 @@ public class EnemyRanged : Enemy
                 break;
         }
         //Debug.Log(Vector3.Distance(targetWaypoint.position, gameObject.transform.position));
-        Debug.Log(stateCurrent);
+        //Debug.Log(stateCurrent);
+        //Debug.Log(Mathf.Abs(base.player.position.z - transform.position.z));
         //Debug.Log(targetWaypoint);
     }
 

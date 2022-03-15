@@ -1012,8 +1012,8 @@ MonoBehaviour:
   waypoints:
   - {fileID: 811027377}
   - {fileID: 216149225}
-  attackRange: 1
-  zRange: 0.5
+  attackRange: 10
+  zRange: 0.6
   attackCooldown: 0
 --- !u!65 &1049564004
 BoxCollider:
