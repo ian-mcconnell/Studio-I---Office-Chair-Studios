@@ -10,8 +10,8 @@ public class EnemyRanged : Enemy
 
     private RangedStates stateCurrent = RangedStates.Patrolling;
 
-    public float attackRange = 1f;
-    public float zRange = 0.5f;
+    public float attackRange = 100f;
+    public float zRange = 1f;
 
     public int attackCooldown = 0;
 
@@ -51,27 +51,33 @@ public class EnemyRanged : Enemy
                 StateDeadRemain();
                 break;
         }
+        Debug.Log(Vector3.Distance(targetWaypoint.position, transform.position));
+        Debug.Log(stateCurrent);
+        Debug.DrawRay(transform.position, transform.right * attackRange, Color.red, 0.1f);
     }
 
     void StatePatrollingEnter()
     {
         stateCurrent = RangedStates.Patrolling;
-        if (Vector3.Distance(targetWaypoint.position, transform.position) <= 1f)
+        base.agent.destination = targetWaypoint.position;
+        if (Vector3.Distance(targetWaypoint.position, transform.position) <= 1.5f)
         {
             waypointItterator += 1;
+            targetWaypoint = waypoints[waypointItterator % waypoints.Length];
+            Debug.Log("Reached Waypoint!");
         }
-        targetWaypoint = waypoints[waypointItterator % waypoints.Length];
-        base.agent.destination = targetWaypoint.position;
+        
     }
 
     void StatePatrollingRemain()
     {
-        if (Vector3.Distance(targetWaypoint.position, transform.position) <= 1f)
+        if (Vector3.Distance(targetWaypoint.position, transform.position) <= 1.5f)
         {
             waypointItterator += 1;
+            targetWaypoint = waypoints[waypointItterator % waypoints.Length];
+            base.agent.destination = targetWaypoint.position;
+            Debug.Log("Reached Waypoint!");
         }
-        targetWaypoint = waypoints[waypointItterator % waypoints.Length];
-        base.agent.destination = targetWaypoint.position;
     }
 
     void StatePatrollingExit()
@@ -82,9 +88,13 @@ public class EnemyRanged : Enemy
     void StateAttackingEnter()
     {
         stateCurrent = RangedStates.Attacking;
+        base.agent.destination = transform.position;
         if (attackCooldown == 0)
         {
-            //attack here
+            if (player.position.x <= transform.position.x)
+            {
+                //attack left here
+            }
         }
     }
 
@@ -92,7 +102,10 @@ public class EnemyRanged : Enemy
     {
         if (attackCooldown == 0)
         {
-            //attack here
+            if (player.position.x <= transform.position.x)
+            {
+                //attack right here
+            }
         }
     }
 
