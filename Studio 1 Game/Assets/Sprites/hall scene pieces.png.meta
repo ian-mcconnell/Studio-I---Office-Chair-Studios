@@ -1,12 +1,60 @@
 fileFormatVersion: 2
 guid: 95345ed41be58af41b919319b1056bb6
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7205955160079735183
+    second: hall scene pieces_0
+  - first:
+      213: -1835232334805229886
+    second: hall scene pieces_1
+  - first:
+      213: 5569772718277496699
+    second: hall scene pieces_2
+  - first:
+      213: -8795584318149874271
+    second: hall scene pieces_3
+  - first:
+      213: 310839774856533659
+    second: hall scene pieces_4
+  - first:
+      213: -6075623833298182775
+    second: hall scene pieces_5
+  - first:
+      213: -5283209578443963626
+    second: hall scene pieces_6
+  - first:
+      213: 7032762966697593693
+    second: hall scene pieces_7
+  - first:
+      213: -3578442113973625810
+    second: hall scene pieces_8
+  - first:
+      213: 354230788033689684
+    second: hall scene pieces_9
+  - first:
+      213: 2542419813181395190
+    second: hall scene pieces_10
+  - first:
+      213: 7580543968325972953
+    second: hall scene pieces_11
+  - first:
+      213: -1587373400988583346
+    second: hall scene pieces_12
+  - first:
+      213: 8104888685970985286
+    second: hall scene pieces_13
+  - first:
+      213: -1529643716592923124
+    second: hall scene pieces_14
+  - first:
+      213: 7889670276183502993
+    second: hall scene pieces_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -35,13 +83,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -50,9 +98,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -75,13 +123,361 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: hall scene pieces_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3497
+        width: 556
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8912ff0a02b00460800000000000000
+      internalID: 7205955160079735183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall scene pieces_1
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 3722
+        width: 805
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce9f9b3ae1f786e0800000000000000
+      internalID: -1835232334805229886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall scene pieces_2
+      rect:
+        serializedVersion: 2
+        x: 2742
+        y: 3417
+        width: 458
+        height: 583
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f879007cecb4d40800000000000000
+      internalID: 5569772718277496699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall scene pieces_3
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 3546
+        width: 145
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad2ea4e9aecfe580800000000000000
+      internalID: -8795584318149874271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall scene pieces_4
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 2593
+        width: 113
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96d26ad023505400800000000000000
+      internalID: 310839774856533659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall scene pieces_5
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 2706
+        width: 193
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d5d5b405c0faba0800000000000000
+      internalID: -6075623833298182775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall scene pieces_6
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 2618
+        width: 1603
+        height: 481
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61308ea41e44ea6b0800000000000000
+      internalID: -5283209578443963626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall scene pieces_7
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1925
+        width: 117
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b488338a4699160800000000000000
+      internalID: 7032762966697593693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall scene pieces_8
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 1878
+        width: 221
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cdd435bd1d65ec0800000000000000
+      internalID: -3578442113973625810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall scene pieces_9
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 1917
+        width: 181
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4583141660b7ae400800000000000000
+      internalID: 354230788033689684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall scene pieces_10
+      rect:
+        serializedVersion: 2
+        x: 2474
+        y: 1817
+        width: 653
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0979a895d784320800000000000000
+      internalID: 2542419813181395190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall scene pieces_11
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1023
+        width: 187
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3bc446390833960800000000000000
+      internalID: 7580543968325972953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall scene pieces_12
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 1169
+        width: 84
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4afb245d4488f9e0800000000000000
+      internalID: -1587373400988583346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall scene pieces_13
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 1101
+        width: 281
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641126f71595a7070800000000000000
+      internalID: 8104888685970985286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall scene pieces_14
+      rect:
+        serializedVersion: 2
+        x: 2398
+        y: 817
+        width: 802
+        height: 786
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e0297e42d95cae0800000000000000
+      internalID: -1529643716592923124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall scene pieces_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 798
+        height: 798
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19030ee905dbd7d60800000000000000
+      internalID: 7889670276183502993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3901a77b367fa5546a0647480a8c1a6f
     internalID: 0
     vertices: []
     indices: 
