@@ -104,7 +104,7 @@ public class PlayerController : MonoBehaviour
         if (isGrounded)
         {
             direction.y = -1;
-         //   ableToMakeADoubleJump = true;
+            ableToMakeADoubleJump = true;
             if (Input.GetButtonDown("Jump"))
             {
                 Jump();
