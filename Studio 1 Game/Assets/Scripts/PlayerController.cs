@@ -12,11 +12,8 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     public Animator animator;
-    public GameObject rightAnimation;
-    public GameObject leftAnimation;
-    public GameObject idleAnimation;
-    public GameObject rightAttack;
-    public GameObject leftAttack;
+    public Collider rightAttack;
+    public Collider leftAttack;
     public bool ableToMakeADoubleJump = false; //here if we consider to add it
 
     //tentative health variables
@@ -30,8 +27,9 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-
+        rightAttack.enabled = false;
+        leftAttack.enabled = false;
+        
     }
 
     // Update is called once per frame
@@ -46,6 +44,7 @@ public class PlayerController : MonoBehaviour
         direction.y += gravity * Time.deltaTime;
     
         controller.Move(direction * Time.deltaTime);
+        //right
         if(direction.x > 0)
         {
             animator.SetFloat("Speed",direction.x);
@@ -53,33 +52,39 @@ public class PlayerController : MonoBehaviour
             if (Input.GetMouseButton(0) == true)
             {
                 animator.SetBool("isAttacking", true);
+                rightAttack.enabled = true;
 
             }
             else if(Input.GetButtonUp("Fire1") == true)
             {
                 animator.SetBool("isAttacking", false);
+                rightAttack.enabled = false;
 
             }
         }
-        else if(direction.x < 0)
+        else if(direction.x < 0) //left
         {
             animator.SetFloat("Speed", direction.x);
             
             if (Input.GetMouseButton(0) == true)
             {
                 animator.SetBool("isAttacking", true);
+                leftAttack.enabled = true;
 
             }
             else if (Input.GetButtonUp("Fire1") == true)
             {
                 animator.SetBool("isAttacking", false);
+                leftAttack.enabled = false;
 
             }
 
-        }
+        }//idle
         else
         {
             animator.SetFloat("Speed", 0);
+            rightAttack.enabled = false;
+            leftAttack.enabled = false;
 
         }
         

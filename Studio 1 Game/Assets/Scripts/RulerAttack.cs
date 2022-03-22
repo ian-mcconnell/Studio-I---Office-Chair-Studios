@@ -21,6 +21,7 @@ public class RulerAttack : MonoBehaviour
         if (other.tag == "Enemy")
         {
             other.gameObject.SendMessage("ChangeHealth", damageAmount);
+            Debug.Log(" " + other.name + " got hit with " + Mathf.Abs(damageAmount) + " of damage");
 
             //Knock back the enemy
             //Vector3 dir = other.transform.position - transform.position;
