@@ -437,6 +437,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1367310566311722433, guid: b7efc7fc081761149a79edccf984c79b, type: 3}
+      propertyPath: life
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1367310566311722433, guid: b7efc7fc081761149a79edccf984c79b, type: 3}
+      propertyPath: currentHealth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1367310566311722433, guid: b7efc7fc081761149a79edccf984c79b, type: 3}
       propertyPath: healthSprites.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -645,6 +653,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 497967112}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &506166484 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3539506596395636561, guid: b7efc7fc081761149a79edccf984c79b, type: 3}
+  m_PrefabInstance: {fileID: 412236365}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &621698620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1418,6 +1437,17 @@ Transform:
   m_Father: {fileID: 1221646797}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1049455648 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3539506596999268073, guid: b7efc7fc081761149a79edccf984c79b, type: 3}
+  m_PrefabInstance: {fileID: 412236365}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1094351985
 GameObject:
   m_ObjectHideFlags: 0
@@ -2333,6 +2363,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622904625}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1705799331 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3539506596368882535, guid: b7efc7fc081761149a79edccf984c79b, type: 3}
+  m_PrefabInstance: {fileID: 412236365}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1742711182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1866529130585483011, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+  m_PrefabInstance: {fileID: 1866529129060053838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1742711183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742711182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcca17e2d8cf29a4ebf34e9bf77bdcb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHearts: 3
+  life: 12
+  currentHealth: 12
+  healthImages:
+  - {fileID: 1705799331}
+  - {fileID: 506166484}
+  - {fileID: 1049455648}
+  healthSprites:
+  - {fileID: 2960506500777659671, guid: f0a338bf8e2501745adba135c45b41f9, type: 3}
+  - {fileID: 1104208840986878293, guid: f0a338bf8e2501745adba135c45b41f9, type: 3}
+  - {fileID: 5908605237715232867, guid: f0a338bf8e2501745adba135c45b41f9, type: 3}
+  - {fileID: -4376026343072022276, guid: f0a338bf8e2501745adba135c45b41f9, type: 3}
+  - {fileID: -7594635179777620597, guid: f0a338bf8e2501745adba135c45b41f9, type: 3}
 --- !u!1 &1830507492
 GameObject:
   m_ObjectHideFlags: 0
