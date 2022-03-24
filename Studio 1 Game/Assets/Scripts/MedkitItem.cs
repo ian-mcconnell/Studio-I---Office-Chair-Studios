@@ -1,15 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class HealthSystem : MonoBehaviour
+public class MedkitItem : MonoBehaviour
 {
     private int maxHeartNumber = 3;
     public int startHearts = 3;
+    public int life;
     public float currentHealth;
     private bool isDead = false;
     private int maxHealth;
     private int healthPerHeart = 4;
 
-    
+
     public Image[] healthImages;
     public Sprite[] healthSprites;
     // Start is called before the first frame update
@@ -70,33 +73,11 @@ public class HealthSystem : MonoBehaviour
             }
         }
     }
-    public void takeDamage(int amount)
+    public void Heal(int amount)
     {
         currentHealth += amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
         UpdateHearts();
     }
 
-
-
-    public void OnTriggerEnter(Collider collision)
-    {
-        if (collision.tag == "Enemy")
-        {
-            currentHealth -= 1;
-            currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
-            UpdateHearts();
-        }
-    }
-
-    public void UseMedKit(int amount)
-    {
-        if (currentHealth < maxHealth)
-        {
-            currentHealth += amount;
-            currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
-            UpdateHearts();
-            Destroy(gameObject);
-        }
-    }
 }
