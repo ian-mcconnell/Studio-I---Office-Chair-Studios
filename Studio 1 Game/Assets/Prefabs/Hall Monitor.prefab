@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 7582794681099687663}
   - component: {fileID: 7582794681099687657}
   m_Layer: 0
-  m_Name: hall monitor v11_0 (1)
+  m_Name: Hall Monitor
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,7 +158,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3496611487179239459, guid: 44ec465bb6ffba84da90d624ed600d89, type: 3}
+  m_Sprite: {fileID: 2737661891719910967, guid: 776ee9c8940248142be79a93c5e44a5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -179,7 +179,7 @@ Animator:
   m_GameObject: {fileID: 7582794681099687660}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f74010490ded834fa14b7c9dc68409a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4f13e885bd8a1a1498315bf5061ac9b9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

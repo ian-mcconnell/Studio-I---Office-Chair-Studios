@@ -2645,7 +2645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7582794681099687660, guid: 9dd20c0b0d3885d4fb02220c0d6c2d93, type: 3}
       propertyPath: m_Name
-      value: hall monitor v11_0 (1)
+      value: Hall Monitor
       objectReference: {fileID: 0}
     - target: {fileID: 7582794681099687662, guid: 9dd20c0b0d3885d4fb02220c0d6c2d93, type: 3}
       propertyPath: waypoints.Array.data[0]
