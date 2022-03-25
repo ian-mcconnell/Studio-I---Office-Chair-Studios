@@ -8,7 +8,6 @@ public class MedkitItem : MonoBehaviour
     public int startHearts = 3;
     public int life;
     public float currentHealth;
-    private bool isDead = false;
     private int maxHealth;
     private int healthPerHeart = 4;
 
@@ -30,21 +29,7 @@ public class MedkitItem : MonoBehaviour
     //    }
     //}
     // Update is called once per frame
-    public virtual void ChangeHealth(float amount)
-    {
-        bool empty = false;
-        int i = 0;
-        currentHealth += amount;
-        if (currentHealth > maxHealth)
-        {
-            currentHealth = maxHealth;
-        }
-        else if (currentHealth <= 0)
-        {
-            currentHealth = 0;
-            isDead = true;
-        }
-    }
+   
     private void UpdateHearts()
     {
         bool empty = false;
