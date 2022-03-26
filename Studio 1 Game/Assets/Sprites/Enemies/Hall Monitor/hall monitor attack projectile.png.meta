@@ -1,7 +1,19 @@
 fileFormatVersion: 2
-guid: 84327e8e13d67d242b1da223ea634a5a
+guid: ea0220c25c2dbea44ba5a3cd6e3b7577
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1003662422971040847
+    second: hall monitor attack projectile_0
+  - first:
+      213: 5880121361033291640
+    second: hall monitor attack projectile_1
+  - first:
+      213: -3135689655490791077
+    second: hall monitor attack projectile_2
+  - first:
+      213: 6324550649496324114
+    second: hall monitor attack projectile_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,9 +53,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -88,7 +100,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -101,11 +113,95 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: hall monitor attack projectile_0
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 340
+        width: 116
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb376c08564212f0800000000000000
+      internalID: -1003662422971040847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall monitor attack projectile_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 340
+        width: 124
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877639049336a9150800000000000000
+      internalID: 5880121361033291640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall monitor attack projectile_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 84
+        width: 100
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59ba963fdacb74d0800000000000000
+      internalID: -3135689655490791077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall monitor attack projectile_3
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 84
+        width: 124
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218c13b8e4155c750800000000000000
+      internalID: 6324550649496324114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 4c2ef5be058515b45af83523ec82262d
     internalID: 0
     vertices: []
     indices: 

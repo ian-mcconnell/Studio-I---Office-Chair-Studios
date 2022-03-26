@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemyAttack : MonoBehaviour
+{
+    public float damage = -2f;
+    public float duration = 5f;
+
+    private void Start()
+    {
+        Destroy(gameObject, duration);
+    }
+
+    void OnTrigerEnter(Collider other)
+    {
+        GameObject go = other.gameObject;
+
+        if (go.tag == "Player")
+        {
+            go.GetComponent<PlayerController>().ChangeHealth(damage);
+            Destroy(gameObject);
+        }
+    }
+}
