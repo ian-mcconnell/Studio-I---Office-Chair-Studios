@@ -158,4 +158,21 @@ public class PlayerController : MonoBehaviour
     {
         isInvulnerable = false;
     }
+
+    public void OnTriggerEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "ChangeLayerForward")
+        {
+            gameObject.layer = 2;
+            GameObject.FindGameObjectWithTag("ChangeLayerForward").SetActive(false);
+            GameObject.FindGameObjectWithTag("ChangeLayerBackward").SetActive(true);
+        }
+
+        if (collision.gameObject.tag == "ChangeLayerBackward")
+        {
+            gameObject.layer = 0;
+            GameObject.FindGameObjectWithTag("ChangeLayerForward").SetActive(true);
+            GameObject.FindGameObjectWithTag("ChangeLayerBackward").SetActive(false);
+        }
+    }
 }
