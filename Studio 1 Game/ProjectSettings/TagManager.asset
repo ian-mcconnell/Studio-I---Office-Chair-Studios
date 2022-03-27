@@ -6,7 +6,13 @@ TagManager:
   tags:
   - Attack
   - Enemy
+<<<<<<< Updated upstream
   - inventoryitem
+=======
+  - ChangeLayer
+  - ChangeLayerForward
+  - ChangeLayerBackward
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
