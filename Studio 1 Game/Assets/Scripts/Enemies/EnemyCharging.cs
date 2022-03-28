@@ -28,6 +28,14 @@ public class EnemyCharging : Enemy
     public override void FSMProcess()
     {
         base.playerDistance = Vector3.Distance(transform.position, player.position);
+        if (base.player.position.x < transform.position.x)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
 
         switch (stateCurrent)
         {

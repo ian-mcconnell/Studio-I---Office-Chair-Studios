@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
     protected float playerDistance;
     protected Transform player;
 
+    protected Animator animator;
+
     protected virtual void Start()
     {
         maxHealth = 100f;
@@ -23,6 +25,7 @@ public class Enemy : MonoBehaviour
 
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        animator = GetComponent<Animator>();
 
         InvokeRepeating("FSMProcess", 0f, 0.1f);
     }

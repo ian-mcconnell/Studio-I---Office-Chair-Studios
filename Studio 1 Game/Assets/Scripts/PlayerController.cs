@@ -159,7 +159,7 @@ public class PlayerController : MonoBehaviour
         isInvulnerable = false;
     }
 
-    public void OnTriggerEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "ChangeLayerForward")
         {
