@@ -4,8 +4,7 @@ public class HealthSystem : MonoBehaviour
 {
     private int maxHeartNumber = 3;
     public int startHearts = 3;
-    public float currentHealth;
-    private bool isDead = false;
+    public int currentHealth;
     private int maxHealth;
     private int healthPerHeart = 4;
 
@@ -27,21 +26,7 @@ public class HealthSystem : MonoBehaviour
     //    }
     //}
     // Update is called once per frame
-    public virtual void ChangeHealth(float amount)
-    {
-        bool empty = false;
-        int i = 0;
-        currentHealth += amount;
-        if (currentHealth > maxHealth)
-        {
-            currentHealth = maxHealth;
-        }
-        else if (currentHealth <= 0)
-        {
-            currentHealth = 0;
-            isDead = true;
-        }
-    }
+    
     private void UpdateHearts()
     {
         bool empty = false;
@@ -98,5 +83,13 @@ public class HealthSystem : MonoBehaviour
             UpdateHearts();
             Destroy(gameObject);
         }
+    }
+
+    public void AddHealth(int amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
+        UpdateHearts();
+        Destroy(gameObject);
     }
 }

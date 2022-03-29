@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+//make this class abstract
 public class Item : MonoBehaviour
 {
     private InventorySystem inventory;
     public GameObject itemButton;
     public Transform Player;
+    
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventorySystem>();
@@ -47,5 +48,6 @@ public class Item : MonoBehaviour
     //        }
     //    }
     //}
-
+    //public abstract void useItem();
+    
 }

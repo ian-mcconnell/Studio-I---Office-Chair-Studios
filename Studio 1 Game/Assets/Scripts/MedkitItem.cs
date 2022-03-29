@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+//use inheritance
 public class MedkitItem : MonoBehaviour
 {
     private int maxHeartNumber = 3;
     public int startHearts = 3;
-    public int life;
     public float currentHealth;
     private int maxHealth;
     private int healthPerHeart = 4;
 
-
+    //public HealthSystem hs;
     public Image[] healthImages;
     public Sprite[] healthSprites;
     // Start is called before the first frame update
@@ -29,7 +29,7 @@ public class MedkitItem : MonoBehaviour
     //    }
     //}
     // Update is called once per frame
-   
+
     private void UpdateHearts()
     {
         bool empty = false;
@@ -64,5 +64,8 @@ public class MedkitItem : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
         UpdateHearts();
     }
-
+    //public override void useItem()
+    //{
+    //    hs.AddHealth(1);
+    //}
 }
