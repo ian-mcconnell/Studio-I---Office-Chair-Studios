@@ -37,14 +37,6 @@ public class EnemyRanged : Enemy
     public override void FSMProcess()
     {
         base.playerDistance = Vector3.Distance(transform.position, player.position);
-        if (base.player.position.x < transform.position.x)
-        {
-            GetComponent<SpriteRenderer>().flipX = true;
-        }
-        else
-        {
-            GetComponent<SpriteRenderer>().flipX = false;
-        }
 
         attackCooldown -= 1;
         if (attackCooldown < 0) { attackCooldown = 0; }
@@ -59,7 +51,7 @@ public class EnemyRanged : Enemy
 
             case RangedStates.Attacking:
                 if (isDead) { StateAttackingExit(); StateDeadEnter(); }
-                else if (base.playerDistance >= attackRange || Mathf.Abs(Mathf.Abs(base.player.position.z) - Mathf.Abs(transform.position.z)) >= zRange) { StateAttackingExit(); StatePatrollingEnter(); }
+                else if ((base.playerDistance >= attackRange || Mathf.Abs(Mathf.Abs(base.player.position.z) - Mathf.Abs(transform.position.z)) >= zRange) && !attackLocked) { StateAttackingExit(); StatePatrollingEnter(); }
                 else { StateAttackingRemain(); }
                 break;
 
@@ -67,10 +59,17 @@ public class EnemyRanged : Enemy
                 StateDeadRemain();
                 break;
         }
-        //Debug.Log(Vector3.Distance(targetWaypoint.position, gameObject.transform.position));
-        //Debug.Log(stateCurrent);
-        //Debug.Log(Mathf.Abs(base.player.position.z - transform.position.z));
-        //Debug.Log(targetWaypoint);
+
+        if (base.player.position.x < transform.position.x)
+        {
+            if (stateCurrent == RangedStates.Patrolling) { GetComponent<SpriteRenderer>().flipX = false; }
+            else { GetComponent<SpriteRenderer>().flipX = true; }
+        }
+        else
+        {
+            if (stateCurrent == RangedStates.Patrolling) { GetComponent<SpriteRenderer>().flipX = true; }
+            else { GetComponent<SpriteRenderer>().flipX = false; }
+        }
     }
 
     void StatePatrollingEnter()
@@ -106,7 +105,14 @@ public class EnemyRanged : Enemy
     void StateAttackingEnter()
     {
         stateCurrent = RangedStates.Attacking;
-        base.animator.SetBool("isAttacking", true);
+        if (attackCooldown == 0)
+        {
+            base.animator.SetBool("isAttacking", true);
+        }
+        else
+        {
+            base.animator.SetBool("isAttacking", false);
+        }
         base.agent.destination = transform.position;
 
         if (attackCooldown == 0 && attackLocked == false)
@@ -128,6 +134,16 @@ public class EnemyRanged : Enemy
 
     void StateAttackingRemain()
     {
+        stateCurrent = RangedStates.Attacking;
+        if (attackCooldown == 0)
+        {
+            base.animator.SetBool("isAttacking", true);
+        }
+        else
+        {
+            base.animator.SetBool("isAttacking", false);
+        }
+
         if (attackCooldown == 0 && attackLocked == false)
         {
             if (player.position.x <= transform.position.x)
@@ -166,6 +182,7 @@ public class EnemyRanged : Enemy
     private void ShootProjectileLeft()
     {
         attackLocked = false;
+        attackCooldown = 6;
 
         GameObject proj = Instantiate(projectile, leftAttackSpawn.position, new Quaternion(0, 0, 0, 0));
         proj.GetComponent<Rigidbody>().velocity = new Vector3(projectileSpeed * -1f, 0f, 0f);
@@ -174,6 +191,7 @@ public class EnemyRanged : Enemy
     private void ShootProjectileRight()
     {
         attackLocked = false;
+        attackCooldown = 6;
 
         GameObject proj = Instantiate(projectile, rightAttackSpawn.position, new Quaternion(0, 0, 0, 0));
         proj.GetComponent<Rigidbody>().velocity = new Vector3(projectileSpeed, 0f, 0f);

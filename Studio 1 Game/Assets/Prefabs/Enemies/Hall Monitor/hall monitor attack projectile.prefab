@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4058824325519884501}
   - component: {fileID: 4058824325519884505}
   - component: {fileID: 4058824325519884502}
+  - component: {fileID: 6292856331763095372}
   m_Layer: 0
   m_Name: hall monitor attack projectile
   m_TagString: Untagged
@@ -71,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 521296307
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -1003662422971040847, guid: ea0220c25c2dbea44ba5a3cd6e3b7577, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -118,7 +119,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 124
   m_CollisionDetection: 0
 --- !u!136 &4058824325519884502
 CapsuleCollider:
@@ -134,3 +135,17 @@ CapsuleCollider:
   m_Height: 0.92
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6292856331763095372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4058824325519884498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a074e158fb28a124081ab6e58a48c479, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: -2
+  duration: 5

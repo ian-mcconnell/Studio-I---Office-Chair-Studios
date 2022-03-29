@@ -12,13 +12,15 @@ public class EnemyAttack : MonoBehaviour
         Destroy(gameObject, duration);
     }
 
-    void OnTrigerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
+        
         GameObject go = other.gameObject;
 
         if (go.tag == "Player")
         {
             go.GetComponent<PlayerController>().ChangeHealth(damage);
+            Debug.Log("Dealt damage to player");
             Destroy(gameObject);
         }
     }
