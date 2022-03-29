@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
     private Vector3 direction;
+    
     public float speed = 8;
     public float jumpForce = 10;
     public float gravity = -20;
@@ -30,12 +31,13 @@ public class PlayerController : MonoBehaviour
         rightAttack.enabled = false;
         leftAttack.enabled = false;
         
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-       // Input.GetButtonDown("fire1");
+
         float hInput = Input.GetAxis("Horizontal");
         float jumpInput = Input.GetAxis("Jump");
         float vInput = Input.GetAxis("Vertical");
@@ -45,10 +47,10 @@ public class PlayerController : MonoBehaviour
     
         controller.Move(direction * Time.deltaTime);
         //right
-        if(direction.x > 0)
+        if(direction.x > 0 || (Input.mousePosition.x > Screen.width / 2.0f))
         {
             animator.SetFloat("Speed",direction.x);
-            
+            animator.SetInteger("Position", 1); //position = 1 for right
             if (Input.GetMouseButton(0) == true)
             {
                 animator.SetBool("isAttacking", true);
@@ -62,10 +64,10 @@ public class PlayerController : MonoBehaviour
 
             }
         }
-        else if(direction.x < 0) //left
+        else if(direction.x < 0 || (Input.mousePosition.x < Screen.width / 2.0f)) //left
         {
             animator.SetFloat("Speed", direction.x);
-            
+            animator.SetInteger("Position", 0); //position = 0 for left
             if (Input.GetMouseButton(0) == true)
             {
                 animator.SetBool("isAttacking", true);
