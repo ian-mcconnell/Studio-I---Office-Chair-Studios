@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
     public float invulnerabilityDuration = .3f;
     public bool isInvulnerable = false;
 
+    public Transform pickUpPosition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -177,4 +179,6 @@ public class PlayerController : MonoBehaviour
             GameObject.FindGameObjectWithTag("ChangeLayerBackward").SetActive(false);
         }
     }
+
+    
 }

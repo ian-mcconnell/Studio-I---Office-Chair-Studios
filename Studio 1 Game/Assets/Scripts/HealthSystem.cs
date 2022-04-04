@@ -74,22 +74,11 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
-    public void UseMedKit(int amount)
-    {
-        if (currentHealth < maxHealth)
-        {
-            currentHealth += amount;
-            currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
-            UpdateHearts();
-            Destroy(gameObject);
-        }
-    }
-
     public void AddHealth(int amount)
     {
         currentHealth += amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
         UpdateHearts();
-        Destroy(gameObject);
+        
     }
 }

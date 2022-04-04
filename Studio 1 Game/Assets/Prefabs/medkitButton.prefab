@@ -123,8 +123,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1456601976610499443}
         m_TargetAssemblyTypeName: MedkitItem, Assembly-CSharp
-        m_MethodName: Heal
-        m_Mode: 3
+        m_MethodName: useItem
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -145,15 +145,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a3ec8d9807e1e9488265aeac5fdf4c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHearts: 3
-  currentHealth: 12
-  healthImages:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  healthSprites:
-  - {fileID: 2960506500777659671, guid: f0a338bf8e2501745adba135c45b41f9, type: 3}
-  - {fileID: 1104208840986878293, guid: f0a338bf8e2501745adba135c45b41f9, type: 3}
-  - {fileID: 5908605237715232867, guid: f0a338bf8e2501745adba135c45b41f9, type: 3}
-  - {fileID: -4376026343072022276, guid: f0a338bf8e2501745adba135c45b41f9, type: 3}
-  - {fileID: -5210419759864030761, guid: f0a338bf8e2501745adba135c45b41f9, type: 3}
+  itemButton: {fileID: 5105323141233819874}
