@@ -3,24 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 //use inheritance
-public class MedkitItem : MonoBehaviour
+public class MedkitItem : Item
 {
-    private int maxHeartNumber = 3;
-    public int startHearts = 3;
-    public float currentHealth;
-    private int maxHealth;
-    private int healthPerHeart = 4;
-
+    //private int maxHeartNumber = 3;
+    //public int startHearts = 3;
+    //public float currentHealth;
+    //private int maxHealth;
+    //private int healthPerHeart = 4;
+    HealthSystem hs;
     //public HealthSystem hs;
-    public Image[] healthImages;
-    public Sprite[] healthSprites;
+    //public Image[] healthImages;
+    //public Sprite[] healthSprites;
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = startHearts * healthPerHeart;
-        maxHealth = maxHeartNumber * healthPerHeart;
+        hs = FindObjectOfType<HealthSystem>();
     }
 
+   
     //void checkHealth()
     //{
     //    for(int i = 0; i < maxHeartNumber; i++)
@@ -30,42 +30,11 @@ public class MedkitItem : MonoBehaviour
     //}
     // Update is called once per frame
 
-    private void UpdateHearts()
+    
+
+    public override void useItem()
     {
-        bool empty = false;
-        int i = 0;
-        foreach (Image image in healthImages)
-        {
-            if (empty)
-            {
-                image.sprite = healthSprites[0];
-            }
-            else
-            {
-                i++;
-                if (currentHealth >= i * healthPerHeart)
-                {
-                    image.sprite = healthSprites[healthSprites.Length - 1];
-                }
-                else
-                {
-                    int currentHeartHealth = (int)(healthPerHeart - (healthPerHeart * i - currentHealth));
-                    int healthPerImage = healthPerHeart / (healthSprites.Length - 1);
-                    int imageIndex = currentHeartHealth / healthPerImage;
-                    image.sprite = healthSprites[imageIndex];
-                    empty = true;
-                }
-            }
-        }
+        hs.AddHealth(1);
+        Destroy(itemButton);
     }
-    public void Heal(int amount)
-    {
-        currentHealth += amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
-        UpdateHearts();
-    }
-    //public override void useItem()
-    //{
-    //    hs.AddHealth(1);
-    //}
 }

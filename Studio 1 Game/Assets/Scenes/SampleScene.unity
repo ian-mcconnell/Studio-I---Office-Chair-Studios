@@ -356,7 +356,6 @@ GameObject:
   - component: {fileID: 197106004}
   - component: {fileID: 197106003}
   - component: {fileID: 197106002}
-  - component: {fileID: 197106005}
   - component: {fileID: 197106006}
   m_Layer: 0
   m_Name: New Piskel_3
@@ -449,20 +448,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &197106005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197106001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f725f76b97720c14ca6d6af9b79091da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemButton: {fileID: 6593488935719521686, guid: 860e5e6ae8abf614b90bb23ed4c17bec, type: 3}
-  Player: {fileID: 387537301}
 --- !u!136 &197106006
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2658,6 +2643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f725f76b97720c14ca6d6af9b79091da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
   itemButton: {fileID: 4524043900680130156, guid: 886a019f6e3c2734f91b15125bbcbb13, type: 3}
   Player: {fileID: 387537301}
 --- !u!136 &1596353491
@@ -2838,7 +2824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHearts: 3
-  currentHealth: 0
+  currentHealth: 12
   healthImages:
   - {fileID: 3539506596493795626}
   - {fileID: 3539506596537330972}
@@ -3026,11 +3012,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1894134387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f725f76b97720c14ca6d6af9b79091da, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a3ec8d9807e1e9488265aeac5fdf4c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 5105323141233819874, guid: 4975b17659c6d7546b6c56fa1d17cc44, type: 3}
-  Player: {fileID: 387537301}
 --- !u!1 &2125742958
 GameObject:
   m_ObjectHideFlags: 0
@@ -3144,7 +3129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2140814608
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3305,6 +3290,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1866529130585483039, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: pickUpPosition
+      value: 
+      objectReference: {fileID: 387537301}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
 --- !u!224 &3539506596493795620
@@ -3626,7 +3615,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &3539506596951885270
 MonoBehaviour:
   m_ObjectHideFlags: 0

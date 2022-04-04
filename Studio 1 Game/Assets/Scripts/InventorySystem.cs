@@ -7,10 +7,11 @@ public class InventorySystem : MonoBehaviour
 {
     public GameObject[] slots;
     public bool[] isFull;
+   
 
     public void Update()
     {
-        
+
     }
 
     public void inventoryChoice()
@@ -20,6 +21,33 @@ public class InventorySystem : MonoBehaviour
 
     //public void itemUsage()
     //{
-    //    switch I
+    //    switch (Item)
+    //    {
+    //        case
+    //    }
+            
     //}
+
+    public void addToInventory(Item item)
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (isFull[i] == false)
+            {
+                isFull[i] = true;
+                Instantiate(item.itemButton, slots[i].transform, false);
+                Destroy(item.gameObject);
+                break;
+            }
+        }
+    }
+
+    public void useInventory(int index)
+    {
+
+    }
 }
+        
+    
+    
+    
