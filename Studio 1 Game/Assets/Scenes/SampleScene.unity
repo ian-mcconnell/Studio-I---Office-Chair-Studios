@@ -1287,7 +1287,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &779075298
 Animator:
   serializedVersion: 3
@@ -2643,9 +2643,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f725f76b97720c14ca6d6af9b79091da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
-  itemButton: {fileID: 4524043900680130156, guid: 886a019f6e3c2734f91b15125bbcbb13, type: 3}
-  Player: {fileID: 387537301}
 --- !u!136 &1596353491
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2824,7 +2821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHearts: 3
-  currentHealth: 12
+  pc: {fileID: 0}
   healthImages:
   - {fileID: 3539506596493795626}
   - {fileID: 3539506596537330972}
@@ -3204,7 +3201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHearts: 3
-  currentHealth: 12
+  pc: {fileID: 0}
   healthImages:
   - {fileID: 3539506596493795626}
   - {fileID: 3539506596537330972}

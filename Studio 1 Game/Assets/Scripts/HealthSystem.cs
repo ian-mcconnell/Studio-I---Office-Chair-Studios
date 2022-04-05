@@ -1,21 +1,27 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 public class HealthSystem : MonoBehaviour
 {
     private int maxHeartNumber = 3;
     public int startHearts = 3;
-    public int currentHealth;
-    private int maxHealth;
+    private float currentHealth = 12;
+    private float maxHealth;
     private int healthPerHeart = 4;
+    public PlayerController pc;
 
     
     public Image[] healthImages;
     public Sprite[] healthSprites;
+
+    protected bool isDead;
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = startHearts * healthPerHeart;
+        Convert.ToInt32(currentHealth);
         maxHealth = maxHeartNumber * healthPerHeart;
+        Convert.ToInt32(maxHealth);
     }
 
     //void checkHealth()
@@ -26,9 +32,28 @@ public class HealthSystem : MonoBehaviour
     //    }
     //}
     // Update is called once per frame
-    
+
     private void UpdateHearts()
     {
+        //if (currentHealth <= 4)
+        //{
+        //    healthImages[1].sprite = healthSprites[0];
+        //    healthImages[2].sprite = healthSprites[0];
+        //    healthImages[0].sprite = healthSprites[currentHealth];
+        //}
+        //else if (currentHealth <= 8)
+        //{
+        //    healthImages[0].sprite = healthSprites[5];
+        //    healthImages[2].sprite = healthSprites[0];
+        //    healthImages[1].sprite = healthSprites[currentHealth - 4];
+        //}
+        //else
+        //{
+        //    healthImages[0].sprite = healthSprites[5];
+        //    healthImages[1].sprite = healthSprites[5];
+        //    healthImages[2].sprite = healthSprites[currentHealth - 8];
+        //}
+
         bool empty = false;
         int i = 0;
         foreach (Image image in healthImages)
@@ -55,9 +80,10 @@ public class HealthSystem : MonoBehaviour
             }
         }
     }
-    public void takeDamage(int amount)
+    public void takeDamage(float amount)
     {
         currentHealth += amount;
+        Convert.ToInt32(currentHealth);
         currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
         UpdateHearts();
     }
@@ -74,11 +100,29 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
-    public void AddHealth(int amount)
+    public void AddHealth(float amount)
     {
         currentHealth += amount;
+        Convert.ToInt32(currentHealth);
         currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
         UpdateHearts();
         
     }
+
+    public virtual void ChangeHealth(int amount)
+    {
+        currentHealth += amount;
+        Convert.ToInt32(currentHealth);
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        else if (currentHealth <= 0)
+        {
+            currentHealth = 0;
+            isDead = true;
+        }
+    }
+
 }
+
