@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
             {
                 animator.SetBool("isAttacking", true);
                 rightAttack.enabled = true;
-
+                leftAttack.enabled = false;
             }
             else if(Input.GetButtonUp("Fire1") == true)
             {
@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
             {
                 animator.SetBool("isAttacking", true);
                 leftAttack.enabled = true;
-
+                rightAttack.enabled = false;
             }
             else if (Input.GetButtonUp("Fire1") == true)
             {
