@@ -84,6 +84,7 @@ public class HealthSystem : MonoBehaviour
     {
         currentHealth += amount;
         Convert.ToInt32(currentHealth);
+        pc.ChangeHealth(amount);
         currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
         UpdateHearts();
     }
@@ -107,21 +108,6 @@ public class HealthSystem : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
         UpdateHearts();
         
-    }
-
-    public virtual void ChangeHealth(int amount)
-    {
-        currentHealth += amount;
-        Convert.ToInt32(currentHealth);
-        if (currentHealth > maxHealth)
-        {
-            currentHealth = maxHealth;
-        }
-        else if (currentHealth <= 0)
-        {
-            currentHealth = 0;
-            isDead = true;
-        }
     }
 
 }
