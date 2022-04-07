@@ -205,6 +205,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &31592672 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3539506596395636561, guid: b7efc7fc081761149a79edccf984c79b, type: 3}
+  m_PrefabInstance: {fileID: 1556126273}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &71832826
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,6 +648,17 @@ Transform:
   m_Father: {fileID: 1156598935}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &191692253 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3539506596368882535, guid: b7efc7fc081761149a79edccf984c79b, type: 3}
+  m_PrefabInstance: {fileID: 1556126273}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &216149224
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,6 +935,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &346066196 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3539506596999268073, guid: b7efc7fc081761149a79edccf984c79b, type: 3}
+  m_PrefabInstance: {fileID: 1556126273}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &381119108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,6 +1675,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1742711183, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: healthImages.Array.data[0]
+      value: 
+      objectReference: {fileID: 191692253}
+    - target: {fileID: 1742711183, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: healthImages.Array.data[1]
+      value: 
+      objectReference: {fileID: 31592672}
+    - target: {fileID: 1742711183, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: healthImages.Array.data[2]
+      value: 
+      objectReference: {fileID: 346066196}
     - target: {fileID: 1866529130585483011, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: m_Name
       value: Lilith

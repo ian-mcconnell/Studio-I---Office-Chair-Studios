@@ -3107,6 +3107,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1684428101, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1742711183, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: healthImages.Array.data[0]
       value: 
