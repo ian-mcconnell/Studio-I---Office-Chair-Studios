@@ -9,21 +9,25 @@ public class HealthSystem : MonoBehaviour
     private float maxHealth;
     private int healthPerHeart = 4;
     public PlayerController pc;
-
+    private float damageAmount;
     
     public Image[] healthImages;
     public Sprite[] healthSprites;
-
-    protected bool isDead;
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = startHearts * healthPerHeart;
-        Convert.ToInt32(currentHealth);
         maxHealth = maxHeartNumber * healthPerHeart;
         Convert.ToInt32(maxHealth);
     }
 
+    private void Update()
+    {
+        currentHealth = pc.currentHealth;
+        Debug.Log(currentHealth);
+        Debug.Log(pc.currentHealth);
+        currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
+        UpdateHearts();
+    }
     //void checkHealth()
     //{
     //    for(int i = 0; i < maxHeartNumber; i++)
@@ -35,24 +39,7 @@ public class HealthSystem : MonoBehaviour
 
     private void UpdateHearts()
     {
-        //if (currentHealth <= 4)
-        //{
-        //    healthImages[1].sprite = healthSprites[0];
-        //    healthImages[2].sprite = healthSprites[0];
-        //    healthImages[0].sprite = healthSprites[currentHealth];
-        //}
-        //else if (currentHealth <= 8)
-        //{
-        //    healthImages[0].sprite = healthSprites[5];
-        //    healthImages[2].sprite = healthSprites[0];
-        //    healthImages[1].sprite = healthSprites[currentHealth - 4];
-        //}
-        //else
-        //{
-        //    healthImages[0].sprite = healthSprites[5];
-        //    healthImages[1].sprite = healthSprites[5];
-        //    healthImages[2].sprite = healthSprites[currentHealth - 8];
-        //}
+
 
         bool empty = false;
         int i = 0;
@@ -80,26 +67,30 @@ public class HealthSystem : MonoBehaviour
             }
         }
     }
-    public void takeDamage(float amount)
-    {
-        currentHealth += amount;
-        Convert.ToInt32(currentHealth);
-        pc.ChangeHealth(amount);
-        currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
-        UpdateHearts();
-    }
+    //public void takeDamage(float amount)
+    //{
+    //    currentHealth += amount;
+    //    Convert.ToInt32(currentHealth);
+    //    pc.ChangeHealth(amount);
+    //    currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
+    //    UpdateHearts();
+    //}
 
 
 
-    public void OnTriggerEnter(Collider collision)
-    {
-        if (collision.tag == "Enemy")
-        {
-            currentHealth -= 1;
-            currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
-            UpdateHearts();
-        }
-    }
+    //public void OnTriggerEnter(Collider other)
+    //{
+    //    GameObject enemy = other.gameObject;
+        
+    //    if (other.tag == "Enemy")
+    //    {
+    //        damageAmount = enemy.GetComponent<EnemyAttack>().damage;
+    //        //this.gameObject.SendMessage("ChangeHealth", damageAmount);
+    //        currentHealth -= damageAmount;
+    //        currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
+    //        UpdateHearts();
+    //    }
+    //}
 
     public void AddHealth(float amount)
     {

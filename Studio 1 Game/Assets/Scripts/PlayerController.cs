@@ -18,8 +18,8 @@ public class PlayerController : MonoBehaviour
     public bool ableToMakeADoubleJump = false; //here if we consider to add it
 
     //tentative health variables
-    private float maxHealth = 4;
-    private float currentHealth = 4;
+    private float maxHealth = 12;
+    public float currentHealth = 12;
     private bool isDead = false;
 
     public float invulnerabilityDuration = .3f;

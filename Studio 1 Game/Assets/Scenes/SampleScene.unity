@@ -357,6 +357,7 @@ GameObject:
   - component: {fileID: 197106003}
   - component: {fileID: 197106002}
   - component: {fileID: 197106006}
+  - component: {fileID: 197106005}
   m_Layer: 0
   m_Name: New Piskel_3
   m_TagString: Untagged
@@ -448,6 +449,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &197106005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197106001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75afadb2da7259d42b37608399a39614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemButton: {fileID: 6593488935719521686, guid: 860e5e6ae8abf614b90bb23ed4c17bec, type: 3}
 --- !u!136 &197106006
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2640,9 +2654,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1596353486}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f725f76b97720c14ca6d6af9b79091da, type: 3}
+  m_Script: {fileID: 11500000, guid: 180f21fb02cfa5a46a586549473f56d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemButton: {fileID: 2684630869008062022, guid: f0e0bb1373b6e284f8cfa454775f803e, type: 3}
 --- !u!136 &1596353491
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2821,7 +2836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHearts: 3
-  pc: {fileID: 0}
+  pc: {fileID: 1742711191}
   healthImages:
   - {fileID: 3539506596493795626}
   - {fileID: 3539506596537330972}
@@ -2849,6 +2864,17 @@ MonoBehaviour:
   - {fileID: 997829943}
   - {fileID: 1188607731}
   isFull: 000000
+--- !u!114 &1742711191 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1866529130585483039, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+  m_PrefabInstance: {fileID: 1866529129060053838}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742711182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fedcaa17aa2290840bf5fc207267defe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1830507492
 GameObject:
   m_ObjectHideFlags: 0
@@ -3201,7 +3227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHearts: 3
-  pc: {fileID: 0}
+  pc: {fileID: 1742711191}
   healthImages:
   - {fileID: 3539506596493795626}
   - {fileID: 3539506596537330972}
@@ -3288,9 +3314,21 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1866529130585483039, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: currentHealth
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866529130585483039, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: pickUpPosition
       value: 
       objectReference: {fileID: 387537301}
+    - target: {fileID: 3774622854134901881, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325060765129600194, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
 --- !u!224 &3539506596493795620

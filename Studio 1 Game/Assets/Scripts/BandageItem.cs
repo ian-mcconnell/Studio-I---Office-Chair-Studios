@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 //use inheritance
-public class MedkitItem : Item
+public class BandageItem : Item
 {
     //private int maxHeartNumber = 3;
     //public int startHearts = 3;
@@ -20,7 +20,7 @@ public class MedkitItem : Item
         hs = FindObjectOfType<HealthSystem>();
     }
 
-   
+
     //void checkHealth()
     //{
     //    for(int i = 0; i < maxHeartNumber; i++)
@@ -30,11 +30,11 @@ public class MedkitItem : Item
     //}
     // Update is called once per frame
 
-    
+
 
     public override void useItem()
     {
-        hs.AddHealth(8);
+        hs.AddHealth(2);
         Destroy(itemButton);
     }
 }
