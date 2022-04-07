@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
     
         controller.Move(direction * Time.deltaTime);
         //right
-        if(direction.x > 0 || (Input.mousePosition.x > Screen.width / 2.0f))
+        if(direction.x > 0 || ((Input.mousePosition.x > Screen.width / 2.0f)&& !leftAttack.enabled))
         {
             animator.SetFloat("Speed",direction.x);
             animator.SetInteger("Position", 1); //position = 1 for right
@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
 
             }
         }
-        else if(direction.x < 0 || (Input.mousePosition.x < Screen.width / 2.0f)) //left
+        else if(direction.x < 0 || ((Input.mousePosition.x < Screen.width / 2.0f) && !rightAttack.enabled)) //left
         {
             animator.SetFloat("Speed", direction.x);
             animator.SetInteger("Position", 0); //position = 0 for left
@@ -109,7 +109,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-                bool isGrounded = Physics.CheckSphere(groundCheck.position, 0.15f, groundLayer);
+        bool isGrounded = Physics.CheckSphere(groundCheck.position, 0.15f, groundLayer);
         if (isGrounded)
         {
             direction.y = -1;
