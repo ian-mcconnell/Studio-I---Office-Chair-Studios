@@ -6,6 +6,7 @@ public class EnemyAttack : MonoBehaviour
 {
     public float damage = -2f;
     public float duration = 5f;
+    public AudioSource hitSource;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class EnemyAttack : MonoBehaviour
         if (go.tag == "Player")
         {
             go.GetComponent<PlayerController>().ChangeHealth(damage);
+            hitSource.Play();
             Debug.Log("Dealt damage to player");
             Destroy(gameObject);
         }

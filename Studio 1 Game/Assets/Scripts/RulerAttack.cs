@@ -5,6 +5,7 @@ using UnityEngine;
 public class RulerAttack : MonoBehaviour
 {
    private readonly float damageAmount = -10f;
+    public AudioSource hitSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,11 +24,12 @@ public class RulerAttack : MonoBehaviour
             other.gameObject.SendMessage("ChangeHealth", damageAmount);
             Debug.Log(" " + other.name + " got hit with " + Mathf.Abs(damageAmount) + " of damage");
             Debug.Log("it ran  :(" + other.gameObject.name);
+            hitSource.Play();
             //Knock back the enemy
             //Vector3 dir = other.transform.position - transform.position;
             //dir = -dir.normalized;
             //GetComponent<Rigidbody>().AddForce(dir * 100f);
         }
-        Debug.Log("it ran :)" + other.gameObject.name);
+  //      Debug.Log("it ran :)" + other.gameObject.name);
     }
 }

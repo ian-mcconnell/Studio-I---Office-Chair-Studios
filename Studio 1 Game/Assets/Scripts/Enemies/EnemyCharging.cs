@@ -11,6 +11,8 @@ public class EnemyCharging : Enemy
     private int recoveryDelay = 9;
     private int timeRecovering = 0;
 
+    public AudioSource hitSource;
+
     public enum ChargingStates
     {
         Idling = 0,
@@ -130,7 +132,7 @@ public class EnemyCharging : Enemy
         if (other.gameObject.tag == "Player")
         {
             other.gameObject.SendMessage("ChangeHealth", -1f);
-
+            hitSource.Play();
             //Knock back the player
             //Vector3 dir = other.contacts[0].point - transform.position;
            // dir = -dir.normalized;
