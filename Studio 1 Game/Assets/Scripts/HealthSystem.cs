@@ -3,13 +3,13 @@ using UnityEngine;
 using UnityEngine.UI;
 public class HealthSystem : MonoBehaviour
 {
-    private int maxHeartNumber = 3;
+    private readonly int maxHeartNumber = 3;
     public int startHearts = 3;
     private float currentHealth = 12;
     private float maxHealth;
-    private int healthPerHeart = 4;
-    public PlayerController pc;
-    private float damageAmount;
+    private readonly int healthPerHeart = 4;
+    public GameObject pc;
+   // private float damageAmount;
     
     public Image[] healthImages;
     public Sprite[] healthSprites;
@@ -22,9 +22,9 @@ public class HealthSystem : MonoBehaviour
 
     private void Update()
     {
-        currentHealth = pc.currentHealth;
+        currentHealth = pc.GetComponent<PlayerController>().currentHealth;
         Debug.Log(currentHealth);
-        Debug.Log(pc.currentHealth);
+        Debug.Log(pc.GetComponent<PlayerController>().currentHealth);
         currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
         UpdateHearts();
     }
@@ -94,11 +94,11 @@ public class HealthSystem : MonoBehaviour
 
     public void AddHealth(float amount)
     {
-        currentHealth += amount;
-        Convert.ToInt32(currentHealth);
+        pc.GetComponent<PlayerController>().currentHealth += amount;
+        Convert.ToInt32(pc.GetComponent<PlayerController>().currentHealth);
         currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
         UpdateHearts();
-        
+        Debug.Log("it ran :)" + amount);
     }
 
 }

@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
 
     //tentative health variables
     private float maxHealth = 12;
-    public float currentHealth = 12;
+    public float currentHealth;
     private bool isDead = false;
 
     public float invulnerabilityDuration = .3f;
@@ -131,6 +131,7 @@ public class PlayerController : MonoBehaviour
 
     public void ChangeHealth(float amount)
     {
+        Debug.Log(amount);
         if (amount >= 0 || !isInvulnerable)
         {
             currentHealth += amount;
