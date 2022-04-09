@@ -9,7 +9,7 @@ public class EnemyRanged : Enemy
     Transform targetWaypoint;
 
     private RangedStates stateCurrent = RangedStates.Patrolling;
-
+    public AudioSource hitSource;
     public float attackRange = 10f;
     public float zRange = 0.6f;
     public Transform leftAttackSpawn;
@@ -122,12 +122,14 @@ public class EnemyRanged : Enemy
                 //attack left here
                 Invoke("ShootProjectileLeft", 1f);
                 attackLocked = true;
+                hitSource.Play();
             }
             else
             {
                 //attack right here
                 Invoke("ShootProjectileRight", 1f);
                 attackLocked = true;
+                hitSource.Play();
             }
         }
     }
@@ -151,12 +153,14 @@ public class EnemyRanged : Enemy
                 //attack left here
                 Invoke("ShootProjectileLeft", 1f);
                 attackLocked = true;
+                hitSource.Play();
             }
             else
             {
                 //attack right here
                 Invoke("ShootProjectileRight", 1f);
                 attackLocked = true;
+                hitSource.Play();
             }
         }
     }

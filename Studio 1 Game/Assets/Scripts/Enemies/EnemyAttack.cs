@@ -17,11 +17,11 @@ public class EnemyAttack : MonoBehaviour
     {
         
         GameObject go = other.gameObject;
-
+        hitSource.Play();
         if (go.tag == "Player")
         {
             go.GetComponent<PlayerController>().ChangeHealth(damage);
-            hitSource.Play();
+            
             Debug.Log("Dealt damage to player");
             Destroy(gameObject);
         }

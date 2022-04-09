@@ -1525,6 +1525,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1610305823, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1742711183, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: healthImages.Array.data[0]
       value: 
@@ -1891,7 +1895,6 @@ GameObject:
   - component: {fileID: 1439644052}
   - component: {fileID: 1439644051}
   - component: {fileID: 1439644056}
-  - component: {fileID: 1439644055}
   m_Layer: 0
   m_Name: Pixel Perfect Camera
   m_TagString: Untagged
@@ -1990,14 +1993,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
---- !u!81 &1439644055
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1439644050}
-  m_Enabled: 1
 --- !u!114 &1439644056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3628,8 +3623,8 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4580631966852479746, guid: 9dd20c0b0d3885d4fb02220c0d6c2d93, type: 3}
-      propertyPath: m_UseGravity
+    - target: {fileID: 2901960903523589585, guid: 9dd20c0b0d3885d4fb02220c0d6c2d93, type: 3}
+      propertyPath: rolloffMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7582794681099687658, guid: 9dd20c0b0d3885d4fb02220c0d6c2d93, type: 3}
