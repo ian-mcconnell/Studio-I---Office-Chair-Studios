@@ -149,6 +149,7 @@ public class PlayerController : MonoBehaviour
 
         if (amount < 0)
         {
+            SendMessage("Flash");
             isInvulnerable = true;
             Invoke("DisableInvulnerability", invulnerabilityDuration);
         }

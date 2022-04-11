@@ -1735,10 +1735,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1610305823, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1742711183, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: healthImages.Array.data[0]
       value: 
@@ -3688,10 +3684,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2901960903523589585, guid: 9dd20c0b0d3885d4fb02220c0d6c2d93, type: 3}
-      propertyPath: rolloffMode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7582794681099687658, guid: 9dd20c0b0d3885d4fb02220c0d6c2d93, type: 3}
       propertyPath: m_RootOrder
       value: 7

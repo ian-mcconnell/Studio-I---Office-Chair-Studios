@@ -42,10 +42,15 @@ public class Enemy : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
-        else if (currentHealth <= 0)
+        else if (currentHealth < 0)
         {
             currentHealth = 0;
             isDead = true;
+        }
+
+        if (amount < 0)
+        {
+            SendMessage("Flash");
         }
     }
 
