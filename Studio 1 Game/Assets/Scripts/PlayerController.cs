@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public Collider rightAttack;
     public Collider leftAttack;
+
     public bool ableToMakeADoubleJump = false; //here if we consider to add it
 
     //tentative health variables
@@ -49,12 +50,13 @@ public class PlayerController : MonoBehaviour
     
         controller.Move(direction * Time.deltaTime);
         //right
-        if(direction.x > 0 || ((Input.mousePosition.x > Screen.width / 2.0f)&& !leftAttack.enabled))
+        if(direction.x > 0 || ((Input.mousePosition.x > Screen.width / 2.0f) && !leftAttack.enabled))
         {
             animator.SetFloat("Speed",direction.x);
             animator.SetInteger("Position", 1); //position = 1 for right
-            if (Input.GetMouseButton(0) == true)
+            if (Input.GetButtonDown("Fire1") == true)
             {
+
                 animator.SetBool("isAttacking", true);
                 rightAttack.enabled = true;
                 leftAttack.enabled = false;
@@ -70,11 +72,11 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetFloat("Speed", direction.x);
             animator.SetInteger("Position", 0); //position = 0 for left
-            if (Input.GetMouseButton(0) == true)
-            {
-                animator.SetBool("isAttacking", true);
-                leftAttack.enabled = true;
-                rightAttack.enabled = false;
+            if (Input.GetButtonDown("Fire1") == true)
+            {               
+                    animator.SetBool("isAttacking", true);
+                    leftAttack.enabled = true;
+                    rightAttack.enabled = false;               
             }
             else if (Input.GetButtonUp("Fire1") == true)
             {
@@ -154,7 +156,27 @@ public class PlayerController : MonoBehaviour
             Invoke("DisableInvulnerability", invulnerabilityDuration);
         }
     }
+    public void GetHeldDown(int heldDown)
+    {
+        if(heldDown == 1)
+        {
+            rightAttack.enabled = false;
+        }
+        if(heldDown == 0)
+        {
+            leftAttack.enabled = false;
+        }
+        if(heldDown == 2)
+        {
+            rightAttack.enabled = true;
+           
+        }
+        if (heldDown == 3)
+        {
+            leftAttack.enabled = true;
 
+        }
+    }
     public bool GetIsDead()
     {
         return isDead;
