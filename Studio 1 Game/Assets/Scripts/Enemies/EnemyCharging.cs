@@ -127,11 +127,11 @@ public class EnemyCharging : Enemy
 
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision col)
     {
-        if (other.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player")
         {
-            other.gameObject.SendMessage("ChangeHealth", -1f);
+            col.gameObject.SendMessage("ChangeHealth", -3f);
             hitSource.Play();
             //Knock back the player
             //Vector3 dir = other.contacts[0].point - transform.position;
