@@ -32,11 +32,11 @@ public class EnemyCharging : Enemy
         base.playerDistance = Vector3.Distance(transform.position, player.position);
         if (base.player.position.x < transform.position.x)
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            GetComponent<SpriteRenderer>().flipX = false;
         }
         else
         {
-            GetComponent<SpriteRenderer>().flipX = false;
+            GetComponent<SpriteRenderer>().flipX = true;
         }
 
         switch (stateCurrent)

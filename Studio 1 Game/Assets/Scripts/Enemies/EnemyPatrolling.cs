@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyPatrolling : Enemy
@@ -33,17 +31,8 @@ public class EnemyPatrolling : Enemy
     public override void FSMProcess()
     {
         base.playerDistance = Vector3.Distance(transform.position, player.position);
-        if (base.player.position.x < transform.position.x)
-        {
-            GetComponent<SpriteRenderer>().flipX = true;
-        }
-        else
-        {
-            GetComponent<SpriteRenderer>().flipX = false;
-        }
 
-            switch (stateCurrent)
-        {
+            switch (stateCurrent){
             case PatrollingStates.Patrolling:
                 if (isDead) { StatePatrollingExit(); StateDeadEnter(); }
                 else if (playerDistance <= attackRange) { StatePatrollingExit(); StateAttackingEnter(); }
@@ -69,6 +58,7 @@ public class EnemyPatrolling : Enemy
                 StateDeadRemain();
                 break;
         }
+        
     }
 
     void StatePatrollingEnter()
