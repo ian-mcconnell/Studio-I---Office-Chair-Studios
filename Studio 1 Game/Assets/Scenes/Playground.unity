@@ -1184,6 +1184,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1804621305766932077, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1804621305766932079, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1855,22 +1859,6 @@ PrefabInstance:
       propertyPath: slots.Array.data[2]
       value: 
       objectReference: {fileID: 716567243}
-    - target: {fileID: 1866529130585483009, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
-      propertyPath: m_Size.x
-      value: 0.68
-      objectReference: {fileID: 0}
-    - target: {fileID: 1866529130585483009, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
-      propertyPath: m_Size.y
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1866529130585483009, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300040, guid: 8fb98a6035269e64a998f9b56828fc4f, type: 3}
-    - target: {fileID: 1866529130585483009, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1866529130585483011, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: m_Name
       value: Lilith
@@ -1918,10 +1906,6 @@ PrefabInstance:
     - target: {fileID: 1866529130585483036, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7272958982308862200, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
-      propertyPath: m_Constraints
-      value: 112
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
@@ -3800,10 +3784,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7582794680771059170, guid: 9dd20c0b0d3885d4fb02220c0d6c2d93, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 7582794681099687658, guid: 9dd20c0b0d3885d4fb02220c0d6c2d93, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -3814,7 +3794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7582794681099687658, guid: 9dd20c0b0d3885d4fb02220c0d6c2d93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.01
+      value: 0.647
       objectReference: {fileID: 0}
     - target: {fileID: 7582794681099687658, guid: 9dd20c0b0d3885d4fb02220c0d6c2d93, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3916,14 +3896,6 @@ PrefabInstance:
     - target: {fileID: 7498529228748934815, guid: 460b26f98cb1bc84dbb4ba2db55c717a, type: 3}
       propertyPath: m_Name
       value: Charger
-      objectReference: {fileID: 0}
-    - target: {fileID: 7621316958956709814, guid: 460b26f98cb1bc84dbb4ba2db55c717a, type: 3}
-      propertyPath: m_Height
-      value: 1.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 7621316958956709814, guid: 460b26f98cb1bc84dbb4ba2db55c717a, type: 3}
-      propertyPath: m_BaseOffset
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 460b26f98cb1bc84dbb4ba2db55c717a, type: 3}
