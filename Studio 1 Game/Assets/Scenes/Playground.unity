@@ -3879,7 +3879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4367573090842749945, guid: 460b26f98cb1bc84dbb4ba2db55c717a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.53
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 4367573090842749945, guid: 460b26f98cb1bc84dbb4ba2db55c717a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3916,6 +3916,14 @@ PrefabInstance:
     - target: {fileID: 7498529228748934815, guid: 460b26f98cb1bc84dbb4ba2db55c717a, type: 3}
       propertyPath: m_Name
       value: Charger
+      objectReference: {fileID: 0}
+    - target: {fileID: 7621316958956709814, guid: 460b26f98cb1bc84dbb4ba2db55c717a, type: 3}
+      propertyPath: m_Height
+      value: 1.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 7621316958956709814, guid: 460b26f98cb1bc84dbb4ba2db55c717a, type: 3}
+      propertyPath: m_BaseOffset
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 460b26f98cb1bc84dbb4ba2db55c717a, type: 3}
