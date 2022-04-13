@@ -29,16 +29,6 @@ public class EnemyCharging : Enemy
 
     public override void FSMProcess()
     {
-        base.playerDistance = Vector3.Distance(transform.position, player.position);
-        if (base.player.position.x < transform.position.x)
-        {
-            GetComponent<SpriteRenderer>().flipX = false;
-        }
-        else
-        {
-            GetComponent<SpriteRenderer>().flipX = true;
-        }
-
         switch (stateCurrent)
         {
             case ChargingStates.Idling:
@@ -63,7 +53,7 @@ public class EnemyCharging : Enemy
                 StateDeadRemain();
                 break;
         }
-        Debug.Log(stateCurrent);
+        //Debug.Log(stateCurrent);
     }
 
     void StateIdlingEnter()
@@ -74,7 +64,15 @@ public class EnemyCharging : Enemy
 
     void StateIdlingRemain()
     {
-        
+        playerDistance = Vector3.Distance(transform.position, player.position);
+        if (player.position.x < transform.position.x)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
     }
 
     void StateIdlingExit()
@@ -84,6 +82,7 @@ public class EnemyCharging : Enemy
 
     void StateChargingEnter()
     {
+        base.animator.SetBool("playerDetected", true);
         stateCurrent = ChargingStates.Charging;
         base.agent.destination = player.position;
     }
@@ -101,6 +100,7 @@ public class EnemyCharging : Enemy
     void StateRecoveringEnter()
     {
         stateCurrent = ChargingStates.Recovering;
+        base.animator.SetBool("recovering", true);
         base.agent.destination = transform.position;
         timeRecovering = 0;
     }
@@ -112,7 +112,7 @@ public class EnemyCharging : Enemy
 
     void StateRecoveringExit()
     {
-
+        base.animator.SetBool("recovering", false);
     }
 
     void StateDeadEnter()
