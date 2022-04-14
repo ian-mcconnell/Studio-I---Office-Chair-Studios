@@ -138,7 +138,7 @@ TextureImporter:
         width: 216
         height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,36 +151,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charging creature idle animation_1
-      rect:
-        serializedVersion: 2
-        x: 456
-        y: 592
-        width: 20
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c19c9840a9dfb570800000000000000
-      internalID: 8484739505425519049
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: charging creature idle animation_2
       rect:
         serializedVersion: 2
-        x: 372
+        x: 373
         y: 388
         width: 216
-        height: 204
+        height: 236
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,78 +172,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charging creature idle animation_3
-      rect:
-        serializedVersion: 2
-        x: 148
-        y: 272
-        width: 24
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fbc4798c9e95b0020800000000000000
-      internalID: 2309038094585121983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: charging creature idle animation_4
-      rect:
-        serializedVersion: 2
-        x: 452
-        y: 288
-        width: 20
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00c1357b47523d3c0800000000000000
-      internalID: -4336080833005544448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: charging creature idle animation_5
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 292
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e7ed5219e5a3bc00800000000000000
-      internalID: 915257569740449769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: charging creature idle animation_6
       rect:
         serializedVersion: 2
         x: 52
         y: 68
         width: 216
-        height: 220
+        height: 244
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,9 +199,9 @@ TextureImporter:
         x: 372
         y: 68
         width: 216
-        height: 208
+        height: 244
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -293,27 +209,6 @@ TextureImporter:
       bones: []
       spriteID: ae50a0c6e207ace50800000000000000
       internalID: 6830395129544181226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: charging creature idle animation_8
-      rect:
-        serializedVersion: 2
-        x: 464
-        y: 260
-        width: 20
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4917e9466d082fa30800000000000000
-      internalID: 4247599056863261076
       vertices: []
       indices: 
       edges: []

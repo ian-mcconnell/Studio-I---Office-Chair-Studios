@@ -156,7 +156,7 @@ TextureImporter:
         width: 252
         height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -169,36 +169,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charging creature charge attack_1
-      rect:
-        serializedVersion: 2
-        x: 428
-        y: 604
-        width: 20
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d7ea70c9342aa5c0800000000000000
-      internalID: -4203507471735920684
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: charging creature charge attack_2
       rect:
         serializedVersion: 2
         x: 324
-        y: 400
-        width: 264
-        height: 204
+        y: 396
+        width: 308
+        height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,99 +190,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charging creature charge attack_3
-      rect:
-        serializedVersion: 2
-        x: 584
-        y: 396
-        width: 48
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 291279c81eff0c470800000000000000
-      internalID: 8413005448119525778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: charging creature charge attack_4
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 284
-        width: 24
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc3d583bc61867dc0800000000000000
-      internalID: -3641580944814124083
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: charging creature charge attack_5
-      rect:
-        serializedVersion: 2
-        x: 424
-        y: 296
-        width: 20
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd11d532aae6ff300800000000000000
-      internalID: 288070578191798749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: charging creature charge attack_6
-      rect:
-        serializedVersion: 2
-        x: 452
-        y: 300
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e25f62385752dbff0800000000000000
-      internalID: -18817636797844178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: charging creature charge attack_7
       rect:
         serializedVersion: 2
         x: 24
         y: 72
-        width: 224
-        height: 228
+        width: 296
+        height: 248
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,11 +215,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 324
-        y: 80
-        width: 280
-        height: 204
+        y: 76
+        width: 304
+        height: 244
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -332,132 +227,6 @@ TextureImporter:
       bones: []
       spriteID: 3f05accaf225bf820800000000000000
       internalID: 2953044345387372787
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: charging creature charge attack_9
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 268
-        width: 20
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2ff3e5bd5e657ce0800000000000000
-      internalID: -1408097959720779989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: charging creature charge attack_10
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 176
-        width: 44
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26ea056ba47ecb540800000000000000
-      internalID: 5025145592310967906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: charging creature charge attack_11
-      rect:
-        serializedVersion: 2
-        x: 248
-        y: 76
-        width: 36
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 294f50d2e611dbaf0800000000000000
-      internalID: -379127628729813870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: charging creature charge attack_12
-      rect:
-        serializedVersion: 2
-        x: 280
-        y: 76
-        width: 40
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85cacac00ff0b63e0800000000000000
-      internalID: -2059534880912659368
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: charging creature charge attack_13
-      rect:
-        serializedVersion: 2
-        x: 560
-        y: 76
-        width: 28
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af9389ad101c11740800000000000000
-      internalID: 5121086465003502074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: charging creature charge attack_14
-      rect:
-        serializedVersion: 2
-        x: 584
-        y: 76
-        width: 44
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbfd7423e7e357e80800000000000000
-      internalID: -8181564436318265413
       vertices: []
       indices: 
       edges: []
