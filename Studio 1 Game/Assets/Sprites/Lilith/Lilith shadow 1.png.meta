@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f48469b1acb157a4c9a2ec449bf6343a
+guid: b404ffaa245837d408354e2723ea9384
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7437685092641353733
-    second: main menu_0
+      213: 4359918003558266146
+    second: Lilith shadow 1_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: main menu_0
+      name: Lilith shadow 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 720
-        height: 720
+        x: 88
+        y: 116
+        width: 88
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,8 +120,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5003b1a6f27f73760800000000000000
-      internalID: 7437685092641353733
+      spriteID: 225bbeb035a818c30800000000000000
+      internalID: 4359918003558266146
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 6d8eb075360c76a40a5601e13daeed00
+    spriteID: 303990d32eeb77141b1244af32248178
     internalID: 0
     vertices: []
     indices: 
