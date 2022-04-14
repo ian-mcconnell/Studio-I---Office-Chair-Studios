@@ -1,34 +1,10 @@
 fileFormatVersion: 2
-guid: 29e2919c0e9bd4f49a5da3e1d927c032
+guid: 98115e15a90f8c5428369efa4eed537e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4783917716127177672
-    second: basement hall pieces_0
-  - first:
-      213: -1537068873211740687
-    second: basement hall pieces_1
-  - first:
-      213: 2773667448875063018
-    second: basement hall pieces_2
-  - first:
-      213: 5915641205107670059
-    second: basement hall pieces_3
-  - first:
-      213: 1394230091514064526
-    second: basement hall pieces_4
-  - first:
-      213: -375719602599907405
-    second: basement hall pieces_5
-  - first:
-      213: 2505039187593161014
-    second: basement hall pieces_6
-  - first:
-      213: -921752227037798952
-    second: basement hall pieces_7
-  - first:
-      213: -4858266485744705364
-    second: basement hall pieces_8
+      213: -16975032847443356
+    second: basement hall pieces 1_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -130,7 +106,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: basement hall pieces_0
+      name: basement hall pieces 1_0
       rect:
         serializedVersion: 2
         x: 131
@@ -144,14 +120,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cb557801d3e36240800000000000000
-      internalID: 4783917716127177672
+      spriteID: 141ca151086e368c0800000000000000
+      internalID: -4007105805645332159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: basement hall pieces_1
+      name: basement hall pieces 1_1
       rect:
         serializedVersion: 2
         x: 307
@@ -165,14 +141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fd77e8e00c3baae0800000000000000
-      internalID: -1537068873211740687
+      spriteID: b9d0e11cc50df1e70800000000000000
+      internalID: 9088211669852491163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: basement hall pieces_2
+      name: basement hall pieces 1_2
       rect:
         serializedVersion: 2
         x: 462
@@ -186,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae6134769db0e7620800000000000000
-      internalID: 2773667448875063018
+      spriteID: 8d99028e900d89dc0800000000000000
+      internalID: -3631924358506571304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: basement hall pieces_3
+      name: basement hall pieces 1_4
       rect:
         serializedVersion: 2
-        x: 819
-        y: 1846
-        width: 319
-        height: 412
+        x: 930
+        y: 1783
+        width: 120
+        height: 418
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,20 +183,104 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2c3b196554981250800000000000000
-      internalID: 5915641205107670059
+      spriteID: 2eb8b0dc6a4742e70800000000000000
+      internalID: 9089518207693982690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: basement hall pieces_4
+      name: basement hall pieces 1_5
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 1787
+        width: 118
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb03b56bac2e3910800000000000000
+      internalID: 1818940414161521608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basement hall pieces 1_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1047
+        width: 319
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a08949f816903460800000000000000
+      internalID: 7219435236680630432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basement hall pieces 1_7
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1034
+        width: 302
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a175ac9d72adedc50800000000000000
+      internalID: 6692025961011631898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basement hall pieces 1_8
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1122
+        width: 422
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7f438948ae90270800000000000000
+      internalID: 8217356850324371374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basement hall pieces 1_9
       rect:
         serializedVersion: 2
         x: 0
-        y: 799
-        width: 333
-        height: 802
+        y: 519
+        width: 214
+        height: 282
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8e2bdb91ec495310800000000000000
-      internalID: 1394230091514064526
+      spriteID: 8c17154fc3facc080800000000000000
+      internalID: -9165758465273925176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: basement hall pieces_5
+      name: basement hall pieces 1_10
       rect:
         serializedVersion: 2
-        x: 439
-        y: 1246
-        width: 170
-        height: 219
+        x: 298
+        y: 502
+        width: 243
+        height: 276
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,20 +309,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bfa1e7130d29caf0800000000000000
-      internalID: -375719602599907405
+      spriteID: 673b538f1972ee2d0800000000000000
+      internalID: -3247614773399538826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: basement hall pieces_6
+      name: basement hall pieces 1_11
       rect:
         serializedVersion: 2
         x: 799
-        y: 799
+        y: 0
         width: 801
-        height: 802
+        height: 801
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,20 +330,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6396cec6edfa3c220800000000000000
-      internalID: 2505039187593161014
+      spriteID: f76b3c16f3f3d4b90800000000000000
+      internalID: -7256073883168295297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: basement hall pieces_7
+      name: basement hall pieces 1_3
       rect:
         serializedVersion: 2
-        x: 378
-        y: 822
-        width: 319
-        height: 411
+        x: 1107
+        y: 1780
+        width: 118
+        height: 421
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,29 +351,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dd9c70bb374533f0800000000000000
-      internalID: -921752227037798952
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: basement hall pieces_8
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 323
-        width: 619
-        height: 334
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca060051f58f39cb0800000000000000
-      internalID: -4858266485744705364
+      spriteID: 46ad31d2c41b3cff0800000000000000
+      internalID: -16975032847443356
       vertices: []
       indices: 
       edges: []
@@ -321,7 +360,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4a0202ca5626f4644953178941d6d29f
+    spriteID: f77a115e55ca62141b5c55faf6848912
     internalID: 0
     vertices: []
     indices: 
