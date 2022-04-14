@@ -22,11 +22,33 @@ public class PlayerController : MonoBehaviour
     private float maxHealth = 12;
     public float currentHealth;
     private bool isDead = false;
+    public int level = 1;
 
     public float invulnerabilityDuration = .3f;
     public bool isInvulnerable = false;
 
     public Transform pickUpPosition;
+
+    public void SavePlayer()
+    {
+        SaveSystem.SavePlayer(this);
+    }
+
+    public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.loadPlayer();
+
+        level = data.level;
+        currentHealth = data.health;
+  //      Vector3 position;
+    //    position.x = data.
+     
+        direction.x = data.position[0];
+        direction.y = data.position[1];
+        direction.z = data.position[2];
+        transform.position = direction;
+        controller.center = direction - transform.position;
+    }
 
     // Start is called before the first frame update
     void Start()
