@@ -1,19 +1,34 @@
 fileFormatVersion: 2
-guid: 747480672077e914cbdf0559302aeb82
+guid: c28bcf8547758e245a88acd725fa8af9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3192620852499377533
-    second: charger_idle_left_0
+      213: 112421772039131741
+    second: charging creature idle animation_0
   - first:
-      213: 3938346302450768813
-    second: charger_idle_left_1
+      213: 8484739505425519049
+    second: charging creature idle animation_1
   - first:
-      213: 7562323860692927407
-    second: charger_idle_left_2
+      213: 4253884473145337253
+    second: charging creature idle animation_2
   - first:
-      213: -338545954047213711
-    second: charger_idle_left_3
+      213: 2309038094585121983
+    second: charging creature idle animation_3
+  - first:
+      213: -4336080833005544448
+    second: charging creature idle animation_4
+  - first:
+      213: 915257569740449769
+    second: charging creature idle animation_5
+  - first:
+      213: -1165127121691399975
+    second: charging creature idle animation_6
+  - first:
+      213: 6830395129544181226
+    second: charging creature idle animation_7
+  - first:
+      213: 4247599056863261076
+    second: charging creature idle animation_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,11 +130,158 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: charger_idle_left_0
+      name: charging creature idle animation_0
       rect:
         serializedVersion: 2
         x: 52
         y: 388
+        width: 216
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52996b81076f8100800000000000000
+      internalID: 112421772039131741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charging creature idle animation_1
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 592
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c19c9840a9dfb570800000000000000
+      internalID: 8484739505425519049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charging creature idle animation_2
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 388
+        width: 216
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5a069e365d80b30800000000000000
+      internalID: 4253884473145337253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charging creature idle animation_3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 272
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc4798c9e95b0020800000000000000
+      internalID: 2309038094585121983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charging creature idle animation_4
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 288
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c1357b47523d3c0800000000000000
+      internalID: -4336080833005544448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charging creature idle animation_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 292
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7ed5219e5a3bc00800000000000000
+      internalID: 915257569740449769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charging creature idle animation_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 68
+        width: 216
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d829615e03a4dfe0800000000000000
+      internalID: -1165127121691399975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charging creature idle animation_7
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 68
         width: 216
         height: 208
       alignment: 0
@@ -129,20 +291,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3821548ff3881b3d0800000000000000
-      internalID: -3192620852499377533
+      spriteID: ae50a0c6e207ace50800000000000000
+      internalID: 6830395129544181226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charger_idle_left_1
+      name: charging creature idle animation_8
       rect:
         serializedVersion: 2
-        x: 372
-        y: 388
-        width: 216
-        height: 204
+        x: 464
+        y: 260
+        width: 20
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,50 +312,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dab1d088811d7a630800000000000000
-      internalID: 3938346302450768813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: charger_idle_left_2
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 68
-        width: 216
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa300110c75c2f860800000000000000
-      internalID: 7562323860692927407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: charger_idle_left_3
-      rect:
-        serializedVersion: 2
-        x: 372
-        y: 68
-        width: 216
-        height: 204
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17fbedc9f3e3d4bf0800000000000000
-      internalID: -338545954047213711
+      spriteID: 4917e9466d082fa30800000000000000
+      internalID: 4247599056863261076
       vertices: []
       indices: 
       edges: []
@@ -201,7 +321,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 84f3e368fbcb7e94ab2e9467cdfc1bd7
+    spriteID: 51bc8d9858f55944f8905b1ea4995362
     internalID: 0
     vertices: []
     indices: 

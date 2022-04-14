@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: af5aaeacbb78edf45abf7d144848a502
+guid: 2ddbb9f7a93649e4da6567ba72997247
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 644021718410035850
-    second: charger_movement_left_0
+      213: 3361418331578818123
+    second: coach hedge hp bar_1
   - first:
-      213: 6093116372662470042
-    second: charger_movement_left_1
+      213: 7026394554634601067
+    second: coach hedge hp bar_2
   - first:
-      213: -6575755878074717214
-    second: charger_movement_left_2
+      213: 3448370784685175936
+    second: coach hedge hp bar_3
   - first:
-      213: -2924556285917313764
-    second: charger_movement_left_3
+      213: -8464332068679265978
+    second: coach hedge hp bar_4
+  - first:
+      213: 4460228768920595715
+    second: coach hedge hp bar_5
+  - first:
+      213: 4072636226837441971
+    second: coach hedge hp bar_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,55 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: charger_movement_left_0
+      name: coach hedge hp bar_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 360
-        width: 256
-        height: 236
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a828779375600f800800000000000000
-      internalID: 644021718410035850
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: charger_movement_left_1
-      rect:
-        serializedVersion: 2
-        x: 376
-        y: 384
-        width: 228
-        height: 212
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a95c9a7ee091f8450800000000000000
-      internalID: 6093116372662470042
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: charger_movement_left_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 60
+        x: 0
+        y: 436
         width: 252
-        height: 216
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2eb6ba56ed83eb4a0800000000000000
-      internalID: -6575755878074717214
+      spriteID: d4b08df9768651c30800000000000000
+      internalID: 4329481411059256141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charger_movement_left_3
+      name: coach hedge hp bar_1
       rect:
         serializedVersion: 2
-        x: 376
-        y: 64
-        width: 232
-        height: 212
+        x: 256
+        y: 428
+        width: 252
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +156,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c15434c8d83e967d0800000000000000
-      internalID: -2924556285917313764
+      spriteID: b4edd3bb92826ae20800000000000000
+      internalID: 3361418331578818123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coach hedge hp bar_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 348
+        width: 252
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b620cb8be94c28160800000000000000
+      internalID: 7026394554634601067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coach hedge hp bar_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 348
+        width: 252
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084befa55f21bdf20800000000000000
+      internalID: 3448370784685175936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coach hedge hp bar_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 268
+        width: 252
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641dc6954d6a88a80800000000000000
+      internalID: -8464332068679265978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coach hedge hp bar_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 268
+        width: 252
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d6d7c1f6ae5ed30800000000000000
+      internalID: 4460228768920595715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coach hedge hp bar_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 172
+        width: 252
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd68001219e48830800000000000000
+      internalID: 4072636226837441971
       vertices: []
       indices: 
       edges: []
@@ -201,7 +270,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 673c4f809cce5b640b301ade77403a58
+    spriteID: fb1d14fe9a6eb20429eec84deec6edf9
     internalID: 0
     vertices: []
     indices: 

@@ -1,19 +1,34 @@
 fileFormatVersion: 2
-guid: 8bfc9ac400bbc2b44ac501d874b54353
+guid: 35027f4c6809c2f4eb41b607d846d56d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9052084849682144877
-    second: charger_movement_right_0
+      213: -8692465033978733458
+    second: charging creature movement_0
   - first:
-      213: -7854379121183548898
-    second: charger_movement_right_1
+      213: -822311457372782375
+    second: charging creature movement_1
   - first:
-      213: -5182264845163268369
-    second: charger_movement_right_2
+      213: -5506421217893357161
+    second: charging creature movement_2
   - first:
-      213: -2426586032168909670
-    second: charger_movement_right_3
+      213: -2549479010258016559
+    second: charging creature movement_3
+  - first:
+      213: -816367753460264651
+    second: charging creature movement_4
+  - first:
+      213: 8488049944643913100
+    second: charging creature movement_5
+  - first:
+      213: -2279485315403700351
+    second: charging creature movement_6
+  - first:
+      213: 227900835406089648
+    second: charging creature movement_7
+  - first:
+      213: 3615982563498939517
+    second: charging creature movement_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,13 +130,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: charger_movement_right_0
+      name: charging creature movement_0
       rect:
         serializedVersion: 2
         x: 32
         y: 360
         width: 256
-        height: 236
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,17 +144,38 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 391200a0ac8806280800000000000000
-      internalID: -9052084849682144877
+      spriteID: e6c91333b192e5780800000000000000
+      internalID: -8692465033978733458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charger_movement_right_1
+      name: charging creature movement_1
       rect:
         serializedVersion: 2
-        x: 356
+        x: 456
+        y: 596
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0cf8816109694f0800000000000000
+      internalID: -822311457372782375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charging creature movement_2
+      rect:
+        serializedVersion: 2
+        x: 376
         y: 384
         width: 228
         height: 212
@@ -150,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1a1c96bdc3aff290800000000000000
-      internalID: -7854379121183548898
+      spriteID: 799eacb93134593b0800000000000000
+      internalID: -5506421217893357161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charger_movement_right_2
+      name: charging creature movement_3
       rect:
         serializedVersion: 2
-        x: 36
+        x: 32
         y: 60
         width: 252
-        height: 216
+        height: 236
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,17 +207,80 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe67c048495e418b0800000000000000
-      internalID: -5182264845163268369
+      spriteID: 1d6a14f095e6e9cd0800000000000000
+      internalID: -2549479010258016559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charger_movement_right_3
+      name: charging creature movement_4
       rect:
         serializedVersion: 2
-        x: 352
+        x: 148
+        y: 280
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531dae08addaba4f0800000000000000
+      internalID: -816367753460264651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charging creature movement_5
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 288
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85464af37c9bc570800000000000000
+      internalID: 8488049944643913100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charging creature movement_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 292
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187a4a0de24ad50e0800000000000000
+      internalID: -2279485315403700351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charging creature movement_7
+      rect:
+        serializedVersion: 2
+        x: 376
         y: 64
         width: 232
         height: 212
@@ -192,8 +291,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a94c5af3cd8035ed0800000000000000
-      internalID: -2426586032168909670
+      spriteID: 0bd05623a9aa92300800000000000000
+      internalID: 227900835406089648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charging creature movement_8
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 260
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d745c53bbfc8e2230800000000000000
+      internalID: 3615982563498939517
       vertices: []
       indices: 
       edges: []
@@ -201,7 +321,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8101a8023c8d16b41b0e97d368cf9dda
+    spriteID: 93996ee776a836c438632b04c9248c9e
     internalID: 0
     vertices: []
     indices: 
