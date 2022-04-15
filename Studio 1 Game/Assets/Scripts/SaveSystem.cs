@@ -14,6 +14,16 @@ public static class SaveSystem
         formatter.Serialize(stream, data);
         stream.Close();
     }
+    public static void SaveInv(Item item)
+    {
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/Inventory.data";
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        InvData data = new InvData(item);
+        formatter.Serialize(stream, data);
+        stream.Close();
+    }
     public static PlayerData loadPlayer()
     {
         string path = Application.persistentDataPath + "/player.data";
@@ -29,6 +39,27 @@ public static class SaveSystem
             return data;
 
         }else
+        {
+            Debug.LogError("Save file not found in " + path);
+            return null;
+        }
+    }
+    public static InvData loadInv()
+    {
+        string path = Application.persistentDataPath + "/Inventory.data";
+        if (File.Exists(path))
+        {
+            //    Debug.Log(path);
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+
+            InvData data = formatter.Deserialize(stream) as InvData;
+            stream.Close();
+
+            return data;
+
+        }
+        else
         {
             Debug.LogError("Save file not found in " + path);
             return null;

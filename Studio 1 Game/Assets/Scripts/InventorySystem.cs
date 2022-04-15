@@ -28,14 +28,30 @@ public class InventorySystem : MonoBehaviour
             
     //}
 
+
+
+    //public void SaveInv()
+    //{
+    //   SaveSystem.SaveInv(item);
+    //}
+    public void resetInventory()
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+           isFull[i] = false;
+        }
+    }
+
     public void addToInventory(Item item)
     {
         for (int i = 0; i < slots.Length; i++)
         {
-            if (isFull[i] == false)
+            if (isFull[i] == false )
             {
+
                 isFull[i] = true;
                 Instantiate(item.itemButton, slots[i].transform, false);
+                SaveSystem.SaveInv(item);
                 Destroy(item.gameObject);
                 break;
             }

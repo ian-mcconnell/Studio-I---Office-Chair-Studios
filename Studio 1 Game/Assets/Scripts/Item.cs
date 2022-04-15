@@ -6,9 +6,15 @@ using UnityEngine;
 public abstract class Item : MonoBehaviour
 {
     
-    public GameObject itemButton;
+   public GameObject itemButton;
     PlayerController Player;
     InventorySystem inSys;
+    public string itemName;
+    public Vector3 buttonPos;
+//    public Item item;
+    //public Item medKit;
+    //public Item bandage;
+    //public Item bandaid;
 
     public void Awake()
     {
@@ -25,6 +31,39 @@ public abstract class Item : MonoBehaviour
             inSys.addToInventory(this);
         }
     }
+
+    public void loadInv()
+    {
+        InvData data = SaveSystem.loadInv();
+    //    inSys.resetInventory();
+       itemName = data.itemName;
+        
+        Debug.Log(" " + itemName);
+        Debug.Log(" " + this.itemName);
+        if(itemName == "MedKit"&& this.itemName =="MedKit" )
+        {
+            
+            inSys.addToInventory(this);
+        }
+        if(itemName == "Bandage" && this.itemName == "Bandage")
+        {
+            inSys.addToInventory(this);
+        }
+        if(itemName == "Bandaid" && this.itemName == "Bandaid")
+        {
+            inSys.addToInventory(this);
+        }
+
+        //buttonPos.x = data.position[0];
+        //buttonPos.y = data.position[1];
+        //buttonPos.z = data.position[2];
+        //buttonPos = itemButton.transform.position;
+
+    }
+    //public void SaveInv()
+    //{
+    //    SaveSystem.SaveInv(this);
+    //}
     //private void OnTriggerEnter(Collider other)
     //{
     //    if (other.CompareTag("Player"))

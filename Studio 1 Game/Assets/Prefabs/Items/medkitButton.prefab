@@ -146,3 +146,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 5105323141233819874}
+  itemName: MedKit
+  buttonPos: {x: 0, y: 0, z: 0}

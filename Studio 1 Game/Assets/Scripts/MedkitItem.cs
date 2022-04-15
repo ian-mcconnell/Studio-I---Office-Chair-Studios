@@ -19,8 +19,28 @@ public class MedkitItem : Item
     {
         hs = FindObjectOfType<HealthSystem>();
     }
+    //public void loadInv()
+    //{
+    //    InvData data = SaveSystem.loadInv();
 
-   
+    //    itemName = data.itemName;
+
+
+    //    buttonPos.x = data.position[0];
+    //    buttonPos.y = data.position[1];
+    //    buttonPos.z = data.position[2];
+    //    buttonPos = itemButton.transform.position;
+    //    Debug.Log("INVENTORY BUTTON POS: " + buttonPos);
+
+    //}
+    //public void SaveInv()
+    //{
+    //    SaveSystem.SaveInv(this);
+    //}
+    public void loadButton()
+    {
+        loadInv();
+    }
     //void checkHealth()
     //{
     //    for(int i = 0; i < maxHeartNumber; i++)
@@ -30,7 +50,7 @@ public class MedkitItem : Item
     //}
     // Update is called once per frame
 
-    
+
 
     public override void useItem()
     {

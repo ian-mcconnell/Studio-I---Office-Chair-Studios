@@ -3,7 +3,12 @@ guid: f725f76b97720c14ca6d6af9b79091da
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - itemButton: {instanceID: 0}
+  - item: {instanceID: 0}
+  - medKit: {fileID: 4159728222991736007, guid: 7e97e701a25770f4696e5a4caaf908df, type: 3}
+  - bandage: {fileID: 4513515040910344082, guid: 8b37d9c856a62794ab43ddb177fb8ffd, type: 3}
+  - bandaid: {fileID: 46098882183515072, guid: 38af0feed2d34a248ab689dcca303ef9, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
