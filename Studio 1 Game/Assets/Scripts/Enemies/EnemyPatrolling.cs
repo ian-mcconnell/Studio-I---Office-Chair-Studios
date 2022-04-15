@@ -13,6 +13,8 @@ public class EnemyPatrolling : Enemy
 
     public int attackCooldown = 0;
 
+    private ParticleSystem ps;
+
     public enum PatrollingStates
     {
         Patrolling = 0,
@@ -25,6 +27,7 @@ public class EnemyPatrolling : Enemy
     {
         targetWaypoint = waypoints[waypointItterator % waypoints.Length];
         base.Start();
+        ps = GetComponentInChildren<ParticleSystem>();
         StatePatrollingEnter();
     }
 
@@ -129,11 +132,20 @@ public class EnemyPatrolling : Enemy
     {
         stateCurrent = PatrollingStates.Dead;
         base.agent.destination = transform.position;
-        Destroy(gameObject, 3f);
+        Destroy(gameObject);
     }
 
     void StateDeadRemain()
     {
 
+    }
+
+    public override void ChangeHealth(float amount)
+    {
+        base.ChangeHealth(amount);
+        if (amount < 0)
+        {
+            ps.Play();
+        }
     }
 }

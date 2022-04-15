@@ -20,6 +20,8 @@ public class EnemyRanged : Enemy
     public int attackCooldown = 0;
     private bool attackLocked = false;
 
+    private ParticleSystem ps;
+
     public enum RangedStates
     {
         Patrolling = 0,
@@ -31,6 +33,7 @@ public class EnemyRanged : Enemy
     {
         targetWaypoint = waypoints[waypointItterator % waypoints.Length];
         base.Start();
+        ps = GetComponentInChildren<ParticleSystem>();
         StatePatrollingEnter();
     }
 
@@ -175,7 +178,7 @@ public class EnemyRanged : Enemy
         stateCurrent = RangedStates.Dead;
         base.animator.SetBool("isAttacking", false);
         base.agent.destination = transform.position;
-        Destroy(gameObject, 3f);
+        Destroy(gameObject);
     }
 
     void StateDeadRemain()
@@ -199,5 +202,14 @@ public class EnemyRanged : Enemy
 
         GameObject proj = Instantiate(projectile, rightAttackSpawn.position, new Quaternion(0, 0, 0, 0));
         proj.GetComponent<Rigidbody>().velocity = new Vector3(projectileSpeed, 0f, 0f);
+    }
+
+    public override void ChangeHealth(float amount)
+    {
+        base.ChangeHealth(amount);
+        if (amount < 0)
+        {
+            ps.Play();
+        }
     }
 }

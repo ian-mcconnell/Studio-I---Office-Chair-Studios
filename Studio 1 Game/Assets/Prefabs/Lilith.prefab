@@ -213,6 +213,7 @@ MonoBehaviour:
   leftAttack: {fileID: 8558524380852018162}
   ableToMakeADoubleJump: 0
   currentHealth: 12
+  level: 1
   invulnerabilityDuration: 0.3
   isInvulnerable: 0
   pickUpPosition: {fileID: 387537301}

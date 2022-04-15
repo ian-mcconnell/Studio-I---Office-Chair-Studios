@@ -13,6 +13,8 @@ public class EnemyCharging : Enemy
 
     public AudioSource hitSource;
 
+    private ParticleSystem ps;
+
     public enum ChargingStates
     {
         Idling = 0,
@@ -24,6 +26,7 @@ public class EnemyCharging : Enemy
     protected override void Start()
     {
         base.Start();
+        ps = GetComponentInChildren<ParticleSystem>();
         StateIdlingEnter();
     }
 
@@ -89,7 +92,15 @@ public class EnemyCharging : Enemy
 
     void StateChargingRemain()
     {
-        
+        playerDistance = Vector3.Distance(transform.position, player.position);
+        if (player.position.x < transform.position.x)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
     }
 
     void StateChargingExit()
@@ -119,7 +130,7 @@ public class EnemyCharging : Enemy
     {
         stateCurrent = ChargingStates.Dead;
         base.agent.destination = transform.position;
-        Destroy(gameObject, 2f);
+        Destroy(gameObject);
     }
 
     void StateDeadRemain()
@@ -137,6 +148,15 @@ public class EnemyCharging : Enemy
             //Vector3 dir = other.contacts[0].point - transform.position;
            // dir = -dir.normalized;
             //GetComponent<Rigidbody>().AddForce(dir * 3f);
+        }
+    }
+
+    public override void ChangeHealth(float amount)
+    {
+        base.ChangeHealth(amount);
+        if (amount < 0)
+        {
+            ps.Play();
         }
     }
 }
