@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour
     public float invulnerabilityDuration = .3f;
     public bool isInvulnerable = false;
 
+    public GameObject forwardWall;
+    public GameObject backwardWall;
+
     public Transform pickUpPosition;
 
     public void SavePlayer()
@@ -55,8 +58,13 @@ public class PlayerController : MonoBehaviour
     {
         rightAttack.enabled = false;
         leftAttack.enabled = false;
-        
 
+        Renderer sortLayer = GetComponent<SpriteRenderer>();
+        sortLayer.sortingLayerName = "player";
+        sortLayer.sortingOrder = 2;
+
+        forwardWall.SetActive(true);
+        backwardWall.SetActive(false);
     }
 
     // Update is called once per frame
@@ -209,20 +217,24 @@ public class PlayerController : MonoBehaviour
         isInvulnerable = false;
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag == "ChangeLayerForward")
+        if (collision.gameObject.name == "layerForwardWall")
         {
-            gameObject.layer = 2;
-            GameObject.FindGameObjectWithTag("ChangeLayerForward").SetActive(false);
-            GameObject.FindGameObjectWithTag("ChangeLayerBackward").SetActive(true);
+            Renderer sortLayer = GetComponent<SpriteRenderer>();
+            sortLayer.sortingLayerName = "foreground";
+            sortLayer.sortingOrder = 2;
+            forwardWall.SetActive(false);
+            backwardWall.SetActive(true);
         }
 
-        if (collision.gameObject.tag == "ChangeLayerBackward")
+        if (collision.gameObject.name == "layerBackwardWall")
         {
-            gameObject.layer = 0;
-            GameObject.FindGameObjectWithTag("ChangeLayerForward").SetActive(true);
-            GameObject.FindGameObjectWithTag("ChangeLayerBackward").SetActive(false);
+            Renderer sortLayer = GetComponent<SpriteRenderer>();
+            sortLayer.sortingLayerName = "player";
+            sortLayer.sortingOrder = 2;
+            forwardWall.SetActive(true);
+            backwardWall.SetActive(false);
         }
     }
 
