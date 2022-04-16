@@ -5,12 +5,19 @@ using UnityEngine;
 [System.Serializable]
 public class InvData 
 {
-    public string itemName;
-    public float[] position;
+ //   public string itemName;
+ //   public float[] position;
+    public string[] itemNames;
 
-    public InvData(Item item)
+    public InvData( InventorySystem inventory)
     {
-        itemName = item.itemName;
+
+   //     itemName = item.itemName;
+        itemNames = inventory.itemNames;
+        //if(inventory.itemNames == null)
+        //{
+            
+        //}
 
         //itemName = new string[3];
         //itemName[1] = item.itemName;

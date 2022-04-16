@@ -11,6 +11,7 @@ public class BandageItem : Item
     //private int maxHealth;
     //private int healthPerHeart = 4;
     HealthSystem hs;
+    
     //public HealthSystem hs;
     //public Image[] healthImages;
     //public Sprite[] healthSprites;
@@ -18,6 +19,7 @@ public class BandageItem : Item
     void Start()
     {
         hs = FindObjectOfType<HealthSystem>();
+        
     }
 
 

@@ -14,13 +14,13 @@ public static class SaveSystem
         formatter.Serialize(stream, data);
         stream.Close();
     }
-    public static void SaveInv(Item item)
+    public static void SaveInv(InventorySystem inventory)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/Inventory.data";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        InvData data = new InvData(item);
+        InvData data = new InvData(inventory);
         formatter.Serialize(stream, data);
         stream.Close();
     }

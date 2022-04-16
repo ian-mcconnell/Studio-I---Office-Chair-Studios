@@ -21,17 +21,16 @@ public class InventoryLoad: MonoBehaviour
         InventorySystem inSys = FindObjectOfType<InventorySystem>();
         if (itemButtonName != "notfound")
         {
-            
-            var delims =  ",".ToCharArray(); // define delimiters
-//            var parenthesis = "()".ToCharArray();
-            // split the values in an array
-            string[] values  = itemButtonName.Split(delims);
-//            Debug.Log(values[0]+"/t"+values[1]+"/t"+values[2] + "/t" + values[3] + "/t" + values[4] + "/t" + values[5] + "/t" + values[6] + "/t" + values[7]);
+
+            var delims = ",".ToCharArray();
+
+            string[] values = itemButtonName.Split(delims);
+
             var pos = new Vector3
             {
-                x = float.Parse(values[1] )+ inSys.slots[1].transform.position.x,
-                y = float.Parse(values[2] )+ inSys.slots[1].transform.position.y,
-                z = float.Parse(values[3] )+ inSys.slots[1].transform.position.z
+                x = float.Parse(values[1]) + inSys.slots[1].transform.position.x,
+                y = float.Parse(values[2]) + inSys.slots[1].transform.position.y,
+                z = float.Parse(values[3]) + inSys.slots[1].transform.position.z
             };
             var rot = new Quaternion
             {
@@ -45,7 +44,7 @@ public class InventoryLoad: MonoBehaviour
             //{
 
             //};
- //           inSys.addToInventory(item);
+            //           inSys.addToInventory(item);
             Instantiate(item.itemButton, pos, rot,inSys.slots[1].transform);
 //           Debug.Log("location of button: "+ item.)
         }

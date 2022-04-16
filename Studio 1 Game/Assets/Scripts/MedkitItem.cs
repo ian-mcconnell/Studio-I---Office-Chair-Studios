@@ -37,10 +37,7 @@ public class MedkitItem : Item
     //{
     //    SaveSystem.SaveInv(this);
     //}
-    public void loadButton()
-    {
-        loadInv();
-    }
+
     //void checkHealth()
     //{
     //    for(int i = 0; i < maxHeartNumber; i++)

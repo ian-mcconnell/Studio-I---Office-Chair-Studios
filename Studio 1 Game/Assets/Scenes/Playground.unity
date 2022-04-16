@@ -725,13 +725,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2092473950}
-        m_TargetAssemblyTypeName: InventoryLoad, Assembly-CSharp
-        m_MethodName: LoadInventory
-        m_Mode: 2
+      - m_Target: {fileID: 445857352}
+        m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
+        m_MethodName: loadInv
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 4513515040910344082, guid: 8b37d9c856a62794ab43ddb177fb8ffd, type: 3}
-          m_ObjectArgumentAssemblyTypeName: Item, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1282,6 +1282,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: med kit (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4159728222991736012, guid: 7e97e701a25770f4696e5a4caaf908df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e97e701a25770f4696e5a4caaf908df, type: 3}
 --- !u!1 &347104302 stripped
@@ -1504,6 +1508,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &445857352 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1742711189, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+  m_PrefabInstance: {fileID: 1245612329}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c59bf7b93a46d446bacc7607306b296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &474443105
 GameObject:
   m_ObjectHideFlags: 0
@@ -2864,6 +2879,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 716567246}
     - target: {fileID: 1742711189, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: medKit
+      value: 
+      objectReference: {fileID: 4159728222991736007, guid: 7e97e701a25770f4696e5a4caaf908df, type: 3}
+    - target: {fileID: 1742711189, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: Bandage
+      value: 
+      objectReference: {fileID: 4513515040910344082, guid: 8b37d9c856a62794ab43ddb177fb8ffd, type: 3}
+    - target: {fileID: 1742711189, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: Bandaid
+      value: 
+      objectReference: {fileID: 46098882183515072, guid: 38af0feed2d34a248ab689dcca303ef9, type: 3}
+    - target: {fileID: 1742711189, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: slots.Array.size
       value: 12
       objectReference: {fileID: 0}
@@ -2911,6 +2938,10 @@ PrefabInstance:
       propertyPath: slots.Array.data[9]
       value: 
       objectReference: {fileID: 1473490530}
+    - target: {fileID: 1742711189, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: itemNames.Array.size
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1742711189, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: slots.Array.data[10]
       value: 
@@ -3970,6 +4001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bandaid
       objectReference: {fileID: 0}
+    - target: {fileID: 46098882183515076, guid: 38af0feed2d34a248ab689dcca303ef9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38af0feed2d34a248ab689dcca303ef9, type: 3}
 --- !u!1 &1623144645
@@ -4179,7 +4214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1661347450
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4244,9 +4279,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4159728222991736007, guid: 7e97e701a25770f4696e5a4caaf908df, type: 3}
-        m_TargetAssemblyTypeName: MedkitItem, Assembly-CSharp
-        m_MethodName: SaveInv
+      - m_Target: {fileID: 445857352}
+        m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
+        m_MethodName: SaveInven
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4667,6 +4702,10 @@ PrefabInstance:
     - target: {fileID: 4513515040910344078, guid: 8b37d9c856a62794ab43ddb177fb8ffd, type: 3}
       propertyPath: m_Name
       value: 'bandage '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4513515040910344078, guid: 8b37d9c856a62794ab43ddb177fb8ffd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4513515040910344081, guid: 8b37d9c856a62794ab43ddb177fb8ffd, type: 3}
       propertyPath: m_RootOrder
@@ -5335,6 +5374,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4159728222991736007, guid: 7e97e701a25770f4696e5a4caaf908df, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4159728222991736009, guid: 7e97e701a25770f4696e5a4caaf908df, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -5382,6 +5425,10 @@ PrefabInstance:
     - target: {fileID: 4159728222991736012, guid: 7e97e701a25770f4696e5a4caaf908df, type: 3}
       propertyPath: m_Name
       value: med kit
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159728222991736012, guid: 7e97e701a25770f4696e5a4caaf908df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e97e701a25770f4696e5a4caaf908df, type: 3}
