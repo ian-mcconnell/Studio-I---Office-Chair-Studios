@@ -29,8 +29,8 @@ public class InventorySystem : MonoBehaviour
     public void loadInv()
     {
         InvData data = SaveSystem.loadInv();
-        //    inSys.resetInventory();
-        //    itemName = data.itemName;
+        resetInventory();
+
 
         //Debug.Log(" " + itemName);
         //Debug.Log(" " + this.itemName);
@@ -51,36 +51,22 @@ public class InventorySystem : MonoBehaviour
             }
             if (data.itemNames[i] == null)
             {
-                Debug.Log("yay");
+                this.addToInventory(null);
             }
         }
-        //buttonPos.x = data.position[0];
-        //buttonPos.y = data.position[1];
-        //buttonPos.z = data.position[2];
-        //buttonPos = itemButton.transform.position;
+
 
     }
 
-    //public void itemUsage()
-    //{
-    //    switch (Item)
-    //    {
-    //        case
-    //    }
 
-    //}
-
-
-
-    //public void SaveInv()
-    //{
-    //   SaveSystem.SaveInv(item);
-    //}
     public void resetInventory()
     {
         for (int i = 0; i < slots.Length; i++)
         {
            isFull[i] = false;
+            //medKit.reset = true;
+            //Bandage.reset = true;
+            //Bandaid.reset = true;
         }
     }
 
@@ -93,13 +79,7 @@ public class InventorySystem : MonoBehaviour
                 itemNames[i] = item.itemName;
                 isFull[i] = true;
                 Instantiate(item.itemButton, slots[i].transform, false);
-
-  
-
- //               var s = item.itemButton.transform.position.ToString() + item.itemButton.transform.rotation.ToString() + slots[i].transform.ToString();
-//                var save = s.Replace("(", ",").Replace(")",",");
-//                Debug.Log(s);
-                //                PlayerPrefs.SetString(item.itemName, save);
+ //               item.reset = false;
                 item.gameObject.SetActive(false);
                 break;
             }

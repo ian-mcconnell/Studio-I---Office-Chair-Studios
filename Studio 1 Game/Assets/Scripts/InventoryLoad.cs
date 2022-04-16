@@ -40,13 +40,8 @@ public class InventoryLoad: MonoBehaviour
                 w = float.Parse(values[8])
             };
 
-            //var slot = new Transform
-            //{
-
-            //};
-            //           inSys.addToInventory(item);
             Instantiate(item.itemButton, pos, rot,inSys.slots[1].transform);
-//           Debug.Log("location of button: "+ item.)
+
         }
 
     }
