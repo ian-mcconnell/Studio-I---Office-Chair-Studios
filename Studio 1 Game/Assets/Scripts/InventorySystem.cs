@@ -48,10 +48,15 @@ public class InventorySystem : MonoBehaviour
         {
             if (isFull[i] == false )
             {
-
+               
                 isFull[i] = true;
                 Instantiate(item.itemButton, slots[i].transform, false);
-                SaveSystem.SaveInv(item);
+ //               SaveSystem.SaveInv(item);
+
+                var s = item.itemButton.transform.position.ToString() + item.itemButton.transform.rotation.ToString() + slots[i].transform.ToString();
+                var save = s.Replace("(", ",").Replace(")",",");
+                Debug.Log(s);
+                PlayerPrefs.SetString(item.itemName, save);
                 Destroy(item.gameObject);
                 break;
             }

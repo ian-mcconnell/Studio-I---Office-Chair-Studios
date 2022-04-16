@@ -10,7 +10,7 @@ public abstract class Item : MonoBehaviour
     PlayerController Player;
     InventorySystem inSys;
     public string itemName;
-    public Vector3 buttonPos;
+ //   public Vector3 buttonPos;
 //    public Item item;
     //public Item medKit;
     //public Item bandage;
@@ -36,20 +36,20 @@ public abstract class Item : MonoBehaviour
     {
         InvData data = SaveSystem.loadInv();
     //    inSys.resetInventory();
-       itemName = data.itemName;
+   //    itemName = data.itemName;
         
         Debug.Log(" " + itemName);
         Debug.Log(" " + this.itemName);
-        if(itemName == "MedKit"&& this.itemName =="MedKit" )
+        if(data.itemName == "MedKit")
         {
             
             inSys.addToInventory(this);
         }
-        if(itemName == "Bandage" && this.itemName == "Bandage")
+        if(data.itemName == "Bandage" )
         {
             inSys.addToInventory(this);
         }
-        if(itemName == "Bandaid" && this.itemName == "Bandaid")
+        if(data.itemName == "Bandaid" )
         {
             inSys.addToInventory(this);
         }
