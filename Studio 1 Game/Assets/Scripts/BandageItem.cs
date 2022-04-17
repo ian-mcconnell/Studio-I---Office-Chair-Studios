@@ -11,7 +11,8 @@ public class BandageItem : Item
     //private int maxHealth;
     //private int healthPerHeart = 4;
     HealthSystem hs;
-    
+    //public string[] itemNames;
+    //InventorySystem inventory;
     //public HealthSystem hs;
     //public Image[] healthImages;
     //public Sprite[] healthSprites;
@@ -19,6 +20,7 @@ public class BandageItem : Item
     void Start()
     {
         hs = FindObjectOfType<HealthSystem>();
+ //       inventory = FindObjectOfType<InventorySystem>();
         
     }
 
@@ -38,5 +40,10 @@ public class BandageItem : Item
     {
         hs.AddHealth(2);
         Destroy(itemButton);
+        //for (int i = 0; i < inventory.slots.Length; i++)
+        //{
+        //    itemNames[i] = inventory.itemNames[i];
+        //    itemNames[i] = null;
+        //}
     }
 }

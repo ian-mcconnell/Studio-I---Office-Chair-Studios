@@ -2490,6 +2490,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2241715425466865185, guid: f0e0bb1373b6e284f8cfa454775f803e, type: 3}
+      propertyPath: itemNames.Array.size
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2684630869008062022, guid: f0e0bb1373b6e284f8cfa454775f803e, type: 3}
       propertyPath: m_Name
       value: BandageButton

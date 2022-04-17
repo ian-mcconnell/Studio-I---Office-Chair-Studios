@@ -9,6 +9,7 @@ public class InvData
 
     public InvData( InventorySystem inventory)
     {
+   //     if (itemNames.Length >= )
         itemNames = inventory.itemNames;
     }
 

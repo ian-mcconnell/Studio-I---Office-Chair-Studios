@@ -53,6 +53,7 @@ public class InventorySystem : MonoBehaviour
             {
                 this.addToInventory(null);
             }
+  //          itemNames[i] = null;
         }
 
 
@@ -67,6 +68,7 @@ public class InventorySystem : MonoBehaviour
             //medKit.reset = true;
             //Bandage.reset = true;
             //Bandaid.reset = true;
+            itemNames[i] = null;
         }
     }
 
