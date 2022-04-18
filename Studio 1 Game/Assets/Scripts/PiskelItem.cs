@@ -11,6 +11,8 @@ public class PiskelItem : Item
     //private int maxHealth;
     //private int healthPerHeart = 4;
     HealthSystem hs;
+    //public string[] itemNames;
+    InventorySystem inventory;
     //public HealthSystem hs;
     //public Image[] healthImages;
     //public Sprite[] healthSprites;
@@ -18,6 +20,8 @@ public class PiskelItem : Item
     void Start()
     {
         hs = FindObjectOfType<HealthSystem>();
+        inventory = FindObjectOfType<InventorySystem>();
+
     }
 
 
@@ -36,5 +40,13 @@ public class PiskelItem : Item
     {
         hs.AddHealth(4);
         Destroy(itemButton);
+        for (int i = 0; i < inventory.slots.Length; i++)
+        {
+            //itemNames[i] = inventory.itemNames[i];
+            if (inventory.itemNames[i] == "Bandaid" && itemSlot == i)
+            {
+                inventory.itemNames[i] = null;
+            }
+        }
     }
 }

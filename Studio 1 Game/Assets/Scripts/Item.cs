@@ -11,6 +11,7 @@ public abstract class Item : MonoBehaviour
     InventorySystem inSys;
     Item item;
     public string itemName;
+    public int itemSlot;
  //   public bool reset;
 
 

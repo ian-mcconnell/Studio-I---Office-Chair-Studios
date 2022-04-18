@@ -23,7 +23,11 @@ public class InventorySystem : MonoBehaviour
     }
     public void SaveInven()
     {
-        SaveSystem.SaveInv(this);
+        for (int i = 0; i < slots.Length; i++)
+        {
+  //          itemNames[i] = item.itemName;
+        }
+            SaveSystem.SaveInv(this);
     }
 
     public void loadInv()
@@ -51,7 +55,7 @@ public class InventorySystem : MonoBehaviour
             }
             if (data.itemNames[i] == null)
             {
-                this.addToInventory(null);
+ //               this.addToInventory(null);
             }
   //          itemNames[i] = null;
         }
@@ -68,6 +72,18 @@ public class InventorySystem : MonoBehaviour
             //medKit.reset = true;
             //Bandage.reset = true;
             //Bandaid.reset = true;
+            //medKit.itemButton.gameObject.SetActive(false);
+            //Bandaid.itemButton.gameObject.SetActive(false);
+            //Bandage.itemButton.gameObject.SetActive(false);
+            Transform[] ts = slots[i].GetComponentsInChildren<Transform>();
+            foreach (Transform t in ts)
+            {
+                if (t == true && (t.name == "medkitButton(Clone)" || t.name == "BandageButton(Clone)" || t.name == "PiskelButton(Clone)"))
+                {
+                    t.gameObject.SetActive(false);
+                    Debug.Log(" " + t.name);
+                }
+            }
             itemNames[i] = null;
         }
     }
@@ -79,12 +95,15 @@ public class InventorySystem : MonoBehaviour
             if (isFull[i] == false )
             {
                 itemNames[i] = item.itemName;
+                item.itemSlot = i;
                 isFull[i] = true;
                 Instantiate(item.itemButton, slots[i].transform, false);
  //               item.reset = false;
                 item.gameObject.SetActive(false);
                 break;
             }
+
+            
         }
     }
 

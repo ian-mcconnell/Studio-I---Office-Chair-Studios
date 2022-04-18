@@ -147,4 +147,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 2684630869008062022}
   itemName: Bandage
-  buttonPos: {x: 0, y: 0, z: 0}
