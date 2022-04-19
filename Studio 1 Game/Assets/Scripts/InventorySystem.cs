@@ -34,7 +34,28 @@ public class InventorySystem : MonoBehaviour
     {
         InvData data = SaveSystem.loadInv();
         resetInventory();
+        //for (int i = 0; i < slots.Length; i++)
+        //{
+        //    itemNames[i] = data.itemNames[i];
+        //    if (itemNames[i] == "MedKit")
+        //    {
 
+        //        this.addToInventory(medKit);
+        //    }
+        //    if (itemNames[i] == "Bandage")
+        //    {
+        //        this.addToInventory(Bandage);
+        //    }
+        //    if (itemNames[i] == "Bandaid")
+        //    {
+        //        this.addToInventory(Bandaid);
+        //    }
+        //    if (itemNames[i] == null)
+        //    {
+        //        //               this.addToInventory(null);
+        //    }
+        //    //          itemNames[i] = null;
+        //}
 
         //Debug.Log(" " + itemName);
         //Debug.Log(" " + this.itemName);
@@ -55,9 +76,9 @@ public class InventorySystem : MonoBehaviour
             }
             if (data.itemNames[i] == null)
             {
- //               this.addToInventory(null);
+                //               this.addToInventory(null);
             }
-  //          itemNames[i] = null;
+            //          itemNames[i] = null;
         }
 
 

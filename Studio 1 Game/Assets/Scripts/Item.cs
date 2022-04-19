@@ -20,6 +20,7 @@ public abstract class Item : MonoBehaviour
         Player = FindObjectOfType<PlayerController>();
         inSys =  FindObjectOfType<InventorySystem>();
         this.gameObject.SetActive(true);
+        itemSlot = 0;
     }
 
     public void Update()

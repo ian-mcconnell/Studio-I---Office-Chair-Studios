@@ -43,9 +43,10 @@ public class PiskelItem : Item
         for (int i = 0; i < inventory.slots.Length; i++)
         {
             //itemNames[i] = inventory.itemNames[i];
-            if (inventory.itemNames[i] == "Bandaid" && itemSlot == i)
+            if ((inventory.itemNames[i] == "Bandaid" && itemSlot == i) )
             {
                 inventory.itemNames[i] = null;
+                itemSlot = 0;
             }
         }
     }

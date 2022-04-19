@@ -60,9 +60,10 @@ public class MedkitItem : Item
         for (int i = 0; i < inventory.slots.Length; i++)
         {
             //itemNames[i] = inventory.itemNames[i];
-            if (inventory.itemNames[i] == "MedKit" && itemSlot == i)
+            if ((inventory.itemNames[i] == "MedKit" && itemSlot == i) )
             {
                 inventory.itemNames[i] = null;
+                itemSlot = 0;
             }
         }
     }

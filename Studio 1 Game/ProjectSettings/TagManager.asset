@@ -10,11 +10,14 @@ TagManager:
   - followXandY
   - followXandZ
   - followAll
+  - ChangeLayerForward
+  - ChangeLayerBackward
+  - teleporter
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - groundLayer
   - Water
   - UI
   - 

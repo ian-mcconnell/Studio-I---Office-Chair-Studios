@@ -43,9 +43,10 @@ public class BandageItem : Item
         for (int i = 0; i < inventory.slots.Length; i++)
         {
             //itemNames[i] = inventory.itemNames[i];
-            if (inventory.itemNames[i] == "Bandage" && itemSlot == i)
+            if ((inventory.itemNames[i] == "Bandage" && itemSlot == i))
             {
                 inventory.itemNames[i] = null;
+                itemSlot = 0;
             }
         }
     }

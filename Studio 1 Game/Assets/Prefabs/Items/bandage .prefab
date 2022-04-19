@@ -132,3 +132,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 2684630869008062022, guid: f0e0bb1373b6e284f8cfa454775f803e, type: 3}
   itemName: Bandage
+  itemSlot: 0
