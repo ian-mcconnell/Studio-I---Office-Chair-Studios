@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - inventoryitem
+  - followX
+  - followXandY
+  - followXandZ
+  - followAll
   layers:
   - Default
   - TransparentFX
