@@ -11,6 +11,7 @@ public class EnemyAttack : MonoBehaviour
     private void Start()
     {
         Destroy(gameObject, duration);
+        Debug.Log("I existed!");
     }
 
     void OnTriggerEnter(Collider other)
@@ -22,7 +23,7 @@ public class EnemyAttack : MonoBehaviour
         {
             go.GetComponent<PlayerController>().ChangeHealth(damage);
             
-            Debug.Log("Dealt damage to player");
+            //Debug.Log("Dealt damage to player");
             Destroy(gameObject);
         }
     }

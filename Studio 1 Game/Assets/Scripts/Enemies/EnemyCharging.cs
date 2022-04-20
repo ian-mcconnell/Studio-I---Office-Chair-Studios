@@ -32,6 +32,7 @@ public class EnemyCharging : Enemy
 
     public override void FSMProcess()
     {
+        base.playerDistance = Vector3.Distance(transform.position, player.position);
         switch (stateCurrent)
         {
             case ChargingStates.Idling:
@@ -92,7 +93,6 @@ public class EnemyCharging : Enemy
 
     void StateChargingRemain()
     {
-        playerDistance = Vector3.Distance(transform.position, player.position);
         if (player.position.x < transform.position.x)
         {
             GetComponent<SpriteRenderer>().flipX = false;

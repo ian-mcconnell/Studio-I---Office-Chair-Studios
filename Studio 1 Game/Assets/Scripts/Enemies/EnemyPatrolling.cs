@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class EnemyPatrolling : Enemy
 {
@@ -8,12 +9,20 @@ public class EnemyPatrolling : Enemy
 
     private PatrollingStates stateCurrent = PatrollingStates.Patrolling;
 
-    public float attackRange = 1f;
+    public float attackRange = 2f;
     public float aggroRange = 5f;
 
-    public int attackCooldown = 0;
+    private Transform leftAttackSpawn;
+    private Transform rightAttackSpawn;
+
+    public GameObject smallAttack;
+    public GameObject largeAttack;
+
+    private int attackCooldown = 0;
+    private bool attackLocked = false;
 
     private ParticleSystem ps;
+    private SpriteRenderer sr;
 
     public enum PatrollingStates
     {
@@ -26,6 +35,9 @@ public class EnemyPatrolling : Enemy
     protected override void Start()
     {
         targetWaypoint = waypoints[waypointItterator % waypoints.Length];
+        leftAttackSpawn = gameObject.transform.GetChild(1);
+        rightAttackSpawn = gameObject.transform.GetChild(2);
+        sr = GetComponent<SpriteRenderer>();
         base.Start();
         ps = GetComponentInChildren<ParticleSystem>();
         StatePatrollingEnter();
@@ -34,8 +46,25 @@ public class EnemyPatrolling : Enemy
     public override void FSMProcess()
     {
         base.playerDistance = Vector3.Distance(transform.position, player.position);
+        attackCooldown -= 1;
+        if (attackCooldown < 0)
+        {
+            attackCooldown = 0;
+        }
 
-            switch (stateCurrent){
+        if (stateCurrent != PatrollingStates.Attacking)
+        {
+            if (base.agent.destination.x < transform.position.x)
+            {
+                sr.flipX = false;
+            }
+            else
+            {
+                sr.flipX = true;
+            }
+        }
+
+        switch (stateCurrent){
             case PatrollingStates.Patrolling:
                 if (isDead) { StatePatrollingExit(); StateDeadEnter(); }
                 else if (playerDistance <= attackRange) { StatePatrollingExit(); StateAttackingEnter(); }
@@ -52,8 +81,8 @@ public class EnemyPatrolling : Enemy
 
             case PatrollingStates.Attacking:
                 if (isDead) { StateAttackingExit(); StateDeadEnter(); }
-                else if (playerDistance >= attackRange && playerDistance < aggroRange) { StateAttackingExit(); StateChasingEnter(); }
-                else if (playerDistance >= aggroRange) { StateAttackingExit(); StatePatrollingEnter(); }
+                else if (playerDistance >= attackRange && playerDistance < aggroRange && !attackLocked) { StateAttackingExit(); StateChasingEnter(); }
+                else if (playerDistance >= aggroRange && !attackLocked) { StateAttackingExit(); StatePatrollingEnter(); }
                 else { StateAttackingRemain(); }
                 break;
 
@@ -111,7 +140,15 @@ public class EnemyPatrolling : Enemy
         stateCurrent = PatrollingStates.Attacking;
         if (attackCooldown == 0)
         {
-            //attack here
+            int randInt = Random.Range(1, 3);
+            if (randInt == 1)
+            {
+                StartCoroutine(SmallAttack());
+            }
+            else
+            {
+                StartCoroutine(LargeAttack());
+            }
         }
     }
 
@@ -119,7 +156,15 @@ public class EnemyPatrolling : Enemy
     {
         if (attackCooldown == 0)
         {
-            //attack here
+            int randInt = Random.Range(1, 3);
+            if (randInt == 1)
+            {
+                StartCoroutine(SmallAttack());
+            }
+            else
+            {
+                StartCoroutine(LargeAttack());
+            }
         }
     }
 
@@ -138,6 +183,57 @@ public class EnemyPatrolling : Enemy
     void StateDeadRemain()
     {
 
+    }
+
+    IEnumerator SmallAttack()
+    {
+        Debug.Log("Small Attack");
+        attackLocked = true;
+        attackCooldown = 19;
+        base.animator.SetBool("attackingWeak", true);
+        
+        yield return new WaitForSeconds(.6f);
+        if (sr.flipX == false)
+        {
+            Instantiate(smallAttack, leftAttackSpawn.position, new Quaternion(0, 0, 0, 0));
+        }
+        else
+        {
+            Instantiate(smallAttack, leftAttackSpawn.position, new Quaternion(0, 0, 0, 0));
+        }
+
+        yield return new WaitForSeconds(.3f);
+
+        attackLocked = false;
+        base.animator.SetBool("attackingWeak", false);
+        yield return null;
+    }
+
+    IEnumerator LargeAttack()
+    {
+        Debug.Log("Large Attack");
+        attackLocked = true;
+        attackCooldown = 35;
+        base.animator.SetBool("attackingStrong", true);
+        var targetTemp = base.agent.destination;
+        base.agent.destination = transform.position;
+
+        yield return new WaitForSeconds(1.2f);
+        if (sr.flipX == false)
+        {
+            Instantiate(largeAttack, leftAttackSpawn.position, new Quaternion(0, 0, 0, 0));
+        }
+        else
+        {
+            Instantiate(largeAttack, leftAttackSpawn.position, new Quaternion(0, 0, 0, 0));
+        }
+
+        yield return new WaitForSeconds(.1f);
+
+        attackLocked = false;
+        base.agent.destination = targetTemp;
+        base.animator.SetBool("attackingStrong", false);
+        yield return null;
     }
 
     public override void ChangeHealth(float amount)

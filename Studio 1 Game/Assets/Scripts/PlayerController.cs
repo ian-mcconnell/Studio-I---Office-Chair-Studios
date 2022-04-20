@@ -163,7 +163,7 @@ public class PlayerController : MonoBehaviour
 
     public void ChangeHealth(float amount)
     {
-        Debug.Log(amount);
+        //Debug.Log(amount);
         if (amount >= 0 || !isInvulnerable)
         {
             currentHealth += amount;

@@ -23,8 +23,8 @@ public class HealthSystem : MonoBehaviour
     private void Update()
     {
         currentHealth = pc.GetComponent<PlayerController>().currentHealth;
-        Debug.Log(currentHealth);
-        Debug.Log(pc.GetComponent<PlayerController>().currentHealth);
+        //Debug.Log(currentHealth);
+        //Debug.Log(pc.GetComponent<PlayerController>().currentHealth);
         currentHealth = Mathf.Clamp(currentHealth, 0, startHearts * healthPerHeart);
         UpdateHearts();
     }
