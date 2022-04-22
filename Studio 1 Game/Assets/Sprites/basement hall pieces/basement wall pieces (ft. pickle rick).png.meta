@@ -14,6 +14,36 @@ TextureImporter:
   - first:
       213: 4463811569121895167
     second: basement wall pieces (ft. pickle rick)_3
+  - first:
+      213: 6902859219965082623
+    second: basement wall pieces (ft. pickle rick)_4
+  - first:
+      213: 7807691619888874752
+    second: basement wall pieces (ft. pickle rick)_5
+  - first:
+      213: -8212847672847914937
+    second: basement wall pieces (ft. pickle rick)_6
+  - first:
+      213: -5675894130372770139
+    second: basement wall pieces (ft. pickle rick)_9
+  - first:
+      213: 7217909058520696516
+    second: basement wall pieces (ft. pickle rick)_11
+  - first:
+      213: 2072366516163708102
+    second: basement wall pieces (ft. pickle rick)_7
+  - first:
+      213: 7885181451900624288
+    second: basement wall pieces (ft. pickle rick)_8
+  - first:
+      213: -5812427580505112981
+    second: basement wall pieces (ft. pickle rick)_10
+  - first:
+      213: -9119565680909106582
+    second: basement wall pieces (ft. pickle rick)_12
+  - first:
+      213: 7114400002749515483
+    second: basement wall pieces (ft. pickle rick)_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -119,7 +149,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 800
+        y: 1600
         width: 800
         height: 800
       alignment: 0
@@ -139,10 +169,10 @@ TextureImporter:
       name: basement wall pieces (ft. pickle rick)_1
       rect:
         serializedVersion: 2
-        x: 800
-        y: 800
-        width: 800
-        height: 800
+        x: 114
+        y: 663
+        width: 335
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +190,10 @@ TextureImporter:
       name: basement wall pieces (ft. pickle rick)_2
       rect:
         serializedVersion: 2
-        x: 800
-        y: 0
-        width: 800
-        height: 800
+        x: 134
+        y: 462
+        width: 99
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +211,10 @@ TextureImporter:
       name: basement wall pieces (ft. pickle rick)_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 800
-        height: 800
+        x: 403
+        y: 315
+        width: 86
+        height: 242
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,10 +228,220 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: basement wall pieces (ft. pickle rick)_4
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 414
+        width: 158
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb7c8c33e1ebcf50800000000000000
+      internalID: 6902859219965082623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basement wall pieces (ft. pickle rick)_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 275
+        width: 162
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005454f492e7a5c60800000000000000
+      internalID: 7807691619888874752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basement wall pieces (ft. pickle rick)_6
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 235
+        width: 150
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748a1891e8a160e80800000000000000
+      internalID: -8212847672847914937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basement wall pieces (ft. pickle rick)_9
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 148
+        width: 126
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a608605c5c2b31b0800000000000000
+      internalID: -5675894130372770139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basement wall pieces (ft. pickle rick)_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 135
+        width: 126
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6433eeb0a2b2460800000000000000
+      internalID: 7217909058520696516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basement wall pieces (ft. pickle rick)_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 800
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c40a58dd5682cc10800000000000000
+      internalID: 2072366516163708102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basement wall pieces (ft. pickle rick)_8
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 1600
+        width: 799
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad1906c0cacd6d60800000000000000
+      internalID: 7885181451900624288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basement wall pieces (ft. pickle rick)_10
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1600
+        width: 800
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e3f4d39eb165fa0800000000000000
+      internalID: -5812427580505112981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basement wall pieces (ft. pickle rick)_12
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 800
+        width: 800
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62c19ba45bc07180800000000000000
+      internalID: -9119565680909106582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basement wall pieces (ft. pickle rick)_13
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 801
+        width: 800
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd64ce9db1d6bb260800000000000000
+      internalID: 7114400002749515483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 00d9f5cc6fa5ef04b9dde786ddf71d09
+    spriteID: 7d972996bc18e8446aebf0c11b239034
     internalID: 0
     vertices: []
     indices: 

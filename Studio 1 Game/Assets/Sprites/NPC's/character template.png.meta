@@ -20,6 +20,18 @@ TextureImporter:
   - first:
       213: -7814274267380450115
     second: character template_5
+  - first:
+      213: 5393386583573550861
+    second: character template_6
+  - first:
+      213: -721956703382523622
+    second: character template_7
+  - first:
+      213: -6774218469071069581
+    second: character template_8
+  - first:
+      213: -8106351335092658940
+    second: character template_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -125,7 +137,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 84
-        y: 548
+        y: 804
         width: 88
         height: 184
       alignment: 0
@@ -146,7 +158,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 348
-        y: 548
+        y: 804
         width: 72
         height: 184
       alignment: 0
@@ -166,8 +178,8 @@ TextureImporter:
       name: character template_2
       rect:
         serializedVersion: 2
-        x: 92
-        y: 292
+        x: 604
+        y: 804
         width: 72
         height: 188
       alignment: 0
@@ -187,8 +199,8 @@ TextureImporter:
       name: character template_3
       rect:
         serializedVersion: 2
-        x: 348
-        y: 292
+        x: 92
+        y: 548
         width: 72
         height: 176
       alignment: 0
@@ -208,8 +220,8 @@ TextureImporter:
       name: character template_4
       rect:
         serializedVersion: 2
-        x: 40
-        y: 36
+        x: 296
+        y: 548
         width: 176
         height: 212
       alignment: 0
@@ -229,8 +241,8 @@ TextureImporter:
       name: character template_5
       rect:
         serializedVersion: 2
-        x: 340
-        y: 16
+        x: 596
+        y: 528
         width: 96
         height: 232
       alignment: 0
@@ -246,10 +258,94 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: character template_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 292
+        width: 96
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07524ab58829da40800000000000000
+      internalID: 5393386583573550861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character template_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 292
+        width: 96
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a113caf04381bf5f0800000000000000
+      internalID: -721956703382523622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character template_8
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 292
+        width: 96
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ed02891342df1a0800000000000000
+      internalID: -6774218469071069581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character template_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 36
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40dd947f864708f80800000000000000
+      internalID: -8106351335092658940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 211e5f13eed459c45b803f8b65655f1f
+    spriteID: 91ed464879cba8f41bf990a2420ae38e
     internalID: 0
     vertices: []
     indices: 
