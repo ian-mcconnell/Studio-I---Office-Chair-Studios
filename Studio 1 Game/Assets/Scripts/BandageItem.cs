@@ -24,12 +24,12 @@ public class BandageItem : Item
         hs = FindObjectOfType<HealthSystem>();
         inventory = FindObjectOfType<InventorySystem>();
 
-        itemSlot = inventory.Bandage.itemSlot;
+        itemSlot = 0;
 
     }
     private void FixedUpdate()
     {
- //       itemSlot = inventory.Bandage.itemSlot;
+        itemSlot = inventory.Bandage.itemSlot;
     }
 
     //void checkHealth()

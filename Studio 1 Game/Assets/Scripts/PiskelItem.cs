@@ -22,11 +22,11 @@ public class PiskelItem : Item
     {
         hs = FindObjectOfType<HealthSystem>();
         inventory = FindObjectOfType<InventorySystem>();
-        itemSlot = inventory.Bandaid.itemSlot;
+        itemSlot = 0;
     }
     private void FixedUpdate()
     {
- //       itemSlot = inventory.Bandaid.itemSlot;
+        itemSlot = inventory.Bandaid.itemSlot;
     }
 
     //void checkHealth()

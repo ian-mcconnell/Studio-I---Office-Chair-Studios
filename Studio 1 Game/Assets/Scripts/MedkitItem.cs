@@ -22,11 +22,11 @@ public class MedkitItem : Item
     {
         hs = FindObjectOfType<HealthSystem>();
         inventory = FindObjectOfType<InventorySystem>();
-       itemSlot = inventory.medKit.itemSlot;
+       itemSlot = 0;
     }
     private void FixedUpdate()
     {
- //       itemSlot = inventory.medKit.itemSlot;
+        itemSlot = inventory.medKit.itemSlot;
     }
     //public void loadInv()
     //{

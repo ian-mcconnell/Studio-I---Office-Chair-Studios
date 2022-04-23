@@ -133,4 +133,3 @@ MonoBehaviour:
   itemButton: {fileID: 6593488935719521686, guid: 860e5e6ae8abf614b90bb23ed4c17bec, type: 3}
   itemName: Bandaid
   itemSlot: 0
-  Bandaid: {fileID: 46098882183515072}
