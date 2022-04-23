@@ -12,6 +12,12 @@ public class InventorySystem : MonoBehaviour
     public Item Bandaid;
     public Item Bandage;
 
+    public void Start()
+    {
+        //medKit.itemSlot = 0;
+        //Bandaid.itemSlot = 0;
+        //Bandage.itemSlot = 0;
+    }
     public void Update()
     {
 
@@ -25,7 +31,9 @@ public class InventorySystem : MonoBehaviour
     {
         for (int i = 0; i < slots.Length; i++)
         {
-  //          itemNames[i] = item.itemName;
+            //          itemNames[i] = item.itemName;
+            //Debug.Log(i);
+            //Debug.Log(itemNames[i]);
         }
             SaveSystem.SaveInv(this);
     }
@@ -78,7 +86,7 @@ public class InventorySystem : MonoBehaviour
             {
                 //               this.addToInventory(null);
             }
-            //          itemNames[i] = null;
+            itemNames[i] = null;
         }
 
 
@@ -99,13 +107,13 @@ public class InventorySystem : MonoBehaviour
             Transform[] ts = slots[i].GetComponentsInChildren<Transform>();
             foreach (Transform t in ts)
             {
-                if (t == true && (t.name == "medkitButton(Clone)" || t.name == "BandageButton(Clone)" || t.name == "PiskelButton(Clone)"))
+                if (t == true && (t.name == "medkitButton(Clone)" || t.name == "BandageButton(Clone)" || t.name == "PiskelButton(Clone)") )
                 {
                     t.gameObject.SetActive(false);
                     Debug.Log(" " + t.name);
                 }
             }
-            itemNames[i] = null;
+ //           itemNames[i] = null;
         }
     }
 
@@ -117,6 +125,8 @@ public class InventorySystem : MonoBehaviour
             {
                 itemNames[i] = item.itemName;
                 item.itemSlot = i;
+
+//                item.itemButton.itemSlot = i;
                 isFull[i] = true;
                 Instantiate(item.itemButton, slots[i].transform, false);
  //               item.reset = false;

@@ -12,7 +12,9 @@ public class BandageItem : Item
     //private int healthPerHeart = 4;
     HealthSystem hs;
     //public string[] itemNames;
+    //public Item Bandage;
     InventorySystem inventory;
+   // public int itemSlots;
     //public HealthSystem hs;
     //public Image[] healthImages;
     //public Sprite[] healthSprites;
@@ -21,9 +23,14 @@ public class BandageItem : Item
     {
         hs = FindObjectOfType<HealthSystem>();
         inventory = FindObjectOfType<InventorySystem>();
-        
-    }
 
+        itemSlot = inventory.Bandage.itemSlot;
+
+    }
+    private void FixedUpdate()
+    {
+ //       itemSlot = inventory.Bandage.itemSlot;
+    }
 
     //void checkHealth()
     //{
@@ -38,16 +45,28 @@ public class BandageItem : Item
 
     public override void useItem()
     {
+   //     itemSlot = inventory.Bandage.itemSlot;
         hs.AddHealth(2);
-        Destroy(itemButton);
         for (int i = 0; i < inventory.slots.Length; i++)
         {
+            Debug.Log(itemSlot);
             //itemNames[i] = inventory.itemNames[i];
-            if ((inventory.itemNames[i] == "Bandage" && itemSlot == i))
+            if ((inventory.itemNames[i] == "Bandage" && itemSlot == i) )
             {
+                Debug.Log(inventory.itemNames[i] +" "+itemSlot +" " + i);
+                
                 inventory.itemNames[i] = null;
-                itemSlot = 0;
+ //               itemSlot = 0;
             }
         }
+        Destroy(itemButton);
+//        itemButton.gameObject.SetActive(false);
+        //if ((inventory.itemNames[itemSlot] == "Bandage" ))
+        //    {
+        //        inventory.itemNames[itemSlot] = null;
+        //        itemSlot = 0;
+
+        //    }
+
     }
 }

@@ -147,3 +147,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 5105323141233819874}
   itemName: MedKit
+  itemSlot: 0

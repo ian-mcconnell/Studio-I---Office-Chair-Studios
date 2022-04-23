@@ -132,3 +132,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 5105323141233819874, guid: 4975b17659c6d7546b6c56fa1d17cc44, type: 3}
   itemName: MedKit
+  itemSlot: 0
+  MedKit: {fileID: 4159728222991736007}

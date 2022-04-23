@@ -13,6 +13,7 @@ public class MedkitItem : Item
     HealthSystem hs;
     //public string[] itemNames;
     InventorySystem inventory;
+//    public Item MedKit;
     //public HealthSystem hs;
     //public Image[] healthImages;
     //public Sprite[] healthSprites;
@@ -21,7 +22,11 @@ public class MedkitItem : Item
     {
         hs = FindObjectOfType<HealthSystem>();
         inventory = FindObjectOfType<InventorySystem>();
-
+       itemSlot = inventory.medKit.itemSlot;
+    }
+    private void FixedUpdate()
+    {
+ //       itemSlot = inventory.medKit.itemSlot;
     }
     //public void loadInv()
     //{
@@ -56,15 +61,27 @@ public class MedkitItem : Item
     public override void useItem()
     {
         hs.AddHealth(8);
-        Destroy(itemButton);
         for (int i = 0; i < inventory.slots.Length; i++)
         {
+            Debug.Log(itemSlot);
             //itemNames[i] = inventory.itemNames[i];
             if ((inventory.itemNames[i] == "MedKit" && itemSlot == i) )
             {
+                Debug.Log(inventory.itemNames[i] + " " + itemSlot + " " + i);
                 inventory.itemNames[i] = null;
-                itemSlot = 0;
+ //               itemSlot = 0;
             }
         }
+                Destroy(itemButton);
+        //itemButton.gameObject.SetActive(false);
+        //       itemSlot = inventory.medKit.itemSlot;
+        //if ((inventory.itemNames[itemSlot] == "MedKit"))
+        //    {
+
+        //        inventory.itemNames[itemSlot] = null;
+        //        itemSlot = 0;
+
+        //    }
+
     }
 }

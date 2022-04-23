@@ -13,6 +13,7 @@ public class PiskelItem : Item
     HealthSystem hs;
     //public string[] itemNames;
     InventorySystem inventory;
+ //   public Item Bandaid;
     //public HealthSystem hs;
     //public Image[] healthImages;
     //public Sprite[] healthSprites;
@@ -21,9 +22,12 @@ public class PiskelItem : Item
     {
         hs = FindObjectOfType<HealthSystem>();
         inventory = FindObjectOfType<InventorySystem>();
-
+        itemSlot = inventory.Bandaid.itemSlot;
     }
-
+    private void FixedUpdate()
+    {
+ //       itemSlot = inventory.Bandaid.itemSlot;
+    }
 
     //void checkHealth()
     //{
@@ -39,15 +43,27 @@ public class PiskelItem : Item
     public override void useItem()
     {
         hs.AddHealth(4);
-        Destroy(itemButton);
         for (int i = 0; i < inventory.slots.Length; i++)
         {
+
+            Debug.Log(itemSlot);
             //itemNames[i] = inventory.itemNames[i];
             if ((inventory.itemNames[i] == "Bandaid" && itemSlot == i) )
             {
+                Debug.Log(inventory.itemNames[i] + " " + itemSlot + " " + i);
                 inventory.itemNames[i] = null;
-                itemSlot = 0;
+ //               itemSlot = 0;
             }
         }
+        Destroy(itemButton);
+        //itemButton.gameObject.SetActive(false);
+        //      itemSlot = inventory.Bandaid.itemSlot;
+        //if ((inventory.itemNames[itemSlot] == "Bandaid"))
+        //    {
+        //        inventory.itemNames[itemSlot] = null;
+        //        itemSlot = 0;
+
+        //    }
+
     }
 }
