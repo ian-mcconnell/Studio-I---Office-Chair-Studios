@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class pauseMenu : MonoBehaviour
 {
-    bool paused = false;
+    public bool paused = false;
     //public float volumeSliderValue;
     //public AudioSource ambiance;
     //private GUIStyle style;
