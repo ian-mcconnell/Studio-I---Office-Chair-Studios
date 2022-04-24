@@ -85,8 +85,12 @@ public class InventorySystem : MonoBehaviour
             if (data.itemNames[i] == null)
             {
                 //               this.addToInventory(null);
+                itemNames[i] = null;
             }
-            itemNames[i] = null;
+            else
+            {
+                itemNames[i] = null;
+            }
         }
 
 
