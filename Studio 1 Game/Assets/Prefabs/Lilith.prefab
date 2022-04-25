@@ -211,6 +211,7 @@ MonoBehaviour:
   animator: {fileID: 1866529130585483008}
   rightAttack: {fileID: 2438669003754876718}
   leftAttack: {fileID: 8558524380852018162}
+  inventory: {fileID: 1742711189}
   ableToMakeADoubleJump: 0
   currentHealth: 12
   level: 1

@@ -13,6 +13,7 @@ TagManager:
   - ChangeLayerForward
   - ChangeLayerBackward
   - teleporter
+  - Save
   layers:
   - Default
   - TransparentFX

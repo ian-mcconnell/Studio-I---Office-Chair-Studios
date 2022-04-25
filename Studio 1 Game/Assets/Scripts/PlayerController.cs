@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public Collider rightAttack;
     public Collider leftAttack;
+    public InventorySystem inventory;
 
     public bool ableToMakeADoubleJump = false; //here if we consider to add it
 
@@ -175,8 +176,11 @@ public class PlayerController : MonoBehaviour
         }
         else if (currentHealth <= 0)
         {
+            
             currentHealth = 0;
             isDead = true;
+            LoadPlayer();
+            inventory.loadInv();
         }
 
         if (amount < 0)
@@ -209,6 +213,7 @@ public class PlayerController : MonoBehaviour
     }
     public bool GetIsDead()
     {
+
         return isDead;
     }
 
@@ -235,6 +240,10 @@ public class PlayerController : MonoBehaviour
             sortLayer.sortingOrder = 2;
             forwardWall.SetActive(true);
             backwardWall.SetActive(false);
+        }
+        if (collision.gameObject.tag == "Save")
+        {
+            SavePlayer();
         }
     }
 
