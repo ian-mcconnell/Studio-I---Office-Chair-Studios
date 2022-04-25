@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -244,6 +245,21 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Save")
         {
             SavePlayer();
+        }
+
+        if (collision.gameObject.tag == "Carl")
+        {
+            collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
+        }
+
+        if (collision.gameObject.tag == "Tony")
+        {
+            collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
+        }
+
+        if (collision.gameObject.tag == "Ashley")
+        {
+            collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
         }
     }
 
