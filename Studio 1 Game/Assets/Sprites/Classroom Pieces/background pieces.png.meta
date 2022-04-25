@@ -6,9 +6,6 @@ TextureImporter:
       213: 8758269906820622690
     second: background pieces_0
   - first:
-      213: 3279674227600126102
-    second: background pieces_1
-  - first:
       213: 133460380189800717
     second: background pieces_2
   - first:
@@ -26,9 +23,6 @@ TextureImporter:
   - first:
       213: -825640090930034906
     second: background pieces_7
-  - first:
-      213: -2790600480388783548
-    second: background pieces_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -134,9 +128,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 8
-        y: 272
+        y: 264
         width: 112
-        height: 80
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,34 +145,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: background pieces_1
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 276
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 690fb13655eb38d20800000000000000
-      internalID: 3279674227600126102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: background pieces_2
       rect:
         serializedVersion: 2
-        x: 264
-        y: 284
-        width: 112
-        height: 84
+        x: 136
+        y: 276
+        width: 116
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,10 +169,10 @@ TextureImporter:
       name: background pieces_3
       rect:
         serializedVersion: 2
-        x: 4
-        y: 132
-        width: 124
-        height: 120
+        x: 260
+        y: 256
+        width: 120
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,9 +190,9 @@ TextureImporter:
       name: background pieces_4
       rect:
         serializedVersion: 2
-        x: 132
+        x: 0
         y: 128
-        width: 120
+        width: 128
         height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -238,10 +211,10 @@ TextureImporter:
       name: background pieces_5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 124
+        x: 144
+        y: 144
+        width: 88
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,10 +232,10 @@ TextureImporter:
       name: background pieces_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 116
+        x: 304
+        y: 144
+        width: 44
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,10 +253,10 @@ TextureImporter:
       name: background pieces_7
       rect:
         serializedVersion: 2
-        x: 172
-        y: 16
-        width: 56
-        height: 96
+        x: 4
+        y: 0
+        width: 120
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,31 +270,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: background pieces_8
-      rect:
-        serializedVersion: 2
-        x: 304
-        y: 16
-        width: 44
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4426468f5abc549d0800000000000000
-      internalID: -2790600480388783548
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 07d831447891ad94db49312d6d1b4705
+    spriteID: 768b7bff86fc5f64bbe301156de1f1a9
     internalID: 0
     vertices: []
     indices: 
