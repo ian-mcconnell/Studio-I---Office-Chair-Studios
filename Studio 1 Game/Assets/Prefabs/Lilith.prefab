@@ -162,6 +162,7 @@ GameObject:
   - component: {fileID: 1742711189}
   - component: {fileID: 1610305823}
   - component: {fileID: 8403758956171803805}
+  - component: {fileID: 7788074241326978322}
   m_Layer: 0
   m_Name: Lilith
   m_TagString: Player
@@ -522,6 +523,21 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866529130585483011}
   m_Enabled: 1
+--- !u!114 &7788074241326978322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866529130585483011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c3ccff358eb904e9cb0134baa7751e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 0}
+  dialogueText: {fileID: 0}
+  dialogueSprite: {fileID: 0}
 --- !u!1 &3774622854134901881
 GameObject:
   m_ObjectHideFlags: 0

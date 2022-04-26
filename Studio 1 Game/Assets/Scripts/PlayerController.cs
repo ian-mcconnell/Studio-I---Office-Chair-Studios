@@ -280,6 +280,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Save")
         {
             SavePlayer();
+            inventory.SaveInven();
         }
         if (collision.gameObject.tag == "Start")
         {
