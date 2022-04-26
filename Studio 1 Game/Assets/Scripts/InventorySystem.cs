@@ -20,6 +20,16 @@ public class InventorySystem : MonoBehaviour
     }
     public void Update()
     {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            //          itemNames[i] = item.itemName;
+            //Debug.Log(i);
+            //Debug.Log(itemNames[i]);
+            if (itemNames[i] == null)
+            {
+                isFull[i] = false;
+            }
+        }
 
     }
 
@@ -125,6 +135,10 @@ public class InventorySystem : MonoBehaviour
     {
         for (int i = 0; i < slots.Length; i++)
         {
+            //if (itemNames[i] == null)
+            //{
+            //    isFull[i] = false;
+            //}
             if (isFull[i] == false )
             {
                 itemNames[i] = item.itemName;

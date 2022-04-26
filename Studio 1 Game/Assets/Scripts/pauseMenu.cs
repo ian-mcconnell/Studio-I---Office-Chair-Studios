@@ -13,8 +13,9 @@ public class pauseMenu : MonoBehaviour
     //public Font Font;
     private void Start()
     {
+        paused = false;
 
-        
+        Time.timeScale = 1f;
     }
     void Update()
     {

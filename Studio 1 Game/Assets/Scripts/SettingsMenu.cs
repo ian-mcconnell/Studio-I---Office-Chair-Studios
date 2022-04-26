@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SettingsMenu : MonoBehaviour
 {
@@ -48,5 +49,14 @@ public class SettingsMenu : MonoBehaviour
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
+    public void Quit()
+    {
+        Debug.Log("quit the game!(as an application)");
+        Application.Quit();
+    }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

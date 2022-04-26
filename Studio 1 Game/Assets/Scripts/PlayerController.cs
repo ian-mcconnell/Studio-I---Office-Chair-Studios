@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     private float maxHealth = 12;
     public float currentHealth;
     private bool isDead = false;
-    public int level = 1;
+    public int level = 0;
 
     public float invulnerabilityDuration = .3f;
     public bool isInvulnerable = false;
@@ -42,10 +42,11 @@ public class PlayerController : MonoBehaviour
     public void UpdateLevel()
     {
         level += 1;
+        Debug.Log("Level: " + level);
     }
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(level+1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void LoadPlayer()
@@ -288,6 +289,8 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "End")
         {
             LoadNextLevel();
+            //UpdateLevel();
+            //SavePlayer();
         }
         if (collision.gameObject.tag == "NPC")
         {

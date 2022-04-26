@@ -56,7 +56,8 @@ public class BandageItem : Item
                 Debug.Log(inventory.itemNames[i] +" "+itemSlot +" " + i);
                 
                 inventory.itemNames[i] = null;
- //               itemSlot = 0;
+                //inventory.isFull[i] = false;
+                //               itemSlot = 0;
             }
         }
         Destroy(itemButton);
