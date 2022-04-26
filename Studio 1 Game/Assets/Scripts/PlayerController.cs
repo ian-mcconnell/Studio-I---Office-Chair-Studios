@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     private float maxHealth = 12;
     public float currentHealth;
     private bool isDead = false;
-    public int level = 0;
+    public int level = 1;
 
     public float invulnerabilityDuration = .3f;
     public bool isInvulnerable = false;
