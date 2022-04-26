@@ -11,6 +11,12 @@ TextureImporter:
   - first:
       213: 3621147672047609787
     second: rotunda pieces_2
+  - first:
+      213: 2121824297712111511
+    second: rotunda pieces_3
+  - first:
+      213: -1152024237246564257
+    second: rotunda pieces_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,10 +121,10 @@ TextureImporter:
       name: rotunda pieces_0
       rect:
         serializedVersion: 2
-        x: 244
-        y: 860
-        width: 312
-        height: 680
+        x: 242
+        y: 1659
+        width: 315
+        height: 682
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,10 +142,10 @@ TextureImporter:
       name: rotunda pieces_1
       rect:
         serializedVersion: 2
-        x: 1044
-        y: 860
-        width: 312
-        height: 680
+        x: 1043
+        y: 1659
+        width: 315
+        height: 682
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,10 +163,10 @@ TextureImporter:
       name: rotunda pieces_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 144
-        width: 672
-        height: 476
+        x: 63
+        y: 943
+        width: 675
+        height: 478
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,10 +180,52 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: rotunda pieces_3
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1071
+        width: 659
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f4ce4f4fb327d10800000000000000
+      internalID: 2121824297712111511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rotunda pieces_4
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 151
+        width: 347
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5837465f003300f0800000000000000
+      internalID: -1152024237246564257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: fff7c89308c45264083589d16e8aa529
+    spriteID: 4fe6deb2fec9a0c49bfafc2f01fefa5f
     internalID: 0
     vertices: []
     indices: 
