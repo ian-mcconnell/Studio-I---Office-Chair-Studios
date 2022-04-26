@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -37,6 +38,14 @@ public class PlayerController : MonoBehaviour
     public void SavePlayer()
     {
         SaveSystem.SavePlayer(this);
+    }
+    public void UpdateLevel()
+    {
+        level += 1;
+    }
+    public void LoadNextLevel()
+    {
+        SceneManager.LoadScene(level+1);
     }
 
     public void LoadPlayer()
@@ -271,7 +280,15 @@ public class PlayerController : MonoBehaviour
         {
             SavePlayer();
         }
-
+        if (collision.gameObject.tag == "Start")
+        {
+            UpdateLevel();
+            SavePlayer();
+        }
+        if (collision.gameObject.tag == "End")
+        {
+            LoadNextLevel();
+        }
         if (collision.gameObject.tag == "NPC")
         {
             collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();

@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1874984829
-  m_SortingLayer: 2
+  m_SortingLayerID: 521296307
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -4610379932040125943, guid: 8dbff6c32081a7f44b4bae8acc0727ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -132,4 +132,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 2684630869008062022, guid: f0e0bb1373b6e284f8cfa454775f803e, type: 3}
   itemName: Bandage
-  itemSlot: 0
+  itemSlot: 2

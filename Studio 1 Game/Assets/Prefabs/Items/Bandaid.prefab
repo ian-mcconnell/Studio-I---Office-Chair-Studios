@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &46098882183515073
 Transform:
   m_ObjectHideFlags: 0
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1874984829
-  m_SortingLayer: 2
+  m_SortingLayerID: 521296307
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -4309738878335270719, guid: 7c503059dfc32134594b45c2220d7d5d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -132,4 +132,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemButton: {fileID: 6593488935719521686, guid: 860e5e6ae8abf614b90bb23ed4c17bec, type: 3}
   itemName: Bandaid
-  itemSlot: 0
+  itemSlot: 1
