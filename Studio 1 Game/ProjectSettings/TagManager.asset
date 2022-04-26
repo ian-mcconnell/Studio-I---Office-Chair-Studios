@@ -15,9 +15,8 @@ TagManager:
   - teleporter
   - Save
   - NPC
-  - Carl
-  - Tony
-  - Ashley
+  - SetLayerForward
+  - SetLayerBackward
   layers:
   - Default
   - TransparentFX

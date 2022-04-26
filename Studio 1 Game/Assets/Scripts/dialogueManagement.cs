@@ -9,6 +9,8 @@ public class dialogueManagement : MonoBehaviour
     private Queue<string> sentences;
     public GameObject panel;
     public TextMeshProUGUI dialogueText;
+    public GameObject dialogueSprite;
+    Image icon;
 
     void Start()
     {
@@ -23,11 +25,17 @@ public class dialogueManagement : MonoBehaviour
         }
     }
 
-    public void StartDialogue (Dialogue dialogue)
+    public void StartDialogue (Dialogue dialogue, Sprite sprite)
     {
+        Time.timeScale = 0.0f;
         sentences.Clear();
 
-        foreach(string sentence in dialogue.sentences)
+        panel.gameObject.SetActive(true);
+        icon = dialogueSprite.GetComponent<Image>();
+        icon.sprite = sprite;
+        
+
+        foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
@@ -62,13 +70,6 @@ public class dialogueManagement : MonoBehaviour
     {
         panel.gameObject.SetActive(false);
         sentences.Clear();
-    }
-
-    public void OnTriggerEnter(Collider collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            panel.gameObject.SetActive(true);
-        }
+        Time.timeScale = 1.0f;
     }
 }

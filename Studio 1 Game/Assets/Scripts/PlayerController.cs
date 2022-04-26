@@ -229,35 +229,49 @@ public class PlayerController : MonoBehaviour
         {
             Renderer sortLayer = GetComponent<SpriteRenderer>();
             sortLayer.sortingLayerName = "foreground";
-            sortLayer.sortingOrder = 2;
+            sortLayer.sortingOrder = 1;
             forwardWall.SetActive(false);
             backwardWall.SetActive(true);
         }
 
+        //if (collision.gameObject.name == "layerMidWall")
+        //{
+        //    Renderer sortLayer = GetComponent<SpriteRenderer>();
+        //    sortLayer.sortingLayerName = "foreground";
+        //    sortLayer.sortingOrder = 0;
+        //    forwardWall.SetActive(true);
+        //    backwardWall.SetActive(false);
+        //}
+
         if (collision.gameObject.name == "layerBackwardWall")
         {
             Renderer sortLayer = GetComponent<SpriteRenderer>();
-            sortLayer.sortingLayerName = "player";
-            sortLayer.sortingOrder = 2;
+            sortLayer.sortingLayerName = "foreground";
+            sortLayer.sortingOrder = 0;
             forwardWall.SetActive(true);
             backwardWall.SetActive(false);
         }
+
+        if (collision.gameObject.tag == "SetLayerForward")
+        {
+            Renderer sortLayer = GetComponent<SpriteRenderer>();
+            sortLayer.sortingLayerName = "foreground";
+            sortLayer.sortingOrder = 1;
+        }
+
+        if (collision.gameObject.tag == "SetLayerBackward")
+        {
+            Renderer sortLayer = GetComponent<SpriteRenderer>();
+            sortLayer.sortingLayerName = "player";
+            sortLayer.sortingOrder = 1;
+        }
+
         if (collision.gameObject.tag == "Save")
         {
             SavePlayer();
         }
 
-        if (collision.gameObject.tag == "Carl")
-        {
-            collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
-        }
-
-        if (collision.gameObject.tag == "Tony")
-        {
-            collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
-        }
-
-        if (collision.gameObject.tag == "Ashley")
+        if (collision.gameObject.tag == "NPC")
         {
             collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
         }
