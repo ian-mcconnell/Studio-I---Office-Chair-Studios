@@ -257,6 +257,7 @@ public class PlayerController : MonoBehaviour
             Renderer sortLayer = GetComponent<SpriteRenderer>();
             sortLayer.sortingLayerName = "foreground";
             sortLayer.sortingOrder = 1;
+            backwardWall.SetActive(true);
         }
 
         if (collision.gameObject.tag == "SetLayerBackward")
