@@ -19,6 +19,7 @@ TagManager:
   - SetLayerBackward
   - Start
   - End
+  - Boss
   layers:
   - Default
   - TransparentFX
