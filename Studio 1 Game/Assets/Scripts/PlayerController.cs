@@ -100,14 +100,15 @@ public class PlayerController : MonoBehaviour
             {
 
                 animator.SetBool("isAttacking", true);
-                rightAttack.enabled = true;
+//                rightAttack.enabled = true;
                 leftAttack.enabled = false;
+                speed = 6;
             }
             else if(Input.GetButtonUp("Fire1") == true)
             {
                 animator.SetBool("isAttacking", false);
                 rightAttack.enabled = false;
-
+                speed = 8;
             }
         }
         else if(direction.x < 0 || ((Input.mousePosition.x < Screen.width / 2.0f) && !rightAttack.enabled)) //left
@@ -117,13 +118,15 @@ public class PlayerController : MonoBehaviour
             if (Input.GetButtonDown("Fire1") == true)
             {               
                     animator.SetBool("isAttacking", true);
-                    leftAttack.enabled = true;
-                    rightAttack.enabled = false;               
+//                    leftAttack.enabled = true;
+                    rightAttack.enabled = false;
+                    speed = 6;
             }
             else if (Input.GetButtonUp("Fire1") == true)
             {
                 animator.SetBool("isAttacking", false);
                 leftAttack.enabled = false;
+                speed = 8;
 
             }
 

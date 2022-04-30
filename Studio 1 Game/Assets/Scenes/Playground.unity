@@ -7456,6 +7456,10 @@ PrefabInstance:
       propertyPath: backwardWall
       value: 
       objectReference: {fileID: 1111029862}
+    - target: {fileID: 7638933875405966961, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 7788074241326978322, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: panel
       value: 

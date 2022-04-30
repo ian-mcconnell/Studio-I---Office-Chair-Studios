@@ -92,9 +92,16 @@ AnimationClip:
     data: 
     objectReferenceParameter: {fileID: 11500000, guid: fedcaa17aa2290840bf5fc207267defe, type: 3}
     floatParameter: 0
+    intParameter: 1
+    messageOptions: 0
+  - time: 0.125
+    functionName: GetHeldDown
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: fedcaa17aa2290840bf5fc207267defe, type: 3}
+    floatParameter: 0
     intParameter: 2
     messageOptions: 0
-  - time: 0.16666667
+  - time: 0.27083334
     functionName: GetHeldDown
     data: 
     objectReferenceParameter: {fileID: 11500000, guid: fedcaa17aa2290840bf5fc207267defe, type: 3}
