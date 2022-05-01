@@ -13,20 +13,21 @@ public class MedkitItem : Item
     HealthSystem hs;
     //public string[] itemNames;
     InventorySystem inventory;
-//    public Item MedKit;
+    //    public Item MedKit;
     //public HealthSystem hs;
     //public Image[] healthImages;
     //public Sprite[] healthSprites;
     // Start is called before the first frame update
+    PlayerController Pc;
     void Start()
     {
         hs = FindObjectOfType<HealthSystem>();
         inventory = FindObjectOfType<InventorySystem>();
-       itemSlot = 0;
+       //itemSlot = 0;
     }
     private void FixedUpdate()
     {
-        itemSlot = inventory.medKit.itemSlot;
+        //itemSlot = inventory.medKit.itemSlot;
     }
     //public void loadInv()
     //{
@@ -61,19 +62,12 @@ public class MedkitItem : Item
     public override void useItem()
     {
         hs.AddHealth(8);
-        for (int i = 0; i < inventory.slots.Length; i++)
-        {
-            Debug.Log(itemSlot);
+        inventory.itemNames[itemSlot] = null;
+        inventory.isFull[itemSlot] = false;
+        Debug.Log(itemSlot);
             //itemNames[i] = inventory.itemNames[i];
-            if ((inventory.itemNames[i] == "MedKit" && itemSlot == i) )
-            {
-                Debug.Log(inventory.itemNames[i] + " " + itemSlot + " " + i);
-                inventory.itemNames[i] = null;
-//                inventory.isFull[i] = false;
-                //               itemSlot = 0;
-            }
-        }
-                Destroy(itemButton);
+                //Debug.Log(inventory.itemNames[i] + " " + itemSlot + " " + i);
+              Destroy(itemButton);
         //itemButton.gameObject.SetActive(false);
         //       itemSlot = inventory.medKit.itemSlot;
         //if ((inventory.itemNames[itemSlot] == "MedKit"))

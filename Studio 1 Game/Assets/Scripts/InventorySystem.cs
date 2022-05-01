@@ -6,17 +6,19 @@ using UnityEngine.UI;
 public class InventorySystem : MonoBehaviour
 {
     public GameObject[] slots;
+    private InventorySystem IS;
     public bool[] isFull;
     public string[] itemNames;
-    public Item medKit;
-    public Item Bandaid;
-    public Item Bandage;
+    public MedkitItem medKit;
+    public BandageItem Bandaid;
+    public PiskelItem Bandage;
 
     public void Start()
     {
         //medKit.itemSlot = 0;
         //Bandaid.itemSlot = 0;
         //Bandage.itemSlot = 0;
+        IS = GameObject.FindGameObjectWithTag("Player").GetComponent<InventorySystem>();
     }
     public void Update()
     {
@@ -142,13 +144,17 @@ public class InventorySystem : MonoBehaviour
             if (isFull[i] == false )
             {
                 itemNames[i] = item.itemName;
+                Debug.Log("itemslot " + i);
                 item.itemSlot = i;
 
-//                item.itemButton.itemSlot = i;
+                //                item.itemButton.itemSlot = i;
                 isFull[i] = true;
-                Instantiate(item.itemButton, slots[i].transform, false);
- //               item.reset = false;
+                GameObject button = Instantiate(item.itemButton, slots[i].transform, false);
+                button.GetComponent<Item>().itemSlot = i;
+                Debug.Log("itemslot " + button.GetComponent<Item>().itemSlot);
+                //               item.reset = false;
                 item.gameObject.SetActive(false);
+            
                 break;
             }
 

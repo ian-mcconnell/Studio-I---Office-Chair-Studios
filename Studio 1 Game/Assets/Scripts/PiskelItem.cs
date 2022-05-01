@@ -22,11 +22,11 @@ public class PiskelItem : Item
     {
         hs = FindObjectOfType<HealthSystem>();
         inventory = FindObjectOfType<InventorySystem>();
-        itemSlot = 0;
+        //itemSlot = 0;
     }
     private void FixedUpdate()
     {
-        itemSlot = inventory.Bandaid.itemSlot;
+        //itemSlot = inventory.Bandaid.itemSlot;
     }
 
     //void checkHealth()
@@ -43,19 +43,22 @@ public class PiskelItem : Item
     public override void useItem()
     {
         hs.AddHealth(4);
-        for (int i = 0; i < inventory.slots.Length; i++)
-        {
+        inventory.itemNames[itemSlot] = null;
+        inventory.isFull[itemSlot] = false;
+        Debug.Log(itemSlot);
+        //for (int i = 0; i < inventory.slots.Length; i++)
+        //{
 
-            Debug.Log(itemSlot);
-            //itemNames[i] = inventory.itemNames[i];
-            if ((inventory.itemNames[i] == "Bandaid" && itemSlot == i) )
-            {
-                Debug.Log(inventory.itemNames[i] + " " + itemSlot + " " + i);
-                inventory.itemNames[i] = null;
-                //inventory.isFull[i] = false;
-                //               itemSlot = 0;
-            }
-        }
+        //    Debug.Log(itemSlot);
+        //    //itemNames[i] = inventory.itemNames[i];
+        //    if ((inventory.itemNames[i] == "Bandaid" && itemSlot == i) )
+        //    {
+        //        Debug.Log(inventory.itemNames[i] + " " + itemSlot + " " + i);
+        //        inventory.itemNames[i] = null;
+        //        //inventory.isFull[i] = false;
+        //        //               itemSlot = 0;
+        //    }
+        //}
         Destroy(itemButton);
         //itemButton.gameObject.SetActive(false);
         //      itemSlot = inventory.Bandaid.itemSlot;
