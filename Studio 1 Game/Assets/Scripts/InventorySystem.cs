@@ -10,8 +10,9 @@ public class InventorySystem : MonoBehaviour
     public bool[] isFull;
     public string[] itemNames;
     public MedkitItem medKit;
-    public BandageItem Bandaid;
-    public PiskelItem Bandage;
+    public PiskelItem Bandaid;
+    public BandageItem Bandage;
+    public AudioSource PickUpSource;
 
     public void Start()
     {
@@ -143,6 +144,7 @@ public class InventorySystem : MonoBehaviour
             //}
             if (isFull[i] == false )
             {
+                PickUpSource.Play();
                 itemNames[i] = item.itemName;
                 Debug.Log("itemslot " + i);
                 item.itemSlot = i;
