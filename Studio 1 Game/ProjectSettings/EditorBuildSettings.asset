@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Basement Lvl-1.unity
     guid: 38013423b07dd3e4a8f6bd02f4b230d9
+  - enabled: 1
+    path: Assets/Scenes/Basement Lvl-2.unity
+    guid: 70c7ec528845aeb4db47404bc37cee89
+  - enabled: 1
+    path: Assets/Scenes/Gym.unity
+    guid: e06a2547e9f03424db08efc903ea3f29
   m_configObjects: {}
