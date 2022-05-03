@@ -20,6 +20,7 @@ TagManager:
   - Start
   - End
   - Boss
+  - Text
   layers:
   - Default
   - TransparentFX

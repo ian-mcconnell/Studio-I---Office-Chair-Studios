@@ -301,6 +301,12 @@ public class PlayerController : MonoBehaviour
         {
             collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
         }
+
+        if (collision.gameObject.tag == "Text")
+        {
+            collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
+            Destroy(collision.gameObject);
+        }
     }
 
 }
