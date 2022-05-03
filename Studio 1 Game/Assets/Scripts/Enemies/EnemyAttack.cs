@@ -11,7 +11,6 @@ public class EnemyAttack : MonoBehaviour
     private void Start()
     {
         Destroy(gameObject, duration);
-        Debug.Log("I existed!");
     }
 
     void OnTriggerEnter(Collider other)

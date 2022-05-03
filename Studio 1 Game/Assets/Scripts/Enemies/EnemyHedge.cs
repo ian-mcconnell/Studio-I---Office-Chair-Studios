@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHedge : Enemy
 {
@@ -21,6 +22,14 @@ public class EnemyHedge : Enemy
     private ParticleSystem ps;
     private SpriteRenderer sr;
 
+    public Image healthBar;
+    public Sprite sprite1;
+    public Sprite sprite2;
+    public Sprite sprite3;
+    public Sprite sprite4;
+    public Sprite sprite5;
+    public Sprite sprite6;
+
     public enum HedgeStates
     {
         Idling = 0,
@@ -33,8 +42,12 @@ public class EnemyHedge : Enemy
     {
         targetWaypoint = waypoints[waypointItterator % waypoints.Length];
         sr = GetComponent<SpriteRenderer>();
-        base.Start();
         ps = GetComponentInChildren<ParticleSystem>();
+
+        base.Start();
+        maxHealth = 300f;
+        currentHealth = maxHealth;
+
         StateIdlingEnter();
     }
 
@@ -156,7 +169,7 @@ public class EnemyHedge : Enemy
 
     void StateHoopingExit()
     {
-        base.animator.SetBool("isWhirling", false);
+        base.animator.SetBool("isHooping", false);
     }
 
     void StateDeadEnter()
@@ -216,6 +229,33 @@ public class EnemyHedge : Enemy
             {
                 ps.Play();
             }
+        }
+        Debug.Log("HedgeHealth: " + currentHealth);
+        switch (currentHealth)
+        {
+            case 250f:
+                healthBar.sprite = sprite1;
+                break;
+
+            case 200f:
+                healthBar.sprite = sprite2;
+                break;
+
+            case 150f:
+                healthBar.sprite = sprite3;
+                break;
+
+            case 100f:
+                healthBar.sprite = sprite4;
+                break;
+
+            case 50f:
+                healthBar.sprite = sprite5;
+                break;
+
+            case 0f:
+                healthBar.sprite = sprite6;
+                break;
         }
     }
 }
