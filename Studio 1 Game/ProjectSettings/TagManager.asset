@@ -22,6 +22,9 @@ TagManager:
   - Boss
   - Text
   - CoachText
+  - saveNPC
+  - killReset
+  - activateA
   layers:
   - Default
   - TransparentFX

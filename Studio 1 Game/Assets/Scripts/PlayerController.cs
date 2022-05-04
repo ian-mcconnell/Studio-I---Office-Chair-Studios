@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     public Collider rightAttack;
     public Collider leftAttack;
     public InventorySystem inventory;
+    public int npcSaved = 0;
+    public int killCount = 0;
 
     public bool ableToMakeADoubleJump = false; //here if we consider to add it
 
@@ -159,6 +161,16 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            npcSaved++;
+        }        
+        
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            killCount++;
+        }
+
         bool isGrounded = Physics.CheckSphere(groundCheck.position, 0.15f, groundLayer);
         if (isGrounded)
         {
@@ -310,6 +322,18 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "NPC")
         {
             collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
+        }
+
+        if (collision.gameObject.tag == "saveNPC")
+        {
+            collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
+            collision.gameObject.GetComponent<CapsuleCollider>().enabled = false;
+            npcSaved++;
+        }
+
+        if (collision.gameObject.tag == "killReset")
+        {
+            killCount = 0;
         }
 
         if (collision.gameObject.tag == "Text")
