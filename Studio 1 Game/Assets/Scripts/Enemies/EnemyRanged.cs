@@ -15,7 +15,7 @@ public class EnemyRanged : Enemy
     public Transform leftAttackSpawn;
     public Transform rightAttackSpawn;
     public GameObject projectile;
-    public float projectileSpeed = 5f;
+    public float projectileSpeed = 9f;
 
     public int attackCooldown = 0;
     private bool attackLocked = false;
