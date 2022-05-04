@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TitleCard : MonoBehaviour
 {
-    public bool isPaused; 
+    public bool isPaused = false; 
     public GameObject titleCard;
     IEnumerator TitleCardPopup()
     {
@@ -13,7 +13,7 @@ public class TitleCard : MonoBehaviour
         yield return new WaitForSecondsRealtime(3);
         titleCard.SetActive(false);
 
-//        Time.timeScale = 1f;
+        Time.timeScale = 1f;
     }
     void pause()
     {
@@ -29,19 +29,22 @@ public class TitleCard : MonoBehaviour
 //        yield return new WaitForSeconds(3);
     }
 
+
     // Update is called once per frame
     void Update()
     {
-        if (titleCard.activeSelf  == true)
+        //isPaused = togglePause();
+        if (titleCard.activeSelf == true)
         {
-        pause();
+            pause();
         }
         else
         {
-            Time.timeScale = 1.0f;
+           // Time.timeScale = 1.0f;
         }
 
 
-        
+
+
     }
 }
