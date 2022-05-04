@@ -30,6 +30,8 @@ public class EnemyHedge : Enemy
     public Sprite sprite5;
     public Sprite sprite6;
 
+    public GameObject endProp;
+
     public enum HedgeStates
     {
         Idling = 0,
@@ -255,6 +257,7 @@ public class EnemyHedge : Enemy
 
             case 0f:
                 healthBar.sprite = sprite6;
+                endProp.SetActive(true);
                 break;
         }
     }

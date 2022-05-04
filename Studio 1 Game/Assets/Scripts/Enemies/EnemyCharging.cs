@@ -147,6 +147,15 @@ public class EnemyCharging : Enemy
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player" && stateCurrent == ChargingStates.Charging)
+        {
+            other.gameObject.SendMessage("ChangeHealth", -3f);
+            hitSource.Play();
+        }
+    }
+
     public override void ChangeHealth(float amount)
     {
         base.ChangeHealth(amount);

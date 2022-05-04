@@ -4879,6 +4879,7 @@ GameObject:
   - component: {fileID: 1867039169799958887}
   - component: {fileID: 136885337432622739}
   - component: {fileID: 7631577623243356857}
+  - component: {fileID: 8433418654198542219}
   m_Layer: 0
   m_Name: Charger
   m_TagString: Enemy
@@ -5147,3 +5148,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flashMaterial: {fileID: 2100000, guid: 41748404349bff04a9d2e2bd0f55747e, type: 2}
   duration: 0.125
+--- !u!65 &8433418654198542219
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7498529228748934815}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.8, y: 2.95, z: 1.68}
+  m_Center: {x: 0, y: -0.08781028, z: 0}
