@@ -144,10 +144,6 @@ public class EnemyCharging : Enemy
         {
             col.gameObject.SendMessage("ChangeHealth", -3f);
             hitSource.Play();
-            //Knock back the player
-            //Vector3 dir = other.contacts[0].point - transform.position;
-           // dir = -dir.normalized;
-            //GetComponent<Rigidbody>().AddForce(dir * 3f);
         }
     }
 
