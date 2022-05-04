@@ -920,6 +920,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 982775247122867131, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
   m_PrefabInstance: {fileID: 358748378}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &358748380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6561590765704603412, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
+  m_PrefabInstance: {fileID: 358748378}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &358748381 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 356988976059636292, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
+  m_PrefabInstance: {fileID: 358748378}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &358748382 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5593282502695931516, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
+  m_PrefabInstance: {fileID: 358748378}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &377087718
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,6 +1848,18 @@ PrefabInstance:
       propertyPath: backwardWall
       value: 
       objectReference: {fileID: 2097803552}
+    - target: {fileID: 7788074241326978322, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: panel
+      value: 
+      objectReference: {fileID: 358748382}
+    - target: {fileID: 7788074241326978322, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 358748381}
+    - target: {fileID: 7788074241326978322, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: dialogueSprite
+      value: 
+      objectReference: {fileID: 358748380}
     - target: {fileID: 8754414158581662278, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: m_Volume
       value: 0.1
