@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     public int npcSaved = 0;
     public int killCount = 0;
 
+    public AudioSource BossSource;
+
     public bool ableToMakeADoubleJump = false; //here if we consider to add it
 
     //tentative health variables
@@ -161,6 +163,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        //cheats
         if (Input.GetKeyDown(KeyCode.P))
         {
             npcSaved++;
@@ -169,6 +172,46 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.O))
         {
             killCount++;
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad0))
+        {
+            SceneManager.LoadScene(0);
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad1))
+        {
+            SceneManager.LoadScene(1);
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad2))
+        {
+            SceneManager.LoadScene(2);
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad3))
+        {
+            SceneManager.LoadScene(3);
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad4))
+        {
+            SceneManager.LoadScene(4);
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad5))
+        {
+            SceneManager.LoadScene(5);
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad6))
+        {
+            SceneManager.LoadScene(6);
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad7))
+        {
+            SceneManager.LoadScene(7);
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad8))
+        {
+            SceneManager.LoadScene(8);
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad9))
+        {
+            SceneManager.LoadScene(9);
         }
 
         bool isGrounded = Physics.CheckSphere(groundCheck.position, 0.15f, groundLayer);
@@ -318,6 +361,10 @@ public class PlayerController : MonoBehaviour
             //SavePlayer();
             LoadNextLevel();
 
+        }
+        if(collision.gameObject.tag == "Boss")
+        {
+            BossSource.Play();
         }
         if (collision.gameObject.tag == "NPC")
         {

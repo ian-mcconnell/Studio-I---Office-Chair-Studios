@@ -6,6 +6,7 @@ public class Basketball : MonoBehaviour
 {
     public bool activatedDamage = false;
     private bool dangerToPlayer = true;
+    public AudioSource HitSource;
 
     private void Start()
     {
@@ -28,6 +29,7 @@ public class Basketball : MonoBehaviour
         }
         else if ((go.tag == "Enemy" || go.tag == "Boss") && activatedDamage)
         {
+            HitSource.Play();
             go.GetComponentInParent(typeof(Enemy)).SendMessage("ChangeHealth", -50f);
             Debug.Log("basketball hit boss");
             Destroy(gameObject);

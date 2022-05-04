@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -992010203530054107}
   m_Layer: 0
   m_Name: Hedge Whirl Attack
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 14.72, y: 8.64, z: 10.71}
+  m_Size: {x: 13, y: 8.64, z: 10.71}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &9068861574429114179
 MonoBehaviour:
@@ -70,11 +70,11 @@ AudioSource:
   m_GameObject: {fileID: 9068861574429114182}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  OutputAudioMixerGroup: {fileID: 24300002, guid: c617d7e7b0e7972429206bdbc0545afb, type: 2}
+  m_audioClip: {fileID: 8300000, guid: a38ce49c841eeac42a8e03a71aee525a, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.8
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -117,7 +117,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

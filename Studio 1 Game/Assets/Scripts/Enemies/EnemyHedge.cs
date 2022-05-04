@@ -22,6 +22,8 @@ public class EnemyHedge : Enemy
     private ParticleSystem ps;
     private SpriteRenderer sr;
 
+    public AudioSource HoopSource;
+
     public Image healthBar;
     public Sprite sprite1;
     public Sprite sprite2;
@@ -190,6 +192,7 @@ public class EnemyHedge : Enemy
     {
         Debug.Log("Hoop Attack");
 
+        HoopSource.Play();
         yield return new WaitForSeconds(.6f);
         
         foreach (Transform tr in ballSpawns)

@@ -20,6 +20,7 @@ public class EnemyAttack : MonoBehaviour
         hitSource.Play();
         if (go.tag == "Player")
         {
+            hitSource.Play();
             go.GetComponent<PlayerController>().ChangeHealth(damage);
             
             //Debug.Log("Dealt damage to player");
