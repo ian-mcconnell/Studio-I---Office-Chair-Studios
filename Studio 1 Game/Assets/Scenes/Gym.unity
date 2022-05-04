@@ -1181,6 +1181,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0409a28845c4b734aa80ae8b90689629, type: 3}
+--- !u!1 &393870925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 581474557960834954, guid: 0409a28845c4b734aa80ae8b90689629, type: 3}
+  m_PrefabInstance: {fileID: 393870924}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &427921803 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1224376116875077743, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
@@ -2190,6 +2195,7 @@ Transform:
   - {fileID: 2060557952}
   - {fileID: 2089754119}
   - {fileID: 2097803553}
+  - {fileID: 1780807552}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7644,6 +7650,7 @@ GameObject:
   - component: {fileID: 1773379775}
   - component: {fileID: 1773379776}
   - component: {fileID: 1773379777}
+  - component: {fileID: 1773379778}
   m_Layer: 0
   m_Name: Boss Hedge
   m_TagString: Boss
@@ -7795,7 +7802,7 @@ MonoBehaviour:
   sprite4: {fileID: 7026394554634601067, guid: 2ddbb9f7a93649e4da6567ba72997247, type: 3}
   sprite5: {fileID: 4460228768920595715, guid: 2ddbb9f7a93649e4da6567ba72997247, type: 3}
   sprite6: {fileID: 4072636226837441971, guid: 2ddbb9f7a93649e4da6567ba72997247, type: 3}
-  endProp: {fileID: 0}
+  endProp: {fileID: 393870925}
 --- !u!95 &1773379776
 Animator:
   serializedVersion: 3
@@ -7831,6 +7838,102 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!82 &1773379778
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773379770}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1780807550
 GameObject:
   m_ObjectHideFlags: 0
@@ -7906,12 +8009,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780807550}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.16, y: 3.38, z: 9.751099}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.423406, y: 0.24375725, z: 9.742424}
   m_LocalScale: {x: 1.997415, y: 1.997415, z: 1.997415}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 1115183817}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1798830761
 GameObject:
