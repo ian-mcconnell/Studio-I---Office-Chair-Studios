@@ -3351,6 +3351,69 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0e0bb1373b6e284f8cfa454775f803e, type: 3}
+--- !u!1 &1046409008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1046409011}
+  - component: {fileID: 1046409010}
+  - component: {fileID: 1046409009}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1046409009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046409008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2dac34169b40544a5c676e319973b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - Coach will get mad if I don't attend detention
+  player: {fileID: 1911268515}
+  dialogueSprite: {fileID: 8957672667280489215, guid: 48df82f11539c1146a4ca3e3746f2277, type: 3}
+--- !u!65 &1046409010
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046409008}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.810295, y: 4.031446, z: 0.10795307}
+  m_Center: {x: -0.14209747, y: 0.27370334, z: 0.22005701}
+--- !u!4 &1046409011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046409008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.59, y: 1.362675, z: 2.956}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 71
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1056778178
 GameObject:
   m_ObjectHideFlags: 0
@@ -4347,7 +4410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1866529130585483036, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.31
+      value: 0.21
       objectReference: {fileID: 0}
     - target: {fileID: 1866529130585483036, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5165,8 +5228,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.294296, y: 1.1436558, z: 0.042533576}
-  m_Center: {x: -0.008713365, y: 0.00007724762, z: 0.0012099445}
+  m_Size: {x: 1.294296, y: 1.1862946, z: 0.087732375}
+  m_Center: {x: -0.008713365, y: 0.021396637, z: -0.0016886294}
 --- !u!212 &1465684052
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5226,7 +5289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1465684050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.799, y: 36.09, z: 1.69}
+  m_LocalPosition: {x: 7.799, y: 36.09, z: -1.13}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5970,9 +6033,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1636468852}
+  - component: {fileID: 1636468853}
   m_Layer: 0
   m_Name: coachHedgeroom
-  m_TagString: Untagged
+  m_TagString: SetLayerForward
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5991,6 +6055,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1636468853
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636468851}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1650313227
 GameObject:
   m_ObjectHideFlags: 0
@@ -7624,7 +7701,6 @@ GameObject:
   - component: {fileID: 2077908637}
   - component: {fileID: 2077908635}
   - component: {fileID: 2077908636}
-  - component: {fileID: 2077908640}
   m_Layer: 0
   m_Name: Coach Hedge v2_2
   m_TagString: CoachText
@@ -7756,19 +7832,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2077908640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2077908634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bf18358ee216b445883d2121e5e120e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  talking: {fileID: 0}
 --- !u!1 &2083069985
 GameObject:
   m_ObjectHideFlags: 0

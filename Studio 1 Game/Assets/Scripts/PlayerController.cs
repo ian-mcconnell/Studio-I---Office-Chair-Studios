@@ -322,8 +322,7 @@ public class PlayerController : MonoBehaviour
         {
             collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
             talkedToCoachHedge = true;
-            destroyObject(collision.gameObject);
-
+            Destroy(collision.gameObject);
         }
     }
 

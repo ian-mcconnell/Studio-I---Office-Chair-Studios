@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Hall empty.unity
     guid: ea142deadae730248bd39d21f156fe02
+  - enabled: 1
+    path: Assets/Scenes/Hallway Branch 1.unity
+    guid: 272fb8d4df9df59419f91fd85e7da77e
   m_configObjects: {}
