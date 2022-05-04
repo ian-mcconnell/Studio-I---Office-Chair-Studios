@@ -221,6 +221,8 @@ MonoBehaviour:
   forwardWall: {fileID: 0}
   backwardWall: {fileID: 0}
   pickUpPosition: {fileID: 387537301}
+  talkedToCoachHedge: 0
+  talking: {fileID: 0}
 --- !u!143 &1866529130585483038
 CharacterController:
   m_ObjectHideFlags: 0
@@ -332,7 +334,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1866529130585483011}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 1
   m_Direction: 1
@@ -539,6 +541,7 @@ MonoBehaviour:
   panel: {fileID: 0}
   dialogueText: {fileID: 0}
   dialogueSprite: {fileID: 0}
+  isTalking: 0
 --- !u!82 &3266426426456288254
 AudioSource:
   m_ObjectHideFlags: 0

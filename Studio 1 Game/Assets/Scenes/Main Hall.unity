@@ -4834,11 +4834,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1195317197724879404, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1338051445449568800, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1804621305766932051, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
       propertyPath: m_Name
@@ -4939,6 +4939,14 @@ PrefabInstance:
     - target: {fileID: 2582182228492311825, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3025306415485331425, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6868974154617473029, guid: 9b905dea2bc70a24caf0bc6bde6c8418, type: 3}
+    - target: {fileID: 7620835125437542995, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
@@ -7373,6 +7381,7 @@ MonoBehaviour:
   panel: {fileID: 0}
   dialogueText: {fileID: 0}
   dialogueSprite: {fileID: 0}
+  isTalking: 0
 --- !u!223 &1202609448 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 1804621305766932076, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
@@ -12086,6 +12095,7 @@ MonoBehaviour:
   panel: {fileID: 1246496482}
   dialogueText: {fileID: 702032343}
   dialogueSprite: {fileID: 0}
+  isTalking: 0
 --- !u!1 &1895604067
 GameObject:
   m_ObjectHideFlags: 0
