@@ -4834,11 +4834,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1195317197724879404, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1338051445449568800, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1804621305766932051, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
       propertyPath: m_Name
@@ -4946,7 +4946,7 @@ PrefabInstance:
       objectReference: {fileID: 6868974154617473029, guid: 9b905dea2bc70a24caf0bc6bde6c8418, type: 3}
     - target: {fileID: 7620835125437542995, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
@@ -4998,6 +4998,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &716567249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 982775247122867131, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
+  m_PrefabInstance: {fileID: 716567242}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &716567250 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1804621305766932079, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
@@ -8776,6 +8781,7 @@ GameObject:
   - component: {fileID: 1439644051}
   - component: {fileID: 1439644056}
   - component: {fileID: 1439644055}
+  - component: {fileID: 1439644057}
   m_Layer: 0
   m_Name: Pixel Perfect Camera
   m_TagString: Untagged
@@ -8906,6 +8912,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paused: 0
   PauseMenu: {fileID: 347122414}
+--- !u!114 &1439644057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439644050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ab35d6362d8074f989157f50b38773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPaused: 0
+  titleCard: {fileID: 716567249}
 --- !u!1 &1466620088
 GameObject:
   m_ObjectHideFlags: 0
