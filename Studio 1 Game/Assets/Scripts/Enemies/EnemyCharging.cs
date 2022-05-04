@@ -140,7 +140,7 @@ public class EnemyCharging : Enemy
 
     private void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player" && stateCurrent == ChargingStates.Charging)
         {
             col.gameObject.SendMessage("ChangeHealth", -3f);
             hitSource.Play();
