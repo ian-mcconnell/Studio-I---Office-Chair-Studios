@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: 3589717855368654248
     second: closed hall door_1
+  - first:
+      213: -2186257154837597674
+    second: blood stain
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,7 +120,7 @@ TextureImporter:
         width: 224
         height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,11 +137,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 292
-        y: 240
+        y: 280
         width: 220
-        height: 284
+        height: 244
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,6 +149,27 @@ TextureImporter:
       bones: []
       spriteID: 8ad202dce5d31d130800000000000000
       internalID: 3589717855368654248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood stain
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 240
+        width: 57
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612bf3273bad8a1e0800000000000000
+      internalID: -2186257154837597674
       vertices: []
       indices: 
       edges: []

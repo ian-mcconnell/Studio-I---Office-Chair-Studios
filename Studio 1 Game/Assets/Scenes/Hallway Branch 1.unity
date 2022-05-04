@@ -1389,10 +1389,9 @@ Transform:
   - {fileID: 1636611382}
   - {fileID: 2018645197}
   - {fileID: 678250339}
-  - {fileID: 163343045}
   - {fileID: 167238948}
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &123318436
 GameObject:
@@ -2041,50 +2040,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &163343044
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 163343045}
-  - component: {fileID: 163343046}
-  m_Layer: 0
-  m_Name: 1-A (1)
-  m_TagString: activateA
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &163343045
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163343044}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.0499992, y: -3.8709984, z: -4.8100004}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 111534034}
-  m_RootOrder: 22
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &163343046
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163343044}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44011307, y: 0.37904358, z: 1}
-  m_Center: {x: -0.050619125, y: 0.014228821, z: 0}
 --- !u!1 &165357782
 GameObject:
   m_ObjectHideFlags: 0
@@ -2250,7 +2205,7 @@ Transform:
   m_LocalScale: {x: 1.9125625, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 111534034}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
 --- !u!64 &167238949
 MeshCollider:
@@ -10590,6 +10545,7 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
+    - Umm...thanks?
     - I'm just confused.
     - I think there were more people.
   player: {fileID: 1337354113}
@@ -12414,6 +12370,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1866529130585483039, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: talking
+      value: 
+      objectReference: {fileID: 1337354120}
+    - target: {fileID: 1866529130585483039, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: forwardWall
       value: 
       objectReference: {fileID: 2079338517}
@@ -12433,6 +12393,22 @@ PrefabInstance:
       propertyPath: dialogueSprite
       value: 
       objectReference: {fileID: 894121781}
+    - target: {fileID: 8974410721158893607, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: killCounterA
+      value: 
+      objectReference: {fileID: 2018645194}
+    - target: {fileID: 8974410721158893607, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: killCounterB
+      value: 
+      objectReference: {fileID: 1427564395}
+    - target: {fileID: 8974410721158893607, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: killCounterC
+      value: 
+      objectReference: {fileID: 1931045451}
+    - target: {fileID: 8974410721158893607, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: killCounterD
+      value: 
+      objectReference: {fileID: 1224571228}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
 --- !u!1 &1249365767
@@ -12484,7 +12460,7 @@ MonoBehaviour:
     name: 
     sentences:
     - Why is this happening?!
-    - I still think there's more people.
+    - Thank you, but I still think there's more people.
   player: {fileID: 1337354113}
   dialogueSprite: {fileID: 5401122994988722673, guid: 201d86db657aad9448293d3ce7b94afe, type: 3}
 --- !u!212 &1249365770
@@ -13123,6 +13099,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1866529130585483011, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
   m_PrefabInstance: {fileID: 1245612329}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1337354120 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7788074241326978322, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+  m_PrefabInstance: {fileID: 1245612329}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337354113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c3ccff358eb904e9cb0134baa7751e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1337354126 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1866529130585483039, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
@@ -13134,22 +13121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fedcaa17aa2290840bf5fc207267defe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1337354127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1337354113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0045b06e49efbfb4693e1b58cfa11de1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  killCounterA: {fileID: 2018645194}
-  killCounterB: {fileID: 1427564395}
-  killCounterC: {fileID: 1931045451}
-  killCounterD: {fileID: 1224571228}
 --- !u!1 &1338958911
 GameObject:
   m_ObjectHideFlags: 0
@@ -19166,7 +19137,7 @@ Transform:
   m_LocalScale: {x: 10.739, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1962256517
 GameObject:
@@ -20168,7 +20139,7 @@ Transform:
   m_LocalScale: {x: 10.416073, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2081829215
 GameObject:

@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 8403758956171803805}
   - component: {fileID: 7788074241326978322}
   - component: {fileID: 3266426426456288254}
+  - component: {fileID: 8974410721158893607}
   m_Layer: 0
   m_Name: Lilith
   m_TagString: Player
@@ -213,6 +214,8 @@ MonoBehaviour:
   rightAttack: {fileID: 2438669003754876718}
   leftAttack: {fileID: 8558524380852018162}
   inventory: {fileID: 1742711189}
+  npcSaved: 0
+  killCount: 0
   ableToMakeADoubleJump: 0
   currentHealth: 12
   level: 1
@@ -638,6 +641,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8974410721158893607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866529130585483011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0045b06e49efbfb4693e1b58cfa11de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  killCounterA: {fileID: 0}
+  killCounterB: {fileID: 0}
+  killCounterC: {fileID: 0}
+  killCounterD: {fileID: 0}
 --- !u!1 &3774622854134901881
 GameObject:
   m_ObjectHideFlags: 0

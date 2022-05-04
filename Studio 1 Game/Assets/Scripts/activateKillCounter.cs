@@ -11,14 +11,15 @@ public class activateKillCounter : MonoBehaviour
 
     // Update is called once per frame
 
-    public void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag == "activateA")
+        if (collision.gameObject.name == "1-A")
         {
             killCounterA.SetActive(true);
             killCounterB.SetActive(false);
             killCounterC.SetActive(false);
             killCounterD.SetActive(false);
+            Debug.Log("activated");
         }
 
         if (collision.gameObject.name == "1-B")
