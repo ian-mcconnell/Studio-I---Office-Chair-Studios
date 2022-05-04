@@ -2256,6 +2256,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1195317197724879404, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1338051445449568800, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -4410,6 +4414,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fedcaa17aa2290840bf5fc207267defe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1256387411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1256387412}
+  m_Layer: 0
+  m_Name: leave Coach Office
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1256387412
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256387411}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -19.682, y: 0.25, z: 0.166}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 70
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1334938528
 GameObject:
   m_ObjectHideFlags: 0
@@ -5214,13 +5248,28 @@ GameObject:
   - component: {fileID: 1480409611}
   - component: {fileID: 1480409610}
   - component: {fileID: 1480409609}
+  - component: {fileID: 1480409608}
+  - component: {fileID: 1480409612}
   m_Layer: 0
-  m_Name: main hall scene pieces_4 (1)
-  m_TagString: Untagged
+  m_Name: coach Hedge Office Door2
+  m_TagString: teleporter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1480409608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480409607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10aaaa44c021e94ab4dac1b9c08d0be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportTarget: {fileID: 1256387412}
 --- !u!65 &1480409609
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5299,6 +5348,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1480409612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480409607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ad14f975377ae4e9bbf4fb5767c14f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 1245612330}
 --- !u!1 &1486556571
 GameObject:
   m_ObjectHideFlags: 0
@@ -5899,6 +5961,36 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1636468851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1636468852}
+  m_Layer: 0
+  m_Name: coachHedgeroom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1636468852
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636468851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.554, y: 36.13, z: -4.73}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 69
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1650313227
 GameObject:
   m_ObjectHideFlags: 0
@@ -6762,102 +6854,6 @@ Transform:
   m_Father: {fileID: 1156598935}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &1806595131
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1806595134}
-  - component: {fileID: 1806595133}
-  - component: {fileID: 1806595132}
-  m_Layer: 0
-  m_Name: main hall scene pieces_4 (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &1806595132
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806595131}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.55, y: 2.1105154, z: 0.5}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!212 &1806595133
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806595131}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: e6ba746a621e7fb40b6805a775250c36, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1874984829
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -6706921551184103168, guid: a2d84ee1e9670d9408b1c55ba781c5bd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.55, y: 2.1105154}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1806595134
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806595131}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -9.32, y: 37.16, z: -3.1999998}
-  m_LocalScale: {x: 1, y: 1.5, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 69
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1837461433
 GameObject:
   m_ObjectHideFlags: 0
@@ -7224,8 +7220,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.55, y: 2.1105154, z: 2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.55, y: 2.1105154, z: 1.8474517}
+  m_Center: {x: 0, y: 0, z: 0.07627416}
 --- !u!114 &1890212545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7238,7 +7234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c10aaaa44c021e94ab4dac1b9c08d0be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportTarget: {fileID: 1480409611}
+  teleportTarget: {fileID: 1636468852}
 --- !u!1 &1895604067
 GameObject:
   m_ObjectHideFlags: 0
@@ -7628,9 +7624,10 @@ GameObject:
   - component: {fileID: 2077908637}
   - component: {fileID: 2077908635}
   - component: {fileID: 2077908636}
+  - component: {fileID: 2077908640}
   m_Layer: 0
   m_Name: Coach Hedge v2_2
-  m_TagString: NPC
+  m_TagString: CoachText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7671,7 +7668,8 @@ MonoBehaviour:
       (use left click to attack)'
     - '*OTHERWORLDLY NOISES COME FROM UPSTAIRS*'
     - OH THAT IS PROBABLY THE MARCHING BAND AGAIN BUT IM GOING TO CHECK THAT OUT!
-    - ONCE YOU GET A HANG OF ATTACKING HEAD THROUGH THE DOOR TO THE LEFT!
+    - 'KEEP TRAINING UNTIL I GET BACK! '
+    - AND YOU BETTER NOT BE GONE WHEN I DO!
   player: {fileID: 1911268515}
   dialogueSprite: {fileID: 144901816714457472, guid: 48df82f11539c1146a4ca3e3746f2277, type: 3}
 --- !u!95 &2077908637
@@ -7758,6 +7756,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2077908640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077908634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bf18358ee216b445883d2121e5e120e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  talking: {fileID: 0}
 --- !u!1 &2083069985
 GameObject:
   m_ObjectHideFlags: 0

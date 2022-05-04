@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: f48469b1acb157a4c9a2ec449bf6343a
+guid: 201d86db657aad9448293d3ce7b94afe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7437685092641353733
-    second: main menu_0
+      213: 5401122994988722673
+    second: save lvl npc's dialogue sprites_0
   - first:
-      213: 9134850749059203067
-    second: main menu_1
+      213: 3564825270461645595
+    second: save lvl npc's dialogue sprites_1
   - first:
-      213: 4356928732326779206
-    second: main menu_2
+      213: -3457843524212868079
+    second: save lvl npc's dialogue sprites_2
   - first:
-      213: -5922356773251201222
-    second: main menu_3
+      213: -2641958299150416328
+    second: save lvl npc's dialogue sprites_3
   - first:
-      213: -1387997548284674578
-    second: main menu_4
-  - first:
-      213: -7956419873832106417
-    second: main menu_5
+      213: -8796249697311158422
+    second: save lvl npc's dialogue sprites_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,97 +118,97 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: main menu_0
+      name: save lvl npc's dialogue sprites_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1440
-        width: 720
-        height: 720
+        x: 8
+        y: 116
+        width: 72
+        height: 76
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5003b1a6f27f73760800000000000000
-      internalID: 7437685092641353733
+      spriteID: 1f92f706fb4a4fa40800000000000000
+      internalID: 5401122994988722673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main menu_1
+      name: save lvl npc's dialogue sprites_1
       rect:
         serializedVersion: 2
-        x: 720
-        y: 1440
-        width: 720
-        height: 720
+        x: 184
+        y: 100
+        width: 64
+        height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bff72e59b5285ce70800000000000000
-      internalID: 9134850749059203067
+      spriteID: b13c33c32bdc87130800000000000000
+      internalID: 3564825270461645595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main menu_2
+      name: save lvl npc's dialogue sprites_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 720
-        width: 720
-        height: 720
+        x: 12
+        y: 4
+        width: 72
+        height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 649d70a199be67c30800000000000000
-      internalID: 4356928732326779206
+      spriteID: 11c386a92a54300d0800000000000000
+      internalID: -3457843524212868079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main menu_3
+      name: save lvl npc's dialogue sprites_3
       rect:
         serializedVersion: 2
-        x: 720
-        y: 720
-        width: 720
-        height: 720
+        x: 160
+        y: 8
+        width: 84
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a37cb3984ef8fcda0800000000000000
-      internalID: -5922356773251201222
+      spriteID: 8368eb3bce0e55bd0800000000000000
+      internalID: -2641958299150416328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main menu_4
+      name: save lvl npc's dialogue sprites_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 720
-        height: 720
+        x: 95
+        y: 174
+        width: 71
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,29 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eedf0617597dcbce0800000000000000
-      internalID: -1387997548284674578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: main menu_5
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 0
-        width: 720
-        height: 720
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f460168974e159190800000000000000
-      internalID: -7956419873832106417
+      spriteID: a6f812c31817de580800000000000000
+      internalID: -8796249697311158422
       vertices: []
       indices: 
       edges: []
@@ -249,7 +225,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7958e2442401751469bf50878aa71b39
+    spriteID: b394650074147d94fad281f93e0be3a7
     internalID: 0
     vertices: []
     indices: 

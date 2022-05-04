@@ -10,6 +10,7 @@ public class dialogueManagement : MonoBehaviour
     public GameObject panel;
     public TextMeshProUGUI dialogueText;
     public GameObject dialogueSprite;
+    public bool isTalking = false;
     Image icon;
 
     void Start()
@@ -19,7 +20,7 @@ public class dialogueManagement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             DisplayNextSentence();
         }
@@ -39,7 +40,7 @@ public class dialogueManagement : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
-
+        isTalking = true;
         DisplayNextSentence();
     }
 
@@ -69,6 +70,7 @@ public class dialogueManagement : MonoBehaviour
     void EndDialogue()
     {
         panel.gameObject.SetActive(false);
+        isTalking = false;
         sentences.Clear();
         Time.timeScale = 1.0f;
     }

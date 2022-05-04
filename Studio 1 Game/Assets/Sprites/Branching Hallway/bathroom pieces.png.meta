@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: -4180516061369122294
     second: bathroom pieces_5
+  - first:
+      213: 1894088557249917792
+    second: bathroom pieces_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -246,10 +249,31 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: bathroom pieces_6
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 52
+        width: 108
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063730ce187294a10800000000000000
+      internalID: 1894088557249917792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e8b4c9c2c3c8456478c8d90a42f21b2f
+    spriteID: cc7cd2291c032d34b8b5bb9c67af17c5
     internalID: 0
     vertices: []
     indices: 

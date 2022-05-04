@@ -21,6 +21,7 @@ TagManager:
   - End
   - Boss
   - Text
+  - CoachText
   layers:
   - Default
   - TransparentFX

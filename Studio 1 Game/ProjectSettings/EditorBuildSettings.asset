@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: c06a5c7b5fe94d64d82db61f3bc4894b
   - enabled: 1
-    path: Assets/Scenes/Playground.unity
+    path: Assets/Scenes/Main Hall.unity
     guid: 0c424731307a6c444914d796fdaa0f07
   - enabled: 1
     path: Assets/Scenes/Basement Opener.unity

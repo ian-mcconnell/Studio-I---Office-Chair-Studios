@@ -14,6 +14,21 @@ TextureImporter:
   - first:
       213: -7415900860555317489
     second: scene transition pieces_3
+  - first:
+      213: 5656648876765645798
+    second: scene transition pieces_4
+  - first:
+      213: -5636617807082538207
+    second: scene transition pieces_5
+  - first:
+      213: -1009097617369771492
+    second: scene transition pieces_6
+  - first:
+      213: 3578029814678008853
+    second: scene transition pieces_7
+  - first:
+      213: -1205741360180069922
+    second: scene transition pieces_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -119,7 +134,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4
-        y: 260
+        y: 516
         width: 248
         height: 248
       alignment: 0
@@ -140,7 +155,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 260
-        y: 260
+        y: 516
         width: 248
         height: 248
       alignment: 0
@@ -160,8 +175,8 @@ TextureImporter:
       name: scene transition pieces_2
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
+        x: 516
+        y: 516
         width: 248
         height: 248
       alignment: 0
@@ -181,8 +196,8 @@ TextureImporter:
       name: scene transition pieces_3
       rect:
         serializedVersion: 2
-        x: 260
-        y: 4
+        x: 4
+        y: 260
         width: 248
         height: 248
       alignment: 0
@@ -198,10 +213,115 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: scene transition pieces_4
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 260
+        width: 248
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb8ab6ee24708e40800000000000000
+      internalID: 5656648876765645798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene transition pieces_5
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 260
+        width: 248
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b3432f7f5b6c1b0800000000000000
+      internalID: -5636617807082538207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene transition pieces_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 248
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c125bfc3017fef1f0800000000000000
+      internalID: -1009097617369771492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene transition pieces_7
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 4
+        width: 248
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514b3a3c827b7a130800000000000000
+      internalID: 3578029814678008853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scene transition pieces_8
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 4
+        width: 248
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed978770f98544fe0800000000000000
+      internalID: -1205741360180069922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 39b6be2f4edf15c4aacbc3b66f083d61
+    spriteID: e1d09bf975e7774498b16b08f37c31c4
     internalID: 0
     vertices: []
     indices: 

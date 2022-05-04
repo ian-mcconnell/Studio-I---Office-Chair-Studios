@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour
 
     public Transform pickUpPosition;
 
+    public bool talkedToCoachHedge = false;
+    public dialogueManagement talking;
+
     public void SavePlayer()
     {
         SaveSystem.SavePlayer(this);
@@ -236,6 +239,13 @@ public class PlayerController : MonoBehaviour
         isInvulnerable = false;
     }
 
+    IEnumerator destroyObject(GameObject target)
+    {
+        yield return new WaitWhile(() => talking.isTalking == true);
+        Debug.Log("doneTalking");
+        Destroy(target);
+    }
+
     public void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.name == "layerForwardWall")
@@ -306,6 +316,14 @@ public class PlayerController : MonoBehaviour
         {
             collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
             Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.tag == "CoachText")
+        {
+            collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
+            talkedToCoachHedge = true;
+            destroyObject(collision.gameObject);
+
         }
     }
 
