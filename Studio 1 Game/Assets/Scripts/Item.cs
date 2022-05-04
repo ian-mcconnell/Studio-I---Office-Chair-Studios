@@ -27,7 +27,8 @@ public abstract class Item : MonoBehaviour
     {
         float distanceX = Mathf.Abs(transform.position.x - Player.pickUpPosition.position.x);
         float distanceY = Mathf.Abs(transform.position.y - Player.pickUpPosition.position.y);
-        if (distanceX <= .5f && distanceY <= .5f)
+        float distanceZ = Mathf.Abs(transform.position.z - Player.pickUpPosition.position.z);
+        if (distanceX <= .5f && distanceY <= .5f && distanceZ <= .5f)
         {           
             inSys.addToInventory(this);
         }
