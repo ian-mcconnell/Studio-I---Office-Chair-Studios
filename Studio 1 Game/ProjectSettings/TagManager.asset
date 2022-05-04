@@ -25,6 +25,7 @@ TagManager:
   - saveNPC
   - killReset
   - activateA
+  - resetLayer
   layers:
   - Default
   - TransparentFX
