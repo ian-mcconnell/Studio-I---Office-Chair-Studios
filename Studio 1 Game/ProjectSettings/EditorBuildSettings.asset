@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Basement Lvl-2.unity
     guid: 70c7ec528845aeb4db47404bc37cee89
   - enabled: 1
+    path: Assets/Scenes/Basement.unity
+    guid: b1f25efb9b817374295f28ecd456c975
+  - enabled: 1
     path: Assets/Scenes/Gym.unity
     guid: e06a2547e9f03424db08efc903ea3f29
   - enabled: 1
