@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
+        //Debug.Log(direction.z);
         float hInput = Input.GetAxis("Horizontal");
         float jumpInput = Input.GetAxis("Jump");
         float vInput = Input.GetAxis("Vertical");
@@ -101,6 +101,7 @@ public class PlayerController : MonoBehaviour
         //right
         if(direction.x > 0 || ((Input.mousePosition.x > Screen.width / 2.0f) && !leftAttack.enabled))
         {
+            animator.SetFloat("VSpeed", direction.z);
             animator.SetFloat("Speed",direction.x);
             animator.SetInteger("Position", 1); //position = 1 for right
             if (Input.GetButtonDown("Fire1") == true)
@@ -120,6 +121,7 @@ public class PlayerController : MonoBehaviour
         }
         else if(direction.x < 0 || ((Input.mousePosition.x < Screen.width / 2.0f) && !rightAttack.enabled)) //left
         {
+            animator.SetFloat("VSpeed", direction.z);
             animator.SetFloat("Speed", direction.x);
             animator.SetInteger("Position", 0); //position = 0 for left
             if (Input.GetButtonDown("Fire1") == true)
@@ -137,9 +139,10 @@ public class PlayerController : MonoBehaviour
 
             }
 
-        }//idle
-        else
+        }                
+        else//idle
         {
+            animator.SetFloat("VSpeed", direction.z);
             animator.SetFloat("Speed", 0);
             rightAttack.enabled = false;
             leftAttack.enabled = false;
