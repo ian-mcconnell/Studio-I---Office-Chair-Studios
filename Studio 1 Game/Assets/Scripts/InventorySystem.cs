@@ -12,7 +12,9 @@ public class InventorySystem : MonoBehaviour
     public MedkitItem medKit;
     public PiskelItem Bandaid;
     public BandageItem Bandage;
+    public KeyItem keyItem;
     public AudioSource PickUpSource;
+
 
     public void Start()
     {
