@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 6254813445232652063}
   - component: {fileID: 6856458228959009873}
   - component: {fileID: 6856458228959009872}
+  - component: {fileID: 6150002703052086309}
+  - component: {fileID: 3921517766984488859}
   m_Layer: 0
   m_Name: Wimpling
   m_TagString: Enemy
@@ -118,7 +120,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.12
-  m_Speed: 8.05
+  m_Speed: 6.93
   m_Acceleration: 20.95
   avoidancePriority: 50
   m_AngularSpeed: 0
@@ -126,7 +128,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2.46
+  m_Height: 0.76
   m_BaseOffset: 0.36
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -271,6 +273,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6150002703052086309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6254813445232652058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d065fec9c373124bbf65e6458c9f9f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 41748404349bff04a9d2e2bd0f55747e, type: 2}
+  duration: 0.125
+--- !u!65 &3921517766984488859
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6254813445232652058}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.68, y: 0.71, z: 1.14}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7375106598456495051
 GameObject:
   m_ObjectHideFlags: 0

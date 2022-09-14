@@ -7,10 +7,10 @@ public class EnemyGrouping : Enemy
     private GroupingStates stateCurrent = GroupingStates.Idling;
 
     public float aggroRange = 8f;
-    public float locationPadding = 1f;
+    public float locationPadding = 1.2f;
     private int recoveryDelay = 9;
     private int timeBobbing = 0;
-    private float bobbingDistance = 2f;
+    private float bobbingDistance = 2.2f;
 
     private bool playerHit = false;
     public int groupMember = 0;
@@ -156,7 +156,6 @@ public class EnemyGrouping : Enemy
     void StateBobbingEnter()
     {
         stateCurrent = GroupingStates.Bobbing;
-        base.animator.SetBool("Bobbing", true);
     }
 
     void StateBobbingRemain()

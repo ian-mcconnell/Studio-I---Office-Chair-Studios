@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 1944126824}
   - component: {fileID: 1944126826}
   - component: {fileID: 1944126827}
+  - component: {fileID: 277911482}
   m_Layer: 0
   m_Name: Scider
   m_TagString: Enemy
@@ -307,6 +308,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &277911482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714532881445893665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d065fec9c373124bbf65e6458c9f9f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 41748404349bff04a9d2e2bd0f55747e, type: 2}
+  duration: 0.125
 --- !u!1 &4142937885573993200
 GameObject:
   m_ObjectHideFlags: 0
