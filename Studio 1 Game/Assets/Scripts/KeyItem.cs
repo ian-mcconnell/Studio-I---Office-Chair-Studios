@@ -67,7 +67,7 @@ public class KeyItem : Item
         Debug.Log(itemSlot);
         //itemNames[i] = inventory.itemNames[i];
         //Debug.Log(inventory.itemNames[i] + " " + itemSlot + " " + i);
-        Destroy(itemButton);
+        //Destroy(itemButton);
         //itemButton.gameObject.SetActive(false);
         //       itemSlot = inventory.medKit.itemSlot;
         //if ((inventory.itemNames[itemSlot] == "MedKit"))
