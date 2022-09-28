@@ -10,8 +10,11 @@ public class EnemyLibrarian : Enemy
     public GameObject hitResponse;
     public GameObject screamObj;
     public GameObject bookObj;
+    public GameObject chargerEnemy;
+    public GameObject wimplingHordeEnemy;
     public Transform[] screamSpawns;
     public Transform[] bookSpawns;
+    public Transform[] monsterSpawns;
 
     private int attackCooldown = 6;
     private int currentMaxCooldown = 6;
@@ -28,8 +31,6 @@ public class EnemyLibrarian : Enemy
     public Sprite sprite2;
     public Sprite sprite3;
     public Sprite sprite4;
-    public Sprite sprite5;
-    public Sprite sprite6;
 
     public GameObject endProp;
 
@@ -47,7 +48,7 @@ public class EnemyLibrarian : Enemy
         ps = GetComponentInChildren<ParticleSystem>();
 
         base.Start();
-        maxHealth = 300f;
+        maxHealth = 30f;
         currentHealth = maxHealth;
 
         StateIdlingEnter();
@@ -164,7 +165,7 @@ public class EnemyLibrarian : Enemy
 
             yield return new WaitForSeconds(.3f);
 
-            int screamSpawnIndex = Random.Range(1, 3);
+            int screamSpawnIndex = Random.Range(1, screamSpawns.Length);
             Instantiate(screamObj, screamSpawns[screamSpawnIndex].position, new Quaternion(0, 0, 0, 0));
         }
         else
@@ -174,8 +175,8 @@ public class EnemyLibrarian : Enemy
 
             yield return new WaitForSeconds(.3f);
 
-            int bookSpawnIndex = Random.Range(1, 5);
-            Instantiate(bookObj, screamSpawns[bookSpawnIndex].position, new Quaternion(0, 0, 0, 0));
+            int bookSpawnIndex = Random.Range(1, bookSpawns.Length);
+            Instantiate(bookObj, bookSpawns[bookSpawnIndex].position, new Quaternion(0, 0, 0, 0));
         }
 
         yield return new WaitForSeconds(.1f);
@@ -192,14 +193,26 @@ public class EnemyLibrarian : Enemy
     {
         Debug.Log("Hit Response");
 
-        while (stateCurrent == LibrarianStates.Hit)
+        //Launch player to start
+        Instantiate(hitResponse, transform.position, new Quaternion(0, 0, 0, 0));
+        yield return new WaitForSeconds(.5f);
+
+        //Spawn new enemies
+        foreach (Transform spawnPoint in monsterSpawns)
         {
-            Instantiate(hitResponse, transform.position, new Quaternion(0, 0, 0, 0));
-            yield return new WaitForSeconds(.2f);
+            if (currentHealth == 20)
+            {
+                //Second wave
+                Instantiate(chargerEnemy, spawnPoint.position, new Quaternion(0, 0, 0, 0));
+            }
+            else if (currentHealth == 10)
+            {
+                //Third wave
+                Instantiate(wimplingHordeEnemy, spawnPoint.position, new Quaternion(0, 0, 0, 0));
+            }
         }
 
-        attackCooldown = 11;
-
+        yield return new WaitForSeconds(.3f);
         isHit = false;
         yield return null;
     }
@@ -220,28 +233,20 @@ public class EnemyLibrarian : Enemy
         Debug.Log("LibrarianHealth: " + currentHealth);
         switch (currentHealth)
         {
-            case 250f:
+            case 30f:
                 healthBar.sprite = sprite1;
                 break;
 
-            case 200f:
+            case 20f:
                 healthBar.sprite = sprite2;
                 break;
 
-            case 150f:
+            case 10f:
                 healthBar.sprite = sprite3;
                 break;
 
-            case 100f:
-                healthBar.sprite = sprite4;
-                break;
-
-            case 50f:
-                healthBar.sprite = sprite5;
-                break;
-
             case 0f:
-                healthBar.sprite = sprite6;
+                healthBar.sprite = sprite4;
                 endProp.SetActive(true);
                 break;
         }
