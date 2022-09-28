@@ -1,12 +1,45 @@
 fileFormatVersion: 2
 guid: 2bf5c228d97256d42abf6ebcf12edda0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1420280157133106126
+    second: librarian boss book throw_0
+  - first:
+      213: 809296160702065813
+    second: librarian boss book throw_1
+  - first:
+      213: -389842353527857152
+    second: librarian boss book throw_2
+  - first:
+      213: 9104644430229388891
+    second: librarian boss book throw_3
+  - first:
+      213: -6348147206363248557
+    second: librarian boss book throw_4
+  - first:
+      213: 3796618013346870790
+    second: librarian boss book throw_5
+  - first:
+      213: 6140756947254391996
+    second: librarian boss book throw_6
+  - first:
+      213: -5436327408585358611
+    second: librarian boss book throw_7
+  - first:
+      213: 691229547241737117
+    second: librarian boss book throw_8
+  - first:
+      213: -507906522493339821
+    second: librarian boss book throw_9
+  - first:
+      213: -8737632752766767696
+    second: librarian boss book throw_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -35,13 +68,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -50,9 +83,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -75,13 +108,280 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: librarian boss book throw_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1603
+        width: 635
+        height: 794
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb64772749d5b310800000000000000
+      internalID: 1420280157133106126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librarian boss book throw_1
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1603
+        width: 635
+        height: 794
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cebb002923b3b00800000000000000
+      internalID: 809296160702065813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librarian boss book throw_2
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 1603
+        width: 634
+        height: 794
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000e197e170079af0800000000000000
+      internalID: -389842353527857152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librarian boss book throw_3
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 803
+        width: 635
+        height: 794
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ebf0eeed13a5e70800000000000000
+      internalID: 9104644430229388891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librarian boss book throw_4
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 803
+        width: 635
+        height: 794
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35884deefb9d6e7a0800000000000000
+      internalID: -6348147206363248557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librarian boss book throw_5
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 1319
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606b361c7fb40b430800000000000000
+      internalID: 3796618013346870790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librarian boss book throw_6
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 803
+        width: 634
+        height: 794
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb43c1d88e9583550800000000000000
+      internalID: 6140756947254391996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librarian boss book throw_7
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 1319
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2cc8856094e84b0800000000000000
+      internalID: -5436327408585358611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librarian boss book throw_8
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 3
+        width: 667
+        height: 794
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b09956c9db79900800000000000000
+      internalID: 691229547241737117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librarian boss book throw_9
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 3
+        width: 635
+        height: 794
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3573ea375bd83f8f0800000000000000
+      internalID: -507906522493339821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: librarian boss book throw_10
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 419
+        width: 83
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bda4892e41bdb680800000000000000
+      internalID: -8737632752766767696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 244f1ffca2f424b41b1d82897db8c50d
     internalID: 0
     vertices: []
     indices: 
