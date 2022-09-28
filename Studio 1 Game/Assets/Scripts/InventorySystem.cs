@@ -12,7 +12,7 @@ public class InventorySystem : MonoBehaviour
     public MedkitItem medKit;
     public PiskelItem Bandaid;
     public BandageItem Bandage;
-    public KeyItem keyItem;
+    public KeyItem Key;
     public AudioSource PickUpSource;
 
 
@@ -97,6 +97,10 @@ public class InventorySystem : MonoBehaviour
             {
                 this.addToInventory(Bandaid);
             }
+            if (data.itemNames[i] == "Key")
+            {
+                this.addToInventory(Key);
+            }
             if (data.itemNames[i] == null)
             {
                 //               this.addToInventory(null);
@@ -126,7 +130,7 @@ public class InventorySystem : MonoBehaviour
             Transform[] ts = slots[i].GetComponentsInChildren<Transform>();
             foreach (Transform t in ts)
             {
-                if (t == true && (t.name == "medkitButton(Clone)" || t.name == "BandageButton(Clone)" || t.name == "PiskelButton(Clone)") )
+                if (t == true && (t.name == "medkitButton(Clone)" || t.name == "BandageButton(Clone)" || t.name == "PiskelButton(Clone)" || t.name == "TheKeyButton(Clone)") )
                 {
                     t.gameObject.SetActive(false);
                     Debug.Log(" " + t.name);

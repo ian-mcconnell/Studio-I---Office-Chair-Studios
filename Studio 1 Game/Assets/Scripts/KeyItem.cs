@@ -10,7 +10,7 @@ public class KeyItem : Item
     //public float currentHealth;
     //private int maxHealth;
     //private int healthPerHeart = 4;
-    HealthSystem hs;
+    //HealthSystem hs;
     //public string[] itemNames;
     InventorySystem inventory;
     //    public Item MedKit;
@@ -21,7 +21,7 @@ public class KeyItem : Item
     PlayerController Pc;
     void Start()
     {
-        hs = FindObjectOfType<HealthSystem>();
+        //hs = FindObjectOfType<HealthSystem>();
         inventory = FindObjectOfType<InventorySystem>();
         //itemSlot = 0;
     }
