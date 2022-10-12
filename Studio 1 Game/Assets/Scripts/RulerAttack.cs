@@ -16,7 +16,7 @@ public class RulerAttack : MonoBehaviour
             //Debug.Log("it ran  :(" + other.gameObject.name);
             hitSource.Play();
         }
-        else if(other.name.Contains("Basketball"))
+        else if (other.name.Contains("Basketball"))
         {
             //Shoot da hoop
             Vector3 altPos = new Vector3(transform.position.x, 0f, transform.position.z);
@@ -25,6 +25,11 @@ public class RulerAttack : MonoBehaviour
             other.gameObject.GetComponent<Rigidbody>().AddForce(-dir * 3000f);
             other.gameObject.GetComponent<Basketball>().activatedDamage = true;
             Destroy(other.gameObject, 3f);
+        }
+        else if (other.name.Contains("Boss Librarian"))
+        {
+            other.gameObject.SendMessage("ChangeHealth", damageAmount);
+            hitSource.Play();
         }
     }
 }

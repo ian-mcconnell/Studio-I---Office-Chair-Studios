@@ -17,6 +17,8 @@ public class EnemyLibrarian : Enemy
     public Transform[] monsterSpawns;
 
     private int attackCooldown = 6;
+    private float bookProjectileSpeed = -6f;
+    private float screamProjectileSpeed = -10f;
     private int currentMaxCooldown = 6;
     private bool isHit = false;
     private bool attacking = false;
@@ -88,7 +90,7 @@ public class EnemyLibrarian : Enemy
                 StateDeadRemain();
                 break;
         }
-
+        Debug.Log("Current state: " + stateCurrent + "HP: " + currentHealth.ToString());
     }
 
     void StateIdlingEnter()
@@ -156,27 +158,29 @@ public class EnemyLibrarian : Enemy
     {
         int attackSelection = Random.Range(1, 3);
 
+        //SCREAM ATTACK
         if (attackSelection == 1)
         {
-            Debug.Log("Scream Attack");
             ScreamSource.Play();
             base.animator.SetBool("isScreaming", true);
             attacking = true;
 
             yield return new WaitForSeconds(.3f);
 
-            int screamSpawnIndex = Random.Range(1, screamSpawns.Length);
-            Instantiate(screamObj, screamSpawns[screamSpawnIndex].position, new Quaternion(0, 0, 0, 0));
+            int screamSpawnIndex = Random.Range(0, screamSpawns.Length);
+            GameObject screamAttack = Instantiate(screamObj, screamSpawns[screamSpawnIndex].position, new Quaternion(0f, 90f, 90f, 0));
+            screamAttack.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, screamProjectileSpeed);
         }
+        //BOOK ATTACK
         else
         {
-            Debug.Log("Book Attack");
             base.animator.SetBool("isThrowing", true);
 
             yield return new WaitForSeconds(.3f);
 
-            int bookSpawnIndex = Random.Range(1, bookSpawns.Length);
-            Instantiate(bookObj, bookSpawns[bookSpawnIndex].position, new Quaternion(0, 0, 0, 0));
+            int bookSpawnIndex = Random.Range(0, bookSpawns.Length);
+            GameObject bookAttack = Instantiate(bookObj, bookSpawns[bookSpawnIndex].position, new Quaternion(0, 0, 0, 0));
+            bookAttack.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, bookProjectileSpeed);
         }
 
         yield return new WaitForSeconds(.1f);
@@ -195,17 +199,20 @@ public class EnemyLibrarian : Enemy
 
         //Launch player to start
         Instantiate(hitResponse, transform.position, new Quaternion(0, 0, 0, 0));
+        //Kill all enemies too
+        NukeEnemiesInStage();
+
         yield return new WaitForSeconds(.5f);
 
         //Spawn new enemies
         foreach (Transform spawnPoint in monsterSpawns)
         {
-            if (currentHealth == 20)
+            if (currentHealth == 20f)
             {
                 //Second wave
                 Instantiate(chargerEnemy, spawnPoint.position, new Quaternion(0, 0, 0, 0));
             }
-            else if (currentHealth == 10)
+            else if (currentHealth == 10f)
             {
                 //Third wave
                 Instantiate(wimplingHordeEnemy, spawnPoint.position, new Quaternion(0, 0, 0, 0));
@@ -217,16 +224,24 @@ public class EnemyLibrarian : Enemy
         yield return null;
     }
 
+    private void NukeEnemiesInStage()
+    {
+        GameObject[] allEnemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach(GameObject enemy in allEnemies)
+        {
+            Destroy(enemy);
+        }
+    }
 
     public override void ChangeHealth(float amount)
     {
-        if (stateCurrent != LibrarianStates.Hit)
+        if (stateCurrent != LibrarianStates.Hit && !isHit)
         {
             base.ChangeHealth(amount);
             if (amount < 0)
             {
                 ps.Play();
-                currentMaxCooldown -= 2;
+                currentMaxCooldown -= 1;
                 isHit = true;
             }
         }
