@@ -1,28 +1,19 @@
 fileFormatVersion: 2
-guid: 4d12803ba5a6a5c459f5e67eda7feaf9
+guid: e6f534a82ed03f34f86b6a703df08847
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 900224816460346407
-    second: bookcase variations_0
+      213: 8515444393750738203
+    second: stitched together bookcase size 3_0
   - first:
-      213: 8127165531285539647
-    second: bookcase variations_1
+      213: -278284812913505836
+    second: stitched together bookcase size 3_1
   - first:
-      213: 427787261751029605
-    second: bookcase variations_2
+      213: 9100911307050473111
+    second: stitched together bookcase size 3_2
   - first:
-      213: -6224174724397498674
-    second: bookcase variations_3
-  - first:
-      213: -2392554065942253200
-    second: bookcase variations_4
-  - first:
-      213: 3173026103836131300
-    second: bookcase variations_5
-  - first:
-      213: -2046946121013312785
-    second: bookcase variations_6
+      213: 3127481825212980950
+    second: stitched together bookcase size 3_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -124,12 +115,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bookcase variations_0
+      name: stitched together bookcase size 3_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 256
-        width: 120
+        x: 256
+        y: 648
+        width: 360
         height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -138,19 +129,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7243c1373bd3e7c00800000000000000
-      internalID: 900224816460346407
+      spriteID: b15ba123f8fec2670800000000000000
+      internalID: 8515444393750738203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bookcase variations_1
+      name: stitched together bookcase size 3_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 256
-        width: 120
+        x: 644
+        y: 660
+        width: 360
         height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -159,19 +150,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3bc21bbdfd79c070800000000000000
-      internalID: 8127165531285539647
+      spriteID: 4d987e3ef65532cf0800000000000000
+      internalID: -278284812913505836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bookcase variations_2
+      name: stitched together bookcase size 3_2
       rect:
         serializedVersion: 2
-        x: 260
-        y: 256
-        width: 120
+        x: 248
+        y: 492
+        width: 360
         height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -180,19 +171,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56f6b108f3ecfe500800000000000000
-      internalID: 427787261751029605
+      spriteID: 79654157d9eec4e70800000000000000
+      internalID: 9100911307050473111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bookcase variations_3
+      name: stitched together bookcase size 3_3
       rect:
         serializedVersion: 2
-        x: 4
-        y: 128
-        width: 120
+        x: 644
+        y: 492
+        width: 360
         height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -201,71 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ece7254b01a4f99a0800000000000000
-      internalID: -6224174724397498674
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bookcase variations_4
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 128
-        width: 120
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0717899d0c0fbced0800000000000000
-      internalID: -2392554065942253200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bookcase variations_5
-      rect:
-        serializedVersion: 2
-        x: 260
-        y: 128
-        width: 120
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4efb1361e6ad80c20800000000000000
-      internalID: 3173026103836131300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bookcase variations_6
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 0
-        width: 120
-        height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe243ae1959c793e0800000000000000
-      internalID: -2046946121013312785
+      spriteID: 6de5f41662c076b20800000000000000
+      internalID: 3127481825212980950
       vertices: []
       indices: 
       edges: []
@@ -273,7 +201,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 234db1145913f044bb30f5a5d5afe553
+    spriteID: 0797b7b4e4cfe8344bcd14cf182dcba6
     internalID: 0
     vertices: []
     indices: 
