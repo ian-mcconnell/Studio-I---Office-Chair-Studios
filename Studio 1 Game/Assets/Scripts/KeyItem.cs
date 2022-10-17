@@ -13,22 +13,29 @@ public class KeyItem : Item
     //HealthSystem hs;
     //public string[] itemNames;
     InventorySystem inventory;
+    Wall keyWall;
+   
     //    public Item MedKit;
     //public HealthSystem hs;
     //public Image[] healthImages;
     //public Sprite[] healthSprites;
     // Start is called before the first frame update
     PlayerController Pc;
+    
     void Start()
     {
         //hs = FindObjectOfType<HealthSystem>();
         inventory = FindObjectOfType<InventorySystem>();
+        keyWall = FindObjectOfType<Wall>();
+        
         //itemSlot = 0;
     }
     private void FixedUpdate()
     {
+        
         //itemSlot = inventory.medKit.itemSlot;
     }
+
     //public void loadInv()
     //{
     //    InvData data = SaveSystem.loadInv();
@@ -56,18 +63,26 @@ public class KeyItem : Item
     //    }
     //}
     // Update is called once per frame
-
+    //public bool CheckforKey()
 
 
     public override void useItem()
     {
-     //   hs.AddHealth(8);
+        //   hs.AddHealth(8);
+         
         inventory.itemNames[itemSlot] = null;
         inventory.isFull[itemSlot] = false;
         Debug.Log(itemSlot);
+        Debug.Log("Now, unlock a door!");
         //itemNames[i] = inventory.itemNames[i];
         //Debug.Log(inventory.itemNames[i] + " " + itemSlot + " " + i);
-        //Destroy(itemButton);
+        if (inventory.hasKey == true)
+        {
+            Debug.Log("You used a key!");
+            Destroy(itemButton);
+            keyWall.Open();
+            Debug.Log("the door is gone");
+        }
         //itemButton.gameObject.SetActive(false);
         //       itemSlot = inventory.medKit.itemSlot;
         //if ((inventory.itemNames[itemSlot] == "MedKit"))
@@ -79,5 +94,14 @@ public class KeyItem : Item
         //    }
 
     }
+
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    Wall keywall = other.GetComponent<Wall>();
+    //    if(useItem(item.itemName == "Key"))
+    //    {
+    //        keywall.Open();
+    //    }
+    //}
 }
 

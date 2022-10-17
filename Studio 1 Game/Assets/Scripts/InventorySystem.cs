@@ -13,7 +13,9 @@ public class InventorySystem : MonoBehaviour
     public PiskelItem Bandaid;
     public BandageItem Bandage;
     public KeyItem Key;
+    public bool hasKey;
     public AudioSource PickUpSource;
+    
 
 
     public void Start()
@@ -162,11 +164,19 @@ public class InventorySystem : MonoBehaviour
                 Debug.Log("itemslot " + button.GetComponent<Item>().itemSlot);
                 //               item.reset = false;
                 item.gameObject.SetActive(false);
-            
+
+                if (itemNames[i] == "Key")
+                {
+                    Debug.Log("PLAYER HAS A " + item.itemName);
+                    hasKey = true;
+                }
                 break;
             }
+            //if (itemNames[i] == "Key")
+            //{
+            //    Debug.Log("PLAYER HAS A" + item.itemName);
+            //}
 
-            
         }
     }
 
