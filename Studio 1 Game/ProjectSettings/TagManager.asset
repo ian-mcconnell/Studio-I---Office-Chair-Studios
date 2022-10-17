@@ -26,6 +26,7 @@ TagManager:
   - killReset
   - activateA
   - resetLayer
+  - Wall
   layers:
   - Default
   - TransparentFX
