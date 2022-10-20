@@ -42,6 +42,10 @@ public class PlayerController : MonoBehaviour
     public bool talkedToCoachHedge = false;
     public dialogueManagement talking;
 
+    public grabAnimationTrigger tentAnim;
+
+    public bool hasSkullChain = false;
+
     public void SavePlayer()
     {
         SaveSystem.SavePlayer(this);
@@ -81,6 +85,8 @@ public class PlayerController : MonoBehaviour
         Renderer sortLayer = GetComponent<SpriteRenderer>();
         sortLayer.sortingLayerName = "player";
         sortLayer.sortingOrder = 2;
+
+        speed = 8;
 
         forwardWall.SetActive(true);
         backwardWall.SetActive(false);
@@ -379,6 +385,7 @@ public class PlayerController : MonoBehaviour
             collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
             collision.gameObject.GetComponent<CapsuleCollider>().enabled = false;
             npcSaved++;
+            Destroy(collision.gameObject);
         }
 
         if (collision.gameObject.tag == "killReset")
@@ -398,6 +405,17 @@ public class PlayerController : MonoBehaviour
             talkedToCoachHedge = true;
             Destroy(collision.gameObject);
         }
+
+        if (collision.gameObject.tag == "animation")
+        {
+            collision.GetComponent<grabAnimationTrigger>().playAnimation();
+        }
+
+        if (collision.gameObject.tag == "item")
+        {
+            hasSkullChain = true;
+            Destroy(collision.gameObject);
+        }    
     }
 
 }
