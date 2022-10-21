@@ -14,6 +14,8 @@ public class KeyItem : Item
     //public string[] itemNames;
     InventorySystem inventory;
     Wall keyWall;
+    public GameObject theWall;
+    private GameObject player;
    
     //    public Item MedKit;
     //public HealthSystem hs;
@@ -27,6 +29,7 @@ public class KeyItem : Item
         //hs = FindObjectOfType<HealthSystem>();
         inventory = FindObjectOfType<InventorySystem>();
         keyWall = FindObjectOfType<Wall>();
+        player = GameObject.FindGameObjectWithTag("Player");
         
         //itemSlot = 0;
     }
@@ -76,7 +79,11 @@ public class KeyItem : Item
         Debug.Log("Now, unlock a door!");
         //itemNames[i] = inventory.itemNames[i];
         //Debug.Log(inventory.itemNames[i] + " " + itemSlot + " " + i);
-        if (inventory.hasKey == true)
+        float distance = Vector3.Distance(player.transform.position, theWall.transform.position);
+        Debug.Log(distance);
+        Debug.Log(player.transform.position);
+        Debug.Log(theWall.transform.position);
+        if (inventory.hasKey == true && distance < 2)
         {
             Debug.Log("You used a key!");
             Destroy(itemButton);

@@ -148,3 +148,5 @@ MonoBehaviour:
   itemButton: {fileID: 8641146763529658161}
   itemName: Key
   itemSlot: 0
+  theWall: {fileID: 432721030104952701, guid: d08f983822f637043ae223f0d5f1f38a, type: 3}
+  player: {fileID: 1866529130585483011, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
