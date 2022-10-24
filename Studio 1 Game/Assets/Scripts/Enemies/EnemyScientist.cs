@@ -7,7 +7,6 @@ public class EnemyScientist : Enemy
 {
     private ScientistStates stateCurrent = ScientistStates.Chasing;
 
-    public GameObject SwoopResponse;
     public GameObject spitObj;
     public GameObject spitSpawn;
     public AnimationCurve curve;
@@ -17,6 +16,8 @@ public class EnemyScientist : Enemy
     private int maxCooldown = 6;
     private int regularAttackCounter = 0;
     private int hitCounter = 0;
+    private int maxSprayShots = 20;
+    private int maxSpitShots = 4;
     private bool isSwooping = false;
     private bool isSpitting = false;
     private bool isSpraying = false;
@@ -227,8 +228,14 @@ public class EnemyScientist : Enemy
         yield return new WaitForSeconds(.3f);
 
         //Fire a spit at where the player will be
-        GameObject screamAttack = Instantiate(spitObj, spitSpawn.transform.position, new Quaternion(0f, 90f, 90f, 0));
-        screamAttack.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, spitProjectileSpeed);
+        int spitCount = 0;
+        while (spitCount <= maxSpitShots)
+        {
+            spitCount++;
+            spitSpawn.transform.LookAt(player.position + player.gameObject.GetComponent<Rigidbody>().velocity);
+            GameObject screamAttack = Instantiate(spitObj, spitSpawn.transform.position, new Quaternion(0f, 0f, 0f, 0));
+            screamAttack.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, spitProjectileSpeed);
+        }
 
         yield return new WaitForSeconds(.1f);
 
@@ -245,13 +252,14 @@ public class EnemyScientist : Enemy
         base.agent.destination = player.position;
 
         //Swoop at the point behind the player
-        base.agent.speed += 15f;
-
         float time = 0f;
-
         float duration = 1f;
+
         Vector3 start = transform.position;
-        Vector3 end = player.position;
+        //Calculate space behind the player
+        Vector3 altPlayerPos = new Vector3(player.position.x, gameObject.transform.position.y, player.position.z);
+        Vector3 dir = gameObject.transform.position - altPlayerPos;
+        Vector3 end = player.position + dir.normalized;
 
         while (time < duration)
         {
@@ -260,14 +268,13 @@ public class EnemyScientist : Enemy
             float linearT = time / duration;
             float heightT = curve.Evaluate(linearT);
 
-            float height = Mathf.Lerp(0f, 3.5f, duration); // change 3 to however tall you want the arc to be
+            float height = Mathf.Lerp(0f, -3.5f, heightT);
 
             transform.position = Vector2.Lerp(start, end, linearT) + new Vector2(0f, height);
 
             yield return null;
         }
 
-        base.agent.speed -= 15f;
         yield return new WaitForSeconds(.3f);
 
         isSpitting = false;
@@ -279,7 +286,39 @@ public class EnemyScientist : Enemy
     {
         Debug.Log("Spray Attack");
 
-        //Shoot where the player is moving to
+        float time = 0f;
+        float duration = 1f;
+
+        //Lower down to ground level
+        Vector3 start = transform.position;
+        Vector3 end = new Vector3(player.position.x, player.position.y - 5f, player.position.z);
+
+        while (time < duration)
+        {
+            time += Time.deltaTime;
+
+            float linearT = time / duration;
+            float heightT = curve.Evaluate(linearT);
+
+            float height = Mathf.Lerp(0f, -3.5f, heightT);
+
+            transform.position = Vector2.Lerp(start, end, linearT) + new Vector2(0f, height);
+
+            yield return null;
+        }
+
+        //ratattatatat
+        spitSpawn.transform.LookAt(player.position);
+        int shotsFired = 0;
+        while (shotsFired <= maxSprayShots)
+        {
+            shotsFired++;
+            GameObject screamAttack = Instantiate(spitObj, spitSpawn.transform.position, new Quaternion(0f, 0f, 0f, 0));
+            screamAttack.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, spitProjectileSpeed);
+
+            yield return new WaitForSeconds(.2f);
+            yield return null;
+        }
 
 
         yield return new WaitForSeconds(.3f);
@@ -301,6 +340,8 @@ public class EnemyScientist : Enemy
                 if (hitCounter == 2)
                 {
                     maxCooldown -= 10;
+                    maxSprayShots *= 2;
+                    maxSprayShots *= 2;
                     hitCounter = 0;
                 }
             }
