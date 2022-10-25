@@ -14,7 +14,7 @@ public class KeyItem : Item
     //public string[] itemNames;
     InventorySystem inventory;
     Wall keyWall;
-    public GameObject theWall;
+    public GameObject[] theWall;
     private GameObject player;
    
     //    public Item MedKit;
@@ -28,7 +28,7 @@ public class KeyItem : Item
     {
         //hs = FindObjectOfType<HealthSystem>();
         inventory = FindObjectOfType<InventorySystem>();
-        keyWall = FindObjectOfType<Wall>();
+        theWall = GameObject.FindGameObjectsWithTag("Wall");
         player = GameObject.FindGameObjectWithTag("Player");
         
         //itemSlot = 0;
@@ -79,15 +79,29 @@ public class KeyItem : Item
         Debug.Log("Now, unlock a door!");
         //itemNames[i] = inventory.itemNames[i];
         //Debug.Log(inventory.itemNames[i] + " " + itemSlot + " " + i);
-        float distance = Vector3.Distance(player.transform.position, theWall.transform.position);
-        Debug.Log(distance);
-        Debug.Log(player.transform.position);
-        Debug.Log(theWall.transform.position);
-        if (inventory.hasKey == true && distance < 2)
+        GameObject door = null;
+        float closeDistance = float.MaxValue;
+        for (int i = 0; i < theWall.Length; i++)
+        {
+            float distance = Vector3.Distance(player.transform.position, theWall[i].transform.position);
+            Debug.Log(distance);
+            Debug.Log(player.transform.position);
+            Debug.Log(theWall[i].transform.position);
+            if (inventory.hasKey == true && distance < 2 && distance < closeDistance)
+            {
+                door = theWall[i];
+                closeDistance = distance;
+            }
+
+        }
+        if(door != null)
         {
             Debug.Log("You used a key!");
             Destroy(itemButton);
-            keyWall.Open();
+            Debug.Log(door);
+            Wall doorwall = door.GetComponent<Wall>();
+            Debug.Log(doorwall);
+            doorwall.Open();
             Debug.Log("the door is gone");
         }
         //itemButton.gameObject.SetActive(false);
