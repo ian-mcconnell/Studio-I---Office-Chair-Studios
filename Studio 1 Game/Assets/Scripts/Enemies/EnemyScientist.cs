@@ -237,7 +237,8 @@ public class EnemyScientist : Enemy
             screamAttack.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, spitProjectileSpeed);
         }
 
-        yield return new WaitForSeconds(.1f);
+        base.animator.SetBool("isSpitting", false);
+        yield return new WaitForSeconds(.4f);
 
         attackCooldown = maxCooldown;
         isSpitting = false;
