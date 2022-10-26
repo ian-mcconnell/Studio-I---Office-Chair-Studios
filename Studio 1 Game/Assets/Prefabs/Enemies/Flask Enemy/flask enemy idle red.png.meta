@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: 311b06792e4b259459d51e3f167050bd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2741881071342761061
+    second: flask enemy idle red_0
+  - first:
+      213: -594276320363997141
+    second: flask enemy idle red_1
+  - first:
+      213: -5065883237860465
+    second: flask enemy idle red_2
+  - first:
+      213: -4891691169642627138
+    second: flask enemy idle red_3
+  - first:
+      213: -1225521804204403918
+    second: flask enemy idle red_4
+  - first:
+      213: 8432445592662676406
+    second: flask enemy idle red_5
+  - first:
+      213: 1547907879016589310
+    second: flask enemy idle red_6
+  - first:
+      213: -2724075734607778583
+    second: flask enemy idle red_7
+  - first:
+      213: -7418308376211879526
+    second: flask enemy idle red_8
+  - first:
+      213: -3372631994321012669
+    second: flask enemy idle red_9
+  - first:
+      213: 4913846228577859302
+    second: flask enemy idle red_10
+  - first:
+      213: -6194327194197838009
+    second: flask enemy idle red_11
+  - first:
+      213: 2714541069112552263
+    second: flask enemy idle red_12
+  - first:
+      213: -7325360817331539975
+    second: flask enemy idle red_13
+  - first:
+      213: -17395466577891745
+    second: flask enemy idle red_14
+  - first:
+      213: -6119095834129595085
+    second: flask enemy idle red_15
+  - first:
+      213: 9200520525216210135
+    second: flask enemy idle red_16
+  - first:
+      213: -2421640937416249123
+    second: flask enemy idle red_17
+  - first:
+      213: 3755663001847763278
+    second: flask enemy idle red_18
+  - first:
+      213: 668811292189007280
+    second: flask enemy idle red_19
+  - first:
+      213: -103496790823110335
+    second: flask enemy idle red_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: flask enemy idle red_14
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 312
+        width: 76
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e2ce15ae232cff0800000000000000
+      internalID: -17395466577891745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask enemy idle red_15
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 312
+        width: 76
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335022c52ca941ba0800000000000000
+      internalID: -6119095834129595085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask enemy idle red_20
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 56
+        width: 76
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1497893973e409ef0800000000000000
+      internalID: -103496790823110335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3fe3d40a704c3d5478a77b16d5005e21
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
