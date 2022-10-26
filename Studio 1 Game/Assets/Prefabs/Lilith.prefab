@@ -214,6 +214,8 @@ MonoBehaviour:
   animator: {fileID: 1866529130585483008}
   rightAttack: {fileID: 2438669003754876718}
   leftAttack: {fileID: 8558524380852018162}
+  chemicalAttack: {fileID: 8289100718274796009, guid: 4d4c16d3ec396a04b98bc4f78b3a7f6b, type: 3}
+  hasChemicaL: 0
   inventory: {fileID: 1742711189}
   npcSaved: 0
   killCount: 0
@@ -228,6 +230,8 @@ MonoBehaviour:
   pickUpPosition: {fileID: 387537301}
   talkedToCoachHedge: 0
   talking: {fileID: 0}
+  tentAnim: {fileID: 0}
+  hasSkullChain: 0
 --- !u!143 &1866529130585483038
 CharacterController:
   m_ObjectHideFlags: 0
@@ -426,6 +430,8 @@ MonoBehaviour:
   medKit: {fileID: 4159728222991736007, guid: 7e97e701a25770f4696e5a4caaf908df, type: 3}
   Bandaid: {fileID: 46098882183515072, guid: 38af0feed2d34a248ab689dcca303ef9, type: 3}
   Bandage: {fileID: 4513515040910344082, guid: 8b37d9c856a62794ab43ddb177fb8ffd, type: 3}
+  Key: {fileID: 0}
+  hasKey: 0
   PickUpSource: {fileID: 3266426426456288254}
 --- !u!82 &1610305823
 AudioSource:

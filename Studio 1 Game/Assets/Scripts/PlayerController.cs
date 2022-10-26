@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public Collider rightAttack;
     public Collider leftAttack;
+    public Rigidbody chemicalAttack;
+    public bool hasChemicaL;
     public InventorySystem inventory;
     public int npcSaved = 0;
     public int killCount = 0;
@@ -124,6 +126,19 @@ public class PlayerController : MonoBehaviour
                 rightAttack.enabled = false;
                 speed = 8;
             }
+            else if (Input.GetButtonDown("Fire2") == true && hasChemicaL == true)
+            {
+                //animator.SetBool("isAttacking", false);
+                Rigidbody clone;
+                clone = Instantiate(chemicalAttack, new Vector3(transform.position.x+1, transform.position.y+1 , transform.position.z), transform.rotation);
+                clone.velocity = transform.TransformDirection(Vector3.right *10);
+
+                speed = 4;
+            }
+            else if (Input.GetButtonUp("Fire2") == true && hasChemicaL == true)
+            {
+                speed = 8;
+            }
         }
         else if(direction.x < 0 || ((Input.mousePosition.x < Screen.width / 2.0f) && !rightAttack.enabled)) //left
         {
@@ -143,6 +158,19 @@ public class PlayerController : MonoBehaviour
                 leftAttack.enabled = false;
                 speed = 8;
 
+            }
+            else if (Input.GetButtonDown("Fire2") == true && hasChemicaL == true)
+            {
+                //animator.SetBool("isAttacking", false);
+                Rigidbody clone;
+                clone = Instantiate(chemicalAttack, new Vector3(transform.position.x - 1, transform.position.y + 1, transform.position.z), transform.rotation);
+                clone.velocity = transform.TransformDirection(Vector3.left * 10);
+
+                speed = 4;
+            }
+            else if (Input.GetButtonUp("Fire2") == true && hasChemicaL == true)
+            {
+                speed = 8;
             }
 
         }                

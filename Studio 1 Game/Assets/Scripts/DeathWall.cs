@@ -12,9 +12,10 @@ public class DeathWall : MonoBehaviour
     {
 
         GameObject go = other.gameObject;
-        hitSource.Play();
+
         if (go.tag == "Player")
         {
+            hitSource.Play();
             go.GetComponent<PlayerController>().ChangeHealth(damage);
 
         }
