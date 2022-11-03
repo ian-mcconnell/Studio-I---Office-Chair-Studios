@@ -1,0 +1,672 @@
+fileFormatVersion: 2
+guid: 1fd1a1966b2daca4385a19517dcdbaec
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5313480205703817674
+    second: scientist transformation part 4_0
+  - first:
+      213: 8104239735664032432
+    second: scientist transformation part 4_1
+  - first:
+      213: -9213538627541310996
+    second: scientist transformation part 4_2
+  - first:
+      213: -7555040747724391095
+    second: scientist transformation part 4_3
+  - first:
+      213: -8594519254878109915
+    second: scientist transformation part 4_4
+  - first:
+      213: -8488123989329636240
+    second: scientist transformation part 4_5
+  - first:
+      213: -7703065725121052727
+    second: scientist transformation part 4_6
+  - first:
+      213: -7657007104881512383
+    second: scientist transformation part 4_7
+  - first:
+      213: -1047870341186457202
+    second: scientist transformation part 4_8
+  - first:
+      213: 5833589497579839251
+    second: scientist transformation part 4_9
+  - first:
+      213: -1664385175144340552
+    second: scientist transformation part 4_10
+  - first:
+      213: -7135767854879531184
+    second: scientist transformation part 4_11
+  - first:
+      213: -4294872110260198111
+    second: scientist transformation part 4_12
+  - first:
+      213: 4273329044063444868
+    second: scientist transformation part 4_13
+  - first:
+      213: -6926601324547257039
+    second: scientist transformation part 4_14
+  - first:
+      213: -2225673627928587414
+    second: scientist transformation part 4_15
+  - first:
+      213: -3855060231516269505
+    second: scientist transformation part 4_16
+  - first:
+      213: 3441348045398232544
+    second: scientist transformation part 4_17
+  - first:
+      213: 8806923909078466697
+    second: scientist transformation part 4_18
+  - first:
+      213: -5615000197517181266
+    second: scientist transformation part 4_19
+  - first:
+      213: 9089433185944045512
+    second: scientist transformation part 4_20
+  - first:
+      213: 146119003651416398
+    second: scientist transformation part 4_21
+  - first:
+      213: -1957130401490324185
+    second: scientist transformation part 4_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: scientist transformation part 4_0
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 3230
+        width: 281
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63654f9a7e9b246b0800000000000000
+      internalID: -5313480205703817674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_1
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 3230
+        width: 281
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba3cdaf91b087070800000000000000
+      internalID: 8104239735664032432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_2
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 3222
+        width: 287
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce16f050f6fe22080800000000000000
+      internalID: -9213538627541310996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_3
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 3202
+        width: 313
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d3940e77a172790800000000000000
+      internalID: -7555040747724391095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_4
+      rect:
+        serializedVersion: 2
+        x: 3501
+        y: 3202
+        width: 314
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f3cbdf5422ab880800000000000000
+      internalID: -8594519254878109915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_5
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 2401
+        width: 312
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07419862430243a80800000000000000
+      internalID: -8488123989329636240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_6
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 2401
+        width: 314
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf3cac1986391590800000000000000
+      internalID: -7703065725121052727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_7
+      rect:
+        serializedVersion: 2
+        x: 1901
+        y: 2405
+        width: 313
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14035ee4b98dcb590800000000000000
+      internalID: -7657007104881512383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_8
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 2401
+        width: 313
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81f9eef9773571f0800000000000000
+      internalID: -1047870341186457202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_9
+      rect:
+        serializedVersion: 2
+        x: 3501
+        y: 2401
+        width: 316
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f12b88db215f050800000000000000
+      internalID: 5833589497579839251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_10
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1601
+        width: 316
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b36812608ae6e8e0800000000000000
+      internalID: -1664385175144340552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_11
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 1698
+        width: 318
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f114261f8a8fc90800000000000000
+      internalID: -7135767854879531184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_12
+      rect:
+        serializedVersion: 2
+        x: 1901
+        y: 1730
+        width: 317
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1256538229c8564c0800000000000000
+      internalID: -4294872110260198111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_13
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 1737
+        width: 313
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fd2cfdf1aed4b30800000000000000
+      internalID: 4273329044063444868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_14
+      rect:
+        serializedVersion: 2
+        x: 3409
+        y: 1821
+        width: 373
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d4c954bc4cfdf90800000000000000
+      internalID: -6926601324547257039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_15
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1065
+        width: 449
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a639c55a0a1dc11e0800000000000000
+      internalID: -2225673627928587414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_16
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 981
+        width: 777
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34dcb8f423108ac0800000000000000
+      internalID: -3855060231516269505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_17
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 970
+        width: 780
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed427270df12cf20800000000000000
+      internalID: 3441348045398232544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_18
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 997
+        width: 758
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980448c52aa783a70800000000000000
+      internalID: 8806923909078466697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_19
+      rect:
+        serializedVersion: 2
+        x: 3218
+        y: 989
+        width: 748
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae7d35e1138312b0800000000000000
+      internalID: -5615000197517181266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 183
+        width: 793
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c787d12357242e70800000000000000
+      internalID: 9089433185944045512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_21
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 202
+        width: 797
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41a39ba57e170200800000000000000
+      internalID: 146119003651416398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scientist transformation part 4_22
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 198
+        width: 764
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7253d08e440e6d4e0800000000000000
+      internalID: -1957130401490324185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5ec3023fbe38bf445b91b558a3486b36
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
