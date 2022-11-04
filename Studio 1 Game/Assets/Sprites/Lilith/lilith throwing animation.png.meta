@@ -1,22 +1,7 @@
 fileFormatVersion: 2
 guid: 95171146b6173b4489630cebd60342c6
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -3869663826507900536
-    second: lilith throwing animation_0
-  - first:
-      213: 57240301667582480
-    second: lilith throwing animation_1
-  - first:
-      213: -7276224640624798956
-    second: lilith throwing animation_3
-  - first:
-      213: -6596027032141796720
-    second: lilith throwing animation_5
-  - first:
-      213: -7586007214132413421
-    second: lilith throwing animation_7
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -35,7 +20,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -144,8 +129,8 @@ TextureImporter:
         serializedVersion: 2
         x: 348
         y: 544
-        width: 112
-        height: 184
+        width: 92
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +148,10 @@ TextureImporter:
       name: lilith throwing animation_3
       rect:
         serializedVersion: 2
-        x: 92
-        y: 288
-        width: 136
-        height: 184
+        x: 604
+        y: 544
+        width: 104
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +169,10 @@ TextureImporter:
       name: lilith throwing animation_5
       rect:
         serializedVersion: 2
-        x: 348
+        x: 92
         y: 288
-        width: 144
-        height: 184
+        width: 108
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,9 +190,9 @@ TextureImporter:
       name: lilith throwing animation_7
       rect:
         serializedVersion: 2
-        x: 92
-        y: 32
-        width: 164
+        x: 348
+        y: 288
+        width: 108
         height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -222,10 +207,73 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: lilith throwing animation_9
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 288
+        width: 108
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a581b586990177270800000000000000
+      internalID: 8248079493619193946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilith throwing animation_11
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 32
+        width: 104
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d256022b6b08f3e0800000000000000
+      internalID: -2019851878115421479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilith throwing animation_13
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 32
+        width: 84
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448ec8eaed4ddeb40800000000000000
+      internalID: 5471263175201318980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 6587722408e97fc4ba3917552fcfa7fa
+    spriteID: 0c5d95ee3ebbcc04eb996c9adcbe2a0b
     internalID: 0
     vertices: []
     indices: 

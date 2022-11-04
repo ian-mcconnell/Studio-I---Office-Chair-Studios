@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 2407a792d3168374d89c11b03f5aa954
+guid: 0db6ed7b4b2c7c9469af26514ac3ff0f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1678338241801511316
-    second: lilith throwing animation sideways_0
+      213: 5903819175694833728
+    second: rotating flask_0
   - first:
-      213: 4283800006814807598
-    second: lilith throwing animation sideways_1
+      213: 6024123836709760892
+    second: rotating flask_1
   - first:
-      213: 7448450304712253051
-    second: lilith throwing animation sideways_2
+      213: -3418319407051744068
+    second: rotating flask_2
   - first:
-      213: -8310743390790645783
-    second: lilith throwing animation sideways_3
-  - first:
-      213: 4257438185952111102
-    second: lilith throwing animation sideways_5
-  - first:
-      213: 809667663945658197
-    second: lilith throwing animation sideways_7
+      213: 9115480228088466899
+    second: rotating flask_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,13 +115,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lilith throwing animation sideways_0
+      name: rotating flask_0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 340
+        width: 76
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0481e61b2449ee150800000000000000
+      internalID: 5903819175694833728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rotating flask_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 344
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f6c0a56bcf99350800000000000000
+      internalID: 6024123836709760892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rotating flask_2
       rect:
         serializedVersion: 2
         x: 92
-        y: 544
-        width: 84
-        height: 184
+        y: 84
+        width: 76
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 491688b1db7aa4710800000000000000
-      internalID: 1678338241801511316
+      spriteID: cbc5bdd3c90bf80d0800000000000000
+      internalID: -3418319407051744068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lilith throwing animation sideways_1
+      name: rotating flask_3
       rect:
         serializedVersion: 2
-        x: 348
-        y: 544
-        width: 84
-        height: 184
+        x: 340
+        y: 92
+        width: 88
+        height: 76
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,92 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e26330fd86d137b30800000000000000
-      internalID: 4283800006814807598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lilith throwing animation sideways_2
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 288
-        width: 84
-        height: 184
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7e168ba6163e5760800000000000000
-      internalID: 7448450304712253051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lilith throwing animation sideways_3
-      rect:
-        serializedVersion: 2
-        x: 348
-        y: 288
-        width: 124
-        height: 184
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e78f741bee4aac80800000000000000
-      internalID: -8310743390790645783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lilith throwing animation sideways_5
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 32
-        width: 156
-        height: 184
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef9ebd62975751b30800000000000000
-      internalID: 4257438185952111102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lilith throwing animation sideways_7
-      rect:
-        serializedVersion: 2
-        x: 348
-        y: 32
-        width: 164
-        height: 184
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55fe99753748c3b00800000000000000
-      internalID: 809667663945658197
+      spriteID: 3dd4f48b8f0b08e70800000000000000
+      internalID: 9115480228088466899
       vertices: []
       indices: 
       edges: []
@@ -249,7 +201,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 82e9b5c02d8d69f4286c66c4ac1433f0
+    spriteID: 603b0fb2b7d9f8e4e897421bec760c5a
     internalID: 0
     vertices: []
     indices: 
