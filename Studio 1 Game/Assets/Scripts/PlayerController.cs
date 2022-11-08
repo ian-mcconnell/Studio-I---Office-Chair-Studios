@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     public Collider rightAttack;
     public Collider leftAttack;
     public Rigidbody chemicalAttack;
-    public bool hasChemicaL;
+    public bool hasChemical;
     public InventorySystem inventory;
     public int npcSaved = 0;
     public int killCount = 0;
@@ -126,17 +126,19 @@ public class PlayerController : MonoBehaviour
                 rightAttack.enabled = false;
                 speed = 8;
             }
-            else if (Input.GetButtonDown("Fire2") == true && hasChemicaL == true)
+            else if (Input.GetButtonDown("Fire2") == true && hasChemical == true)
             {
-                //animator.SetBool("isAttacking", false);
+
+                animator.SetBool("isRangedAttacking", true);
                 Rigidbody clone;
                 clone = Instantiate(chemicalAttack, new Vector3(transform.position.x+1, transform.position.y+1 , transform.position.z), transform.rotation);
                 clone.velocity = transform.TransformDirection(Vector3.right *10);
-
+                hasChemical = false;
                 speed = 4;
             }
-            else if (Input.GetButtonUp("Fire2") == true && hasChemicaL == true)
+            else if (Input.GetButtonUp("Fire2") == true && hasChemical == true)
             {
+                animator.SetBool("isRangedAttacking", false);
                 speed = 8;
             }
         }
@@ -159,17 +161,18 @@ public class PlayerController : MonoBehaviour
                 speed = 8;
 
             }
-            else if (Input.GetButtonDown("Fire2") == true && hasChemicaL == true)
+            else if (Input.GetButtonDown("Fire2") == true && hasChemical == true)
             {
-                //animator.SetBool("isAttacking", false);
+                animator.SetBool("isRangedAttacking", true);
                 Rigidbody clone;
                 clone = Instantiate(chemicalAttack, new Vector3(transform.position.x - 1, transform.position.y + 1, transform.position.z), transform.rotation);
                 clone.velocity = transform.TransformDirection(Vector3.left * 10);
-
+                hasChemical = false;
                 speed = 4;
             }
-            else if (Input.GetButtonUp("Fire2") == true && hasChemicaL == true)
+            else if (Input.GetButtonUp("Fire2") == true && hasChemical == true)
             {
+                animator.SetBool("isRangedAttacking", false);
                 speed = 8;
             }
 
