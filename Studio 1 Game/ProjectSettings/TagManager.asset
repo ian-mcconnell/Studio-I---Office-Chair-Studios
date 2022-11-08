@@ -29,6 +29,8 @@ TagManager:
   - Wall
   - animation
   - item
+  - Blocked
+  - Book
   layers:
   - Default
   - TransparentFX
