@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class SettingsMenu : MonoBehaviour
 {
     public AudioMixer audioMixer;
+    public AudioMixer MusicMixer;
     public Dropdown resolutionDropdown;
 
     Resolution[] resolutions;
@@ -35,6 +36,10 @@ public class SettingsMenu : MonoBehaviour
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("volume", volume);
+    }
+    public void SetMusicVolume(float volume)
+    {
+        MusicMixer.SetFloat("volume", volume);
     }
     public void SetQuality(int qualityLevel)
     {

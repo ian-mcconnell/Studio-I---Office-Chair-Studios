@@ -136,7 +136,7 @@ public class PlayerController : MonoBehaviour
                 hasChemical = false;
                 speed = 4;
             }
-            else if (Input.GetButtonUp("Fire2") == true && hasChemical == true)
+            else if (Input.GetButtonUp("Fire2") == true)
             {
                 animator.SetBool("isRangedAttacking", false);
                 speed = 8;
@@ -170,7 +170,7 @@ public class PlayerController : MonoBehaviour
                 hasChemical = false;
                 speed = 4;
             }
-            else if (Input.GetButtonUp("Fire2") == true && hasChemical == true)
+            else if (Input.GetButtonUp("Fire2") == true )
             {
                 animator.SetBool("isRangedAttacking", false);
                 speed = 8;
