@@ -31,6 +31,10 @@ TagManager:
   - item
   - Blocked
   - Book
+  - scienceLabText
+  - openDoor
+  - closedDoor
+  - beginTransformation
   layers:
   - Default
   - TransparentFX

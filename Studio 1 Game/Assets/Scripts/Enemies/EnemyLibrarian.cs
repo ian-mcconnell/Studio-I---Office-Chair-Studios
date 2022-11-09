@@ -147,6 +147,7 @@ public class EnemyLibrarian : Enemy
     {
         stateCurrent = LibrarianStates.Dead;
         Destroy(gameObject, .5f);
+        endProp.SetActive(true);
     }
 
     void StateDeadRemain()

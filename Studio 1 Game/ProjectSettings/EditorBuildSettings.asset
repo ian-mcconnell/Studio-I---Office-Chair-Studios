@@ -44,4 +44,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Librarian Fight.unity
     guid: 5ebe994dba8774c4c8f9a26e500bdb71
+  - enabled: 1
+    path: Assets/Scenes/Science Level.unity
+    guid: 241a3e580d22f4649919245e4afeaa80
+  - enabled: 1
+    path: Assets/Scenes/Final Boss.unity
+    guid: a11293744c8333349a017cc8b5f11538
   m_configObjects: {}

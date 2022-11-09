@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
     public grabAnimationTrigger tentAnim;
 
     public bool hasSkullChain = false;
+    public bool scienceLabopen = false;
 
     public void SavePlayer()
     {
@@ -428,6 +429,13 @@ public class PlayerController : MonoBehaviour
         {
             collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
             Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.tag == "scienceLabText")
+        {
+            collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
+            Destroy(collision.gameObject);
+            scienceLabopen = true;
         }
 
         if (collision.gameObject.tag == "CoachText")
