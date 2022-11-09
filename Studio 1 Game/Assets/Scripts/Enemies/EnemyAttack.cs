@@ -27,4 +27,17 @@ public class EnemyAttack : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    void OnCollisionEnter(Collision other)
+    {
+        GameObject go = other.gameObject;
+        hitSource.Play();
+        if (go.tag == "Player")
+        {
+            hitSource.Play();
+            go.GetComponent<PlayerController>().ChangeHealth(damage);
+        }
+
+        Destroy(gameObject);
+    }
 }

@@ -8,8 +8,6 @@ public class EnemyGrouping : Enemy
 
     public float aggroRange = 8f;
     public float locationPadding = 1.2f;
-    private int recoveryDelay = 9;
-    private int timeBobbing = 0;
     private float bobbingDistance = 2.2f;
 
     private bool playerHit = false;

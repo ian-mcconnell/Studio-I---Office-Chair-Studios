@@ -12,7 +12,7 @@ public class EnemyScientist : Enemy
     public AnimationCurve curve;
 
     private int attackCooldown = 60;
-    private float spitProjectileSpeed = 30f;
+    private float spitProjectileSpeed = 45f;
     private float sprayProjectileSpeed = 20f;
     private int maxCooldown = 6;
     private int regularAttackCounter = 0;
@@ -22,6 +22,7 @@ public class EnemyScientist : Enemy
     private bool isSwooping = false;
     private bool isSpitting = false;
     private bool isSpraying = false;
+    private bool isLowered = false;
 
     private ParticleSystem ps;
     private SpriteRenderer sr;
@@ -55,6 +56,14 @@ public class EnemyScientist : Enemy
         currentHealth = maxHealth;
 
         StateChasingEnter();
+    }
+
+    private void Update()
+    {
+        if(isLowered)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y - 5f, transform.position.z);
+        }
     }
 
     public override void FSMProcess()
@@ -154,7 +163,6 @@ public class EnemyScientist : Enemy
     void StateSwoopingEnter()
     {
         stateCurrent = ScientistStates.Swooping;
-        base.animator.SetBool("isSwooping", true);
         base.agent.destination = transform.position;
 
         regularAttackCounter++;
@@ -168,7 +176,7 @@ public class EnemyScientist : Enemy
 
     void StateSwoopingExit()
     {
-        base.animator.SetBool("isSwoop", false);
+        
     }
 
     void StateSpittingEnter()
@@ -195,7 +203,6 @@ public class EnemyScientist : Enemy
         stateCurrent = ScientistStates.Spraying;
 
         base.agent.destination = transform.position;
-        regularAttackCounter++;
         StartCoroutine(SprayAttack());
     }
 
@@ -296,6 +303,7 @@ public class EnemyScientist : Enemy
     IEnumerator SprayAttack()
     {
         Debug.Log("Spray Attack");
+        isSpraying = true;
 
         float time = 0f;
         float duration = 1f;
@@ -309,30 +317,47 @@ public class EnemyScientist : Enemy
             time += Time.deltaTime;
 
             float linearT = time / duration;
-            float heightT = curve.Evaluate(linearT);
 
-            float height = Mathf.Lerp(0f, -3.5f, heightT);
-
-            transform.position = Vector2.Lerp(start, end, linearT) + new Vector2(0f, height);
+            transform.position = Vector3.Lerp(start, end, linearT);
 
             yield return null;
         }
+        isLowered = true;
 
         //ratattatatat
         base.animator.SetBool("isSpraying", true);
-        spitSpawn.transform.LookAt(player.position);
+        spitSpawn.transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
         int shotsFired = 0;
+        float yRot = 0f;
         while (shotsFired <= maxSprayShots)
         {
             shotsFired++;
             GameObject spitAttack = Instantiate(spitObj, spitSpawn.transform.position, spitSpawn.transform.rotation);
-            spitAttack.GetComponent<Rigidbody>().AddForce(spitAttack.transform.forward * spitProjectileSpeed, ForceMode.Impulse);
+            spitAttack.GetComponent<Rigidbody>().AddForce(spitAttack.transform.forward * sprayProjectileSpeed, ForceMode.Impulse);
 
+            yRot += 30f;
+            spitSpawn.transform.rotation = new Quaternion(0f, yRot, 0f, 0f);
             yield return new WaitForSeconds(.1f);
             yield return null;
         }
 
         base.animator.SetBool("isSpraying", false);
+
+        //Rise back up
+        isLowered = false;
+        time = 0f;
+        end = new Vector3(transform.position.x, transform.position.y + 5f, transform.position.z);
+        while (time < duration)
+        {
+            time += Time.deltaTime;
+
+            float linearT = time / duration;
+
+            transform.position = Vector3.Lerp(start, end, linearT);
+
+            yield return null;
+        }
+
         yield return new WaitForSeconds(.3f);
 
         isSpraying = false;
