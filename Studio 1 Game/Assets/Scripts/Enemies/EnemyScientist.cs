@@ -12,7 +12,8 @@ public class EnemyScientist : Enemy
     public AnimationCurve curve;
 
     private int attackCooldown = 60;
-    private float spitProjectileSpeed = -10f;
+    private float spitProjectileSpeed = 30f;
+    private float sprayProjectileSpeed = 20f;
     private int maxCooldown = 6;
     private int regularAttackCounter = 0;
     private int hitCounter = 0;
@@ -124,9 +125,10 @@ public class EnemyScientist : Enemy
 
         if (attackCooldown == 0)
         {
-            if(regularAttackCounter == 4)
+            if(regularAttackCounter == 6)
             {
                 isSpraying = true;
+                regularAttackCounter = 0;
             }
             else
             {
@@ -152,7 +154,7 @@ public class EnemyScientist : Enemy
     void StateSwoopingEnter()
     {
         stateCurrent = ScientistStates.Swooping;
-        base.animator.SetBool("isSwoop", true);
+        base.animator.SetBool("isSwooping", true);
         base.agent.destination = transform.position;
 
         regularAttackCounter++;
@@ -173,6 +175,7 @@ public class EnemyScientist : Enemy
     {
         stateCurrent = ScientistStates.Spitting;
 
+        base.agent.destination = transform.position;
         regularAttackCounter++;
         StartCoroutine(SpitAttack());
     }
@@ -191,8 +194,9 @@ public class EnemyScientist : Enemy
     {
         stateCurrent = ScientistStates.Spraying;
 
+        base.agent.destination = transform.position;
         regularAttackCounter++;
-        StartCoroutine(SpitAttack());
+        StartCoroutine(SprayAttack());
     }
 
     void StateSprayingRemain()
@@ -233,8 +237,12 @@ public class EnemyScientist : Enemy
         {
             spitCount++;
             spitSpawn.transform.LookAt(player.position + player.gameObject.GetComponent<Rigidbody>().velocity);
-            GameObject screamAttack = Instantiate(spitObj, spitSpawn.transform.position, new Quaternion(0f, 0f, 0f, 0));
-            screamAttack.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, spitProjectileSpeed);
+
+            //make pukies
+            GameObject spitAttack = Instantiate(spitObj, spitSpawn.transform.position, spitSpawn.transform.rotation);
+            spitAttack.GetComponent<Rigidbody>().AddForce(spitAttack.transform.forward * spitProjectileSpeed, ForceMode.Impulse);
+
+            yield return new WaitForSeconds(.2f);
         }
 
         base.animator.SetBool("isSpitting", false);
@@ -250,7 +258,8 @@ public class EnemyScientist : Enemy
     {
         Debug.Log("Swoop Attack");
 
-        base.agent.destination = player.position;
+        base.agent.destination = transform.position;
+        base.animator.SetBool("isSwooping", true);
 
         //Swoop at the point behind the player
         float time = 0f;
@@ -269,16 +278,17 @@ public class EnemyScientist : Enemy
             float linearT = time / duration;
             float heightT = curve.Evaluate(linearT);
 
-            float height = Mathf.Lerp(0f, -3.5f, heightT);
+            float height = Mathf.Lerp(0f, 0f, heightT);
 
-            transform.position = Vector2.Lerp(start, end, linearT) + new Vector2(0f, height);
+            transform.position = Vector3.Lerp(start, end, linearT) + new Vector3(0f, height, 0f);
 
             yield return null;
         }
 
+        base.animator.SetBool("isSwooping", false);
         yield return new WaitForSeconds(.3f);
 
-        isSpitting = false;
+        isSwooping = false;
 
         yield return null;
     }
@@ -292,7 +302,7 @@ public class EnemyScientist : Enemy
 
         //Lower down to ground level
         Vector3 start = transform.position;
-        Vector3 end = new Vector3(player.position.x, player.position.y - 5f, player.position.z);
+        Vector3 end = new Vector3(transform.position.x, transform.position.y - 5f, transform.position.z);
 
         while (time < duration)
         {
@@ -309,19 +319,20 @@ public class EnemyScientist : Enemy
         }
 
         //ratattatatat
+        base.animator.SetBool("isSpraying", true);
         spitSpawn.transform.LookAt(player.position);
         int shotsFired = 0;
         while (shotsFired <= maxSprayShots)
         {
             shotsFired++;
-            GameObject screamAttack = Instantiate(spitObj, spitSpawn.transform.position, new Quaternion(0f, 0f, 0f, 0));
-            screamAttack.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, spitProjectileSpeed);
+            GameObject spitAttack = Instantiate(spitObj, spitSpawn.transform.position, spitSpawn.transform.rotation);
+            spitAttack.GetComponent<Rigidbody>().AddForce(spitAttack.transform.forward * spitProjectileSpeed, ForceMode.Impulse);
 
-            yield return new WaitForSeconds(.2f);
+            yield return new WaitForSeconds(.1f);
             yield return null;
         }
 
-
+        base.animator.SetBool("isSpraying", false);
         yield return new WaitForSeconds(.3f);
 
         isSpraying = false;
@@ -366,6 +377,14 @@ public class EnemyScientist : Enemy
                 healthBar.sprite = sprite4;
                 endProp.SetActive(true);
                 break;
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerController>().ChangeHealth(-4f);
         }
     }
 }
