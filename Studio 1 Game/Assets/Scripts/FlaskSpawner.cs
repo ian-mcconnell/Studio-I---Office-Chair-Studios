@@ -35,6 +35,7 @@ public class FlaskSpawner : MonoBehaviour
     private void SpawnFlask()
     {
         spawning = false;
-        Instantiate(flaskPrefab);
+        GameObject newFlask = Instantiate(flaskPrefab, gameObject.transform, true);
+        newFlask.transform.position = newFlask.transform.parent.transform.position;
     }
 }

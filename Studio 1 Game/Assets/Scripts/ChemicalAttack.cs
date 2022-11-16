@@ -12,12 +12,13 @@ public class ChemicalAttack : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Enemy")
+        if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Boss"))
         {
             other.gameObject.SendMessage("ChangeHealth", damageAmount);
             //Debug.Log(" " + other.name + " got hit with " + Mathf.Abs(damageAmount) + " of damage");
             //Debug.Log("it ran  :(" + other.gameObject.name);
             hitSource.Play();
+            Destroy(gameObject);
         }
     }
 }

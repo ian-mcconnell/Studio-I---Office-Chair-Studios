@@ -34,6 +34,8 @@ public class EnemyScientist : Enemy
     public Sprite sprite2;
     public Sprite sprite3;
     public Sprite sprite4;
+    public Sprite sprite5;
+    public Sprite sprite6;
 
     public GameObject endProp;
 
@@ -52,7 +54,7 @@ public class EnemyScientist : Enemy
         ps = GetComponentInChildren<ParticleSystem>();
 
         base.Start();
-        maxHealth = 30f;
+        maxHealth = 60f;
         currentHealth = maxHealth;
 
         StateChasingEnter();
@@ -322,7 +324,9 @@ public class EnemyScientist : Enemy
 
             yield return null;
         }
+        
         isLowered = true;
+        yield return new WaitForSeconds(0.1f);
 
         //ratattatatat
         base.animator.SetBool("isSpraying", true);
@@ -335,8 +339,8 @@ public class EnemyScientist : Enemy
             GameObject spitAttack = Instantiate(spitObj, spitSpawn.transform.position, spitSpawn.transform.rotation);
             spitAttack.GetComponent<Rigidbody>().AddForce(spitAttack.transform.forward * sprayProjectileSpeed, ForceMode.Impulse);
 
-            yRot += 30f;
-            spitSpawn.transform.rotation = new Quaternion(0f, yRot, 0f, 0f);
+            yRot += 25f;
+            spitSpawn.transform.rotation = Quaternion.Euler(0f, yRot, 0f);
             yield return new WaitForSeconds(.1f);
             yield return null;
         }
@@ -376,9 +380,9 @@ public class EnemyScientist : Enemy
                 hitCounter++;
                 if (hitCounter == 2)
                 {
-                    maxCooldown -= 10;
+                    maxCooldown -= 1;
                     maxSprayShots *= 2;
-                    maxSprayShots *= 2;
+                    maxSpitShots *= 2;
                     hitCounter = 0;
                 }
             }
@@ -386,20 +390,28 @@ public class EnemyScientist : Enemy
         Debug.Log("ScientistHealth: " + currentHealth);
         switch (currentHealth)
         {
-            case 30f:
+            case 50f:
                 healthBar.sprite = sprite1;
                 break;
 
-            case 20f:
+            case 40f:
                 healthBar.sprite = sprite2;
                 break;
 
-            case 10f:
+            case 30f:
                 healthBar.sprite = sprite3;
                 break;
 
-            case 0f:
+            case 20f:
                 healthBar.sprite = sprite4;
+                break;
+
+            case 10f:
+                healthBar.sprite = sprite5;
+                break;
+
+            case 0f:
+                healthBar.sprite = sprite6;
                 endProp.SetActive(true);
                 break;
         }

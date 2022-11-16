@@ -198,8 +198,6 @@ public class EnemyLibrarian : Enemy
     {
         Debug.Log("Hit Response");
 
-        //Launch player to start
-        Instantiate(hitResponse, transform.position, new Quaternion(0, 0, 0, 0));
         //Kill all enemies too
         NukeEnemiesInStage();
 
@@ -244,6 +242,8 @@ public class EnemyLibrarian : Enemy
                 ps.Play();
                 currentMaxCooldown -= 1;
                 isHit = true;
+                //Launch player to start
+                Instantiate(hitResponse, transform.position, new Quaternion(0, 0, 0, 0));
             }
         }
         Debug.Log("LibrarianHealth: " + currentHealth);

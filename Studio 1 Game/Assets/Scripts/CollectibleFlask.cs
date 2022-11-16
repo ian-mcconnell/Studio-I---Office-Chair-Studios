@@ -8,7 +8,9 @@ public class CollectibleFlask : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
+            //Flask worked
             other.gameObject.SendMessage("SetHasChemical");
+            Destroy(gameObject);
         }
     }
 }
