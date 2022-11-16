@@ -30,8 +30,9 @@ public class PlayerController : MonoBehaviour
     //tentative health variables
     private float maxHealth = 12;
     public float currentHealth;
-    private bool isDead = false;
+    private bool isDead;
     public int level;
+    public bool hasLoadedBefore = false;
 
     public float invulnerabilityDuration = .3f;
     public bool isInvulnerable = false;
@@ -62,7 +63,15 @@ public class PlayerController : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    public void loadLevelUpdate()
+    {
 
+        PlayerData data = SaveSystem.loadPlayer();
+        if (data.level == SceneManager.GetActiveScene().buildIndex )
+        {
+            hasLoadedBefore = data.hasLoadedBefore;
+        }
+    }
     public void LoadPlayer()
     {
         PlayerData data = SaveSystem.loadPlayer();
@@ -82,6 +91,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //loadLevelUpdate();
         rightAttack.enabled = false;
         leftAttack.enabled = false;
 
@@ -93,6 +103,12 @@ public class PlayerController : MonoBehaviour
 
         forwardWall.SetActive(true);
         backwardWall.SetActive(false);
+        //if(hasLoadedBefore == true)
+        //{
+        //    LoadPlayer();
+        //}
+            
+        
     }
 
     // Update is called once per frame
@@ -201,7 +217,10 @@ public class PlayerController : MonoBehaviour
         //Jump
         direction.y = jumpForce;
     }
-
+    public void SetHasChemical()
+    {
+        hasChemical = true;
+    }
     private void Update()
     {
         //cheats
@@ -220,7 +239,7 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Keypad1))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(11);
         }
         if (Input.GetKeyDown(KeyCode.Keypad2))
         {
@@ -289,11 +308,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (currentHealth <= 0)
         {
-            
+           // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             currentHealth = 0;
             isDead = true;
             LoadPlayer();
             inventory.loadInv();
+
         }
 
         if (amount < 0)
@@ -388,8 +408,10 @@ public class PlayerController : MonoBehaviour
 
         if (collision.gameObject.tag == "Save")
         {
+            hasLoadedBefore = true;
             SavePlayer();
             inventory.SaveInven();
+            
         }
         if (collision.gameObject.tag == "Start")
         {
