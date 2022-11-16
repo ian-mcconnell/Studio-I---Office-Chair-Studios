@@ -23,6 +23,8 @@ public abstract class Item : MonoBehaviour
         //isActive = true;
         ItemData data = SaveSystem.loadItem();
         isActive = data.isActive;
+        Debug.Log("data: " + data.isActive);
+        Debug.Log("vaiable: " + isActive);
         //level = data.level;
         //currentHealth = data.health;
         ////      Vector3 position;
@@ -52,27 +54,36 @@ public abstract class Item : MonoBehaviour
         float distanceX = Mathf.Abs(transform.position.x - Player.pickUpPosition.position.x);
         float distanceY = Mathf.Abs(transform.position.y - Player.pickUpPosition.position.y);
         float distanceZ = Mathf.Abs(transform.position.z - Player.pickUpPosition.position.z);
-        if (isActiveAndEnabled)
+        //if (isActiveAndEnabled)
+        //{
+        //    //Debug.Log("is active and enabled: " + isActiveAndEnabled);
+        //    isActive = true;
+        //}
+        //else
+        //{
+        //   // Debug.Log("is active and enabled: " + isActiveAndEnabled);
+        //    isActive = false;
+        //}
+        if (isActive == true && (gameObject.name != "medkitButton" || gameObject.name != "PiskelButton" || gameObject.name != "BandageButton"))
         {
-            //Debug.Log("is active and enabled: " + isActiveAndEnabled);
-            isActive = true;
+            if (TryGetComponent(out SpriteRenderer sprite))
+            {
+                //Debug.Log("is active: " + isActive);
+                gameObject.GetComponent<SpriteRenderer>().enabled = true;
+                gameObject.GetComponent<CapsuleCollider>().enabled = true;
+            }
         }
-        else
+        else if(isActive == false && (gameObject.name != "medkitButton" || gameObject.name != "PiskelButton" || gameObject.name != "BandageButton"))
         {
-           // Debug.Log("is active and enabled: " + isActiveAndEnabled);
-            isActive = false;
-        }
-        if(isActive)
-        {
+            if(TryGetComponent(out SpriteRenderer sprite))
+            {
+                gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                gameObject.GetComponent<CapsuleCollider>().enabled = false;
+            }
             //Debug.Log("is active: " + isActive);
-            this.gameObject.SetActive(true);
+
         }
-        else
-        {
-            //Debug.Log("is active: " + isActive);
-            this.gameObject.SetActive(false);
-        }
-        if (distanceX <= .5f && distanceY <= .5f && distanceZ <= .5f)
+        if ((distanceX <= .5f && distanceY <= .5f && distanceZ <= .5f) && (gameObject.GetComponent<SpriteRenderer>().enabled == true))
         {           
             inSys.addToInventory(this);
             isActive = false;

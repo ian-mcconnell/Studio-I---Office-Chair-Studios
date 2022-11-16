@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4159728222991736009
 Transform:
   m_ObjectHideFlags: 0
@@ -131,5 +131,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 5105323141233819874, guid: 4975b17659c6d7546b6c56fa1d17cc44, type: 3}
+  isActive: 0
   itemName: MedKit
   itemSlot: 1

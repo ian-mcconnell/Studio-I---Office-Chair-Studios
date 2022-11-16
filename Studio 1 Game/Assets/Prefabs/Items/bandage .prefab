@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4513515040910344081
 Transform:
   m_ObjectHideFlags: 0
@@ -131,5 +131,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 2684630869008062022, guid: f0e0bb1373b6e284f8cfa454775f803e, type: 3}
+  isActive: 0
   itemName: Bandage
   itemSlot: 2

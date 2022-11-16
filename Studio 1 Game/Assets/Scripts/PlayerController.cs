@@ -313,6 +313,11 @@ public class PlayerController : MonoBehaviour
             isDead = true;
             LoadPlayer();
             inventory.loadInv();
+            var items = FindObjectsOfType<Item>();
+            foreach (Item i in items)
+            {
+                i.LoadItem();
+            }
 
         }
 
@@ -408,6 +413,10 @@ public class PlayerController : MonoBehaviour
 
         if (collision.gameObject.tag == "Save")
         {
+            var items = FindObjectsOfType<Item>();
+            foreach(Item i in items){
+                i.SaveItem();
+            }
             hasLoadedBefore = true;
             SavePlayer();
             inventory.SaveInven();

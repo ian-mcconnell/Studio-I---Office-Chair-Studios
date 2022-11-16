@@ -53,6 +53,7 @@ public class InventorySystem : MonoBehaviour
             //Debug.Log(itemNames[i]);
         }
             SaveSystem.SaveInv(this);
+        
     }
 
     public void loadInv()
@@ -163,8 +164,9 @@ public class InventorySystem : MonoBehaviour
                 button.GetComponent<Item>().itemSlot = i;
                 Debug.Log("itemslot " + button.GetComponent<Item>().itemSlot);
                 //               item.reset = false;
-                item.gameObject.SetActive(false);
-
+                //item.gameObject.SetActive(false);
+                item.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                item.gameObject.GetComponent<CapsuleCollider>().enabled = false;
                 if (itemNames[i] == "Key")
                 {
                     Debug.Log("PLAYER HAS A " + item.itemName);
