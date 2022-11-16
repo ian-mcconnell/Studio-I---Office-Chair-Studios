@@ -239,27 +239,27 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Keypad1))
         {
-            SceneManager.LoadScene(11);
+            SceneManager.LoadScene(10);
         }
         if (Input.GetKeyDown(KeyCode.Keypad2))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(11);
         }
         if (Input.GetKeyDown(KeyCode.Keypad3))
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(12);
         }
         if (Input.GetKeyDown(KeyCode.Keypad4))
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(13);
         }
         if (Input.GetKeyDown(KeyCode.Keypad5))
         {
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(14);
         }
         if (Input.GetKeyDown(KeyCode.Keypad6))
         {
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(15);
         }
         if (Input.GetKeyDown(KeyCode.Keypad7))
         {
