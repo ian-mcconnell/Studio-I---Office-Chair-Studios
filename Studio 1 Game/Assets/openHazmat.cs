@@ -7,6 +7,8 @@ public class openHazmat : MonoBehaviour
     public PlayerController player;
     public GameObject hazmatDoorOpen;
     public GameObject hazmatDoorClosed;
+    public GameObject dialogueTrigger;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,7 @@ public class openHazmat : MonoBehaviour
         {
             hazmatDoorOpen.SetActive(true);
             hazmatDoorClosed.SetActive(false);
+            dialogueTrigger.SetActive(true);
         }
     }
 }
