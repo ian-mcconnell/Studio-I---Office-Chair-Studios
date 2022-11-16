@@ -2848,6 +2848,8 @@ GameObject:
   - component: {fileID: 1126977152}
   - component: {fileID: 1126977151}
   - component: {fileID: 1126977150}
+  - component: {fileID: 1126977155}
+  - component: {fileID: 1126977154}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2944,6 +2946,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
+--- !u!114 &1126977154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126977149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39043581b0c7ded4497d335b7d70ef4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: c617d7e7b0e7972429206bdbc0545afb, type: 2}
+  MusicMixer: {fileID: 24100000, guid: 6f5ca7af2abb47745ad7ddf71d3b7e7b, type: 2}
+  resolutionDropdown: {fileID: 1478655979}
+--- !u!114 &1126977155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126977149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500f6527e6dbfe14abe90826803b9502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paused: 0
+  PauseMenu: {fileID: 1478655980}
 --- !u!1001 &1144271732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3672,6 +3703,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1478655979 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2683853388758845429, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
+  m_PrefabInstance: {fileID: 1478655958}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0b652f32a2cc243917e4028fa0f046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1478655980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3114200691744329693, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
+  m_PrefabInstance: {fileID: 1478655958}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1537259326
 GameObject:
   m_ObjectHideFlags: 0

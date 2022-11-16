@@ -940,6 +940,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5593282502695931516, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
   m_PrefabInstance: {fileID: 358748378}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &358748383 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3114200691744329693, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
+  m_PrefabInstance: {fileID: 358748378}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &377087718
 GameObject:
   m_ObjectHideFlags: 0
@@ -10981,6 +10986,7 @@ GameObject:
   - component: {fileID: 1798830763}
   - component: {fileID: 1798830765}
   - component: {fileID: 1798830762}
+  - component: {fileID: 1798830766}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -11077,6 +11083,20 @@ MonoBehaviour:
   followXandY: 0
   followXandZ: 1
   followAll: 0
+--- !u!114 &1798830766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798830761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 500f6527e6dbfe14abe90826803b9502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paused: 0
+  PauseMenu: {fileID: 358748383}
 --- !u!1 &1832035800 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3409805669297221514, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
