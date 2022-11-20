@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
 
         Renderer sortLayer = GetComponent<SpriteRenderer>();
         sortLayer.sortingLayerName = "player";
-        sortLayer.sortingOrder = 2;
+        sortLayer.sortingOrder = 0;
 
         speed = 8;
 

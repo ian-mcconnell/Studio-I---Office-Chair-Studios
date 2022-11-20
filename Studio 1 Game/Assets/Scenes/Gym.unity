@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 51763839}
   - component: {fileID: 51763838}
   - component: {fileID: 51763837}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gym floor tiles_5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 109297435}
   - component: {fileID: 109297434}
   - component: {fileID: 109297433}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gym floor tiles_5 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1030,7 +1030,7 @@ GameObject:
   m_Component:
   - component: {fileID: 382229821}
   - component: {fileID: 382229820}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gym floor tiles_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1292,7 +1292,7 @@ GameObject:
   - component: {fileID: 552139680}
   - component: {fileID: 552139679}
   - component: {fileID: 552139681}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gym floor tiles_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1398,7 +1398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 595279727}
   - component: {fileID: 595279726}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gym floor tiles_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1511,7 +1511,7 @@ GameObject:
   - component: {fileID: 621436306}
   - component: {fileID: 621436305}
   - component: {fileID: 621436304}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gym floor tiles_5 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2082,7 +2082,7 @@ GameObject:
   - component: {fileID: 1097155837}
   - component: {fileID: 1097155836}
   - component: {fileID: 1097155835}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gym floor tiles_5 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2256,7 +2256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1162769876}
   - component: {fileID: 1162769875}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: gym floor tiles_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

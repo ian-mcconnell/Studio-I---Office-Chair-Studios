@@ -21,25 +21,25 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 8078583471894703189, guid: 6f2ab9a1d7721e742abe6d04620b704a, type: 3}
-    - time: 0.020833334
+    - time: 0.027777778
       value: {fileID: 8714580941384843931, guid: 6f2ab9a1d7721e742abe6d04620b704a, type: 3}
-    - time: 0.0625
+    - time: 0.083333336
       value: {fileID: 7024668076089176765, guid: 6f2ab9a1d7721e742abe6d04620b704a, type: 3}
-    - time: 0.125
-      value: {fileID: 4987531975585759547, guid: 6f2ab9a1d7721e742abe6d04620b704a, type: 3}
     - time: 0.16666667
+      value: {fileID: 4987531975585759547, guid: 6f2ab9a1d7721e742abe6d04620b704a, type: 3}
+    - time: 0.22222222
       value: {fileID: -6787838294457630866, guid: 6f2ab9a1d7721e742abe6d04620b704a, type: 3}
-    - time: 0.20833333
+    - time: 0.2777778
       value: {fileID: 4973441179061695250, guid: 6f2ab9a1d7721e742abe6d04620b704a, type: 3}
-    - time: 0.25
+    - time: 0.33333334
       value: {fileID: -5232507152656320764, guid: 6f2ab9a1d7721e742abe6d04620b704a, type: 3}
-    - time: 0.27083334
+    - time: 0.3611111
       value: {fileID: 3281877683290239851, guid: 6f2ab9a1d7721e742abe6d04620b704a, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 48
+  m_SampleRate: 36
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -67,7 +67,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.2916667
+    m_StopTime: 0.3888889
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -94,14 +94,14 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.125
+  - time: 0.16666667
     functionName: GetHeldDown
     data: 
     objectReferenceParameter: {fileID: 11500000, guid: fedcaa17aa2290840bf5fc207267defe, type: 3}
     floatParameter: 0
     intParameter: 3
     messageOptions: 0
-  - time: 0.27083334
+  - time: 0.3611111
     functionName: GetHeldDown
     data: 
     objectReferenceParameter: {fileID: 11500000, guid: fedcaa17aa2290840bf5fc207267defe, type: 3}

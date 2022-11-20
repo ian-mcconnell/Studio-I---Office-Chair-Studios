@@ -210,12 +210,12 @@ MonoBehaviour:
   groundCheck: {fileID: 1866529130182721906}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 8
   animator: {fileID: 1866529130585483008}
   rightAttack: {fileID: 2438669003754876718}
   leftAttack: {fileID: 8558524380852018162}
   chemicalAttack: {fileID: 8289100718274796009, guid: 4d4c16d3ec396a04b98bc4f78b3a7f6b, type: 3}
-  hasChemicaL: 0
+  hasChemical: 0
   inventory: {fileID: 1742711189}
   npcSaved: 0
   killCount: 0
@@ -223,6 +223,7 @@ MonoBehaviour:
   ableToMakeADoubleJump: 0
   currentHealth: 12
   level: 1
+  hasLoadedBefore: 0
   invulnerabilityDuration: 0.3
   isInvulnerable: 0
   forwardWall: {fileID: 0}
@@ -232,6 +233,7 @@ MonoBehaviour:
   talking: {fileID: 0}
   tentAnim: {fileID: 0}
   hasSkullChain: 0
+  scienceLabopen: 0
 --- !u!143 &1866529130585483038
 CharacterController:
   m_ObjectHideFlags: 0
