@@ -37,9 +37,6 @@ public class PlayerController : MonoBehaviour
     public float invulnerabilityDuration = .3f;
     public bool isInvulnerable = false;
 
-    public GameObject forwardWall;
-    public GameObject backwardWall;
-
     public Transform pickUpPosition;
 
     public bool talkedToCoachHedge = false;
@@ -97,12 +94,10 @@ public class PlayerController : MonoBehaviour
 
         Renderer sortLayer = GetComponent<SpriteRenderer>();
         sortLayer.sortingLayerName = "player";
-        sortLayer.sortingOrder = 0;
+        sortLayer.sortingOrder = 2;
 
         speed = 8;
 
-        forwardWall.SetActive(true);
-        backwardWall.SetActive(false);
         //if(hasLoadedBefore == true)
         //{
         //    LoadPlayer();
@@ -369,48 +364,6 @@ public class PlayerController : MonoBehaviour
 
     public void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.name == "layerForwardWall")
-        {
-            Renderer sortLayer = GetComponent<SpriteRenderer>();
-            sortLayer.sortingLayerName = "foreground";
-            sortLayer.sortingOrder = 1;
-            forwardWall.SetActive(false);
-            backwardWall.SetActive(true);
-        }
-
-        //if (collision.gameObject.name == "layerMidWall")
-        //{
-        //    Renderer sortLayer = GetComponent<SpriteRenderer>();
-        //    sortLayer.sortingLayerName = "foreground";
-        //    sortLayer.sortingOrder = 0;
-        //    forwardWall.SetActive(true);
-        //    backwardWall.SetActive(false);
-        //}
-
-        if (collision.gameObject.name == "layerBackwardWall")
-        {
-            Renderer sortLayer = GetComponent<SpriteRenderer>();
-            sortLayer.sortingLayerName = "foreground";
-            sortLayer.sortingOrder = 0;
-            forwardWall.SetActive(true);
-            backwardWall.SetActive(false);
-        }
-
-        if (collision.gameObject.tag == "SetLayerForward")
-        {
-            Renderer sortLayer = GetComponent<SpriteRenderer>();
-            sortLayer.sortingLayerName = "foreground";
-            sortLayer.sortingOrder = 1;
-            backwardWall.SetActive(true);
-        }
-
-        if (collision.gameObject.tag == "SetLayerBackward")
-        {
-            Renderer sortLayer = GetComponent<SpriteRenderer>();
-            sortLayer.sortingLayerName = "player";
-            sortLayer.sortingOrder = 1;
-        }
-
         if (collision.gameObject.tag == "Save")
         {
             var items = FindObjectsOfType<Item>();
