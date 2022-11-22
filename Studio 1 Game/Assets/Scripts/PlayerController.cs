@@ -401,6 +401,7 @@ public class PlayerController : MonoBehaviour
             collision.gameObject.GetComponent<DialogueTrigger>().callDialogue();
             collision.gameObject.GetComponent<CapsuleCollider>().enabled = false;
             npcSaved++;
+            killCount = 0;
             Destroy(collision.gameObject);
         }
 
