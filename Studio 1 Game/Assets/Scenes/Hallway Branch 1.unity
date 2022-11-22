@@ -14713,15 +14713,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1866529130585483009, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: m_SortingLayer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1866529130585483009, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1866529130585483009, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: m_SortingLayerID
-      value: -64913065
+      value: 521296307
       objectReference: {fileID: 0}
     - target: {fileID: 1866529130585483009, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -18255,6 +18255,7 @@ MonoBehaviour:
     sentences:
     - Psssst...Lilith...
     - In Here..
+    - In the bathroom..
   player: {fileID: 1337354113}
   dialogueSprite: {fileID: -8796249697311158422, guid: 201d86db657aad9448293d3ce7b94afe, type: 3}
 --- !u!65 &1531580719
