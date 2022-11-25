@@ -2306,7 +2306,7 @@ GameObject:
   - component: {fileID: 965884099}
   - component: {fileID: 965884098}
   - component: {fileID: 965884097}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4208,7 +4208,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670221934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.14, y: 1.93, z: -14.58}
+  m_LocalPosition: {x: 5.14, y: 9.05, z: -14.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5376,6 +5376,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1797332956}
+    - target: {fileID: 6374894607940279644, guid: 1364df73e0f2ad245bd9f7707470205a, type: 3}
+      propertyPath: resetPoint
+      value: 
+      objectReference: {fileID: 1670221934}
     - target: {fileID: 6374894607940279644, guid: 1364df73e0f2ad245bd9f7707470205a, type: 3}
       propertyPath: bookSpawns.Array.data[0]
       value: 

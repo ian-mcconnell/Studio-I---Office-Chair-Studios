@@ -7,11 +7,11 @@ public class EnemyLibrarian : Enemy
 {
     private LibrarianStates stateCurrent = LibrarianStates.Idling;
 
-    public GameObject hitResponse;
     public GameObject screamObj;
     public GameObject bookObj;
     public GameObject chargerEnemy;
     public GameObject wimplingHordeEnemy;
+    public GameObject resetPoint;
     public Transform[] screamSpawns;
     public Transform[] bookSpawns;
     public Transform[] monsterSpawns;
@@ -201,7 +201,36 @@ public class EnemyLibrarian : Enemy
         //Kill all enemies too
         NukeEnemiesInStage();
 
-        yield return new WaitForSeconds(.5f);
+        //Send the player to the start
+        float waitTime = 0.3f;
+        float elapsedTime = 0f;
+        Vector3 startPos = player.transform.position;
+        Vector3 endPos = resetPoint.transform.position;
+
+        float waitTimeMid = 0.1f;
+        float elapsedTimeMid = 0f;
+        Vector3 midPos = startPos + new Vector3(0f, 3f, -3f);
+
+        //lerp to midPos
+        while (elapsedTimeMid < waitTimeMid)
+        {
+            player.transform.position = Vector3.Lerp(startPos, midPos, (elapsedTimeMid / waitTimeMid));
+            elapsedTimeMid += Time.deltaTime;
+
+            yield return null;
+        }
+        //Lerp insurance
+        player.transform.position = midPos;
+        //lerp to endPos
+        while (elapsedTime < waitTime)
+        {
+            player.transform.position = Vector3.Lerp(midPos, endPos, (elapsedTime / waitTime));
+            elapsedTime += Time.deltaTime;
+
+            yield return null;
+        }
+        //Lerp insurance
+        player.transform.position = endPos;
 
         //Spawn new enemies
         foreach (Transform spawnPoint in monsterSpawns)
@@ -218,7 +247,6 @@ public class EnemyLibrarian : Enemy
             }
         }
 
-        yield return new WaitForSeconds(.3f);
         isHit = false;
         yield return null;
     }
@@ -241,9 +269,10 @@ public class EnemyLibrarian : Enemy
             {
                 ps.Play();
                 currentMaxCooldown -= 1;
-                isHit = true;
-                //Launch player to start
-                Instantiate(hitResponse, transform.position, new Quaternion(0, 0, 0, 0));
+                if (currentHealth > 0)
+                {
+                    isHit = true;
+                }
             }
         }
         Debug.Log("LibrarianHealth: " + currentHealth);
@@ -262,6 +291,7 @@ public class EnemyLibrarian : Enemy
                 break;
 
             case 0f:
+                NukeEnemiesInStage();
                 healthBar.sprite = sprite4;
                 endProp.SetActive(true);
                 break;

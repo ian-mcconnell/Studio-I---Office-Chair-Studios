@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6374894607940279618}
   - component: {fileID: 6374894607940279647}
   - component: {fileID: 6374894607940279644}
+  - component: {fileID: 7604840206504904141}
   - component: {fileID: 6374894607940279646}
   - component: {fileID: 6374894607940279641}
   m_Layer: 0
@@ -132,11 +133,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed2a59de9985654885caa30fb803f83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitResponse: {fileID: 8344571444800786527, guid: 66ccd23ea3949d343b8b0bd8cdb66aed, type: 3}
   screamObj: {fileID: 4571104546582375577, guid: 6b38cd5397f345044adb8618879f43eb, type: 3}
   bookObj: {fileID: 4571104546582375577, guid: 17af607b53bd01e41a13c0904ed71ccc, type: 3}
   chargerEnemy: {fileID: 7498529228748934815, guid: 460b26f98cb1bc84dbb4ba2db55c717a, type: 3}
   wimplingHordeEnemy: {fileID: 4006723635205855851, guid: 28e6cbf2523885c439895510c96190eb, type: 3}
+  resetPoint: {fileID: 0}
   screamSpawns:
   - {fileID: 0}
   - {fileID: 0}
@@ -158,6 +159,20 @@ MonoBehaviour:
   sprite3: {fileID: -2919200321603555947, guid: 12d8927828587564a9a5744380881ca7, type: 3}
   sprite4: {fileID: -2770241256430645764, guid: 974ad4c2c5ee96d40b352ed328252983, type: 3}
   endProp: {fileID: 0}
+--- !u!114 &7604840206504904141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6374894607940279640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d065fec9c373124bbf65e6458c9f9f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 41748404349bff04a9d2e2bd0f55747e, type: 2}
+  duration: 0.1
 --- !u!54 &6374894607940279646
 Rigidbody:
   m_ObjectHideFlags: 0

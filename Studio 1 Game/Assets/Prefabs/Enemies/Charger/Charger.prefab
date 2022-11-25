@@ -4984,7 +4984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce2cc2f1631981d4ea34c0c1517320ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aggroRange: 8
+  aggroRange: 10
   locationPadding: 1.2
   hitSource: {fileID: 136885337432622739}
 --- !u!195 &7621316958956709814
@@ -4997,7 +4997,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.39
-  m_Speed: 7.86
+  m_Speed: 12
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 0
