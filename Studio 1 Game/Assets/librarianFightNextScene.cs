@@ -4,15 +4,35 @@ using UnityEngine;
 
 public class librarianFightNextScene : MonoBehaviour
 {
-
     public GameObject anim;
     public GameObject floor;
     public PlayerController player;
-    // Start is called before the first frame update
-    public void playAnimation()
+    private Vector3 endPos;
+
+    bool playing = false;
+    float timeFrozen = 2.67f;
+    float timePassed = 0f;
+
+    private void LateUpdate()
     {
+        if(playing)
+        {
+            player.gameObject.transform.position = endPos;
+            timePassed += Time.deltaTime;
+            //Stop the lock after timePassed seconds
+            if(timePassed >= timeFrozen)
+            {
+                playing = false;
+            }
+        }
+    }
+
+    public void Start()
+    {
+        Debug.Log("playAnimation() ran");
+        endPos = player.gameObject.transform.position;
+        playing = true;
         anim.SetActive(true);
-        player.GetComponent<PlayerController>().speed = 0;
     }
 
     public void takeFloorAway()
