@@ -21,7 +21,7 @@ public class dialogueManagement : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
-        {
+        {   
             DisplayNextSentence();
         }
     }
