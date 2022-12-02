@@ -118,21 +118,26 @@ public class PlayerController : MonoBehaviour
         direction.y += gravity * Time.deltaTime;
     
         controller.Move(direction * Time.deltaTime);
-        //right
-        if(direction.x > 0 || ((Input.mousePosition.x > Screen.width / 2.0f) && !leftAttack.enabled))
+        //right 
+        if(direction.x > 0 || ((Input.mousePosition.x > Screen.width / 2.0f) && !leftAttack.enabled)|| Input.GetKeyDown(KeyCode.Period))
         {
             animator.SetFloat("VSpeed", direction.z);
             animator.SetFloat("Speed",direction.x);
             animator.SetInteger("Position", 1); //position = 1 for right
-            if (Input.GetButtonDown("Fire1") == true)
+            if (Input.GetButtonDown("Fire1") == true || Input.GetKeyDown(KeyCode.Period))
             {
-
+                //if((Input.mousePosition.x < Screen.width / 2.0f) || Input.GetKeyDown(KeyCode.Comma))
+                //{
+                //    direction.x = direction.x*-1;
+                //    animator.SetInteger("Position", 0);
+                //    animator.SetFloat("Speed", direction.x*-1);
+                //}
                 animator.SetBool("isAttacking", true);
 //                rightAttack.enabled = true;
                 leftAttack.enabled = false;
                 speed = 6;
             }
-            else if(Input.GetButtonUp("Fire1") == true)
+            else if(Input.GetButtonUp("Fire1") == true || Input.GetKeyUp(KeyCode.Period) || Input.GetKeyUp(KeyCode.Comma))
             {
                 animator.SetBool("isAttacking", false);
                 rightAttack.enabled = false;
@@ -153,20 +158,27 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("isRangedAttacking", false);
                 speed = 8;
             }
-        }
-        else if(direction.x < 0 || ((Input.mousePosition.x < Screen.width / 2.0f) && !rightAttack.enabled)) //left
+        }//left
+        else if(direction.x < 0 || ((Input.mousePosition.x < Screen.width / 2.0f) && !rightAttack.enabled) || Input.GetKeyDown(KeyCode.Comma))
         {
             animator.SetFloat("VSpeed", direction.z);
             animator.SetFloat("Speed", direction.x);
             animator.SetInteger("Position", 0); //position = 0 for left
-            if (Input.GetButtonDown("Fire1") == true)
-            {               
-                    animator.SetBool("isAttacking", true);
+            if (Input.GetButtonDown("Fire1") == true || Input.GetKeyDown(KeyCode.Comma))
+            {
+                //if ((Input.mousePosition.x > Screen.width / 2.0f) || Input.GetKeyDown(KeyCode.Period))
+                //{
+                //    direction.x = Mathf.Abs(direction.x);
+                //    animator.SetInteger("Position", 1);
+                //    animator.SetFloat("Speed",Mathf.Abs( direction.x));
+
+                //}
+                animator.SetBool("isAttacking", true);
 //                    leftAttack.enabled = true;
                     rightAttack.enabled = false;
                     speed = 6;
             }
-            else if (Input.GetButtonUp("Fire1") == true)
+            else if (Input.GetButtonUp("Fire1") == true || Input.GetKeyUp(KeyCode.Comma) || Input.GetKeyUp(KeyCode.Period))
             {
                 animator.SetBool("isAttacking", false);
                 leftAttack.enabled = false;
@@ -361,15 +373,20 @@ public class PlayerController : MonoBehaviour
         Debug.Log("doneTalking");
         Destroy(target);
     }
+    IEnumerator saveItems()
+    {
+        var items = FindObjectsOfType<Item>();
+            foreach(Item i in items){
+                i.SaveItem();
+            }
+        yield return null;
+    }
 
     public void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Save")
         {
-            var items = FindObjectsOfType<Item>();
-            foreach(Item i in items){
-                i.SaveItem();
-            }
+            StartCoroutine(saveItems());
             hasLoadedBefore = true;
             SavePlayer();
             inventory.SaveInven();
