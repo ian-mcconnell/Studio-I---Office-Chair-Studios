@@ -41,7 +41,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46098882183515076}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -113,7 +113,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 46098882183515076}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.52
   m_Height: 0.56
   m_Direction: 1
@@ -133,4 +133,4 @@ MonoBehaviour:
   itemButton: {fileID: 6593488935719521686, guid: 860e5e6ae8abf614b90bb23ed4c17bec, type: 3}
   isActive: 0
   itemName: Bandaid
-  itemSlot: 0
+  itemSlot: 1
