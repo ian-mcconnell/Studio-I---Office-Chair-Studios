@@ -7052,10 +7052,9 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - Uhhhh....
-    - Where is everyone?
-    - HELLOOOOOO?!
-    - Guess I'll take a look around
+    - Hmm, Mireska said there was a key in the library.
+    - Guess I'll check it out.
+    - Wait, who is that over there?
   player: {fileID: 140971419}
   dialogueSprite: {fileID: 8957672667280489215, guid: 48df82f11539c1146a4ca3e3746f2277, type: 3}
 --- !u!65 &1096501393
@@ -7550,8 +7549,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1280036067}
   - component: {fileID: 1280036066}
-  - component: {fileID: 1280036069}
   - component: {fileID: 1280036068}
+  - component: {fileID: 1280036069}
   m_Layer: 0
   m_Name: scared npc_0
   m_TagString: NPC
@@ -7648,8 +7647,8 @@ MonoBehaviour:
     - 'Lilith: I''ll go investigate it.'
   player: {fileID: 140971419}
   dialogueSprite: {fileID: 8462984722985806040, guid: 75276873049d51f41a2a2e56c67e6e82, type: 3}
---- !u!65 &1280036069
-BoxCollider:
+--- !u!136 &1280036069
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7658,8 +7657,9 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.72, y: 1.36, z: 0.2}
+  m_Radius: 0.36
+  m_Height: 1.36
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1287782783
 GameObject:
