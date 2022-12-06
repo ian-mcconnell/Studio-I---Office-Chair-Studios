@@ -123,7 +123,7 @@ public class EnemyFlask : Enemy
         }
 
         yield return new WaitForSeconds(0.667f);
-        isAttacking = true;
+        isAttacking = false;
 
         yield return null;
     }
