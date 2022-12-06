@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 610da66b883b8704989b412a861a5b59, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -574,6 +574,27 @@ PrefabInstance:
 --- !u!1 &12922703 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 982775247122867131, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
+  m_PrefabInstance: {fileID: 12922702}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &12922704 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6561590765704603412, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
+  m_PrefabInstance: {fileID: 12922702}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &12922705 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 356988976059636292, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
+  m_PrefabInstance: {fileID: 12922702}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &12922706 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5593282502695931516, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
   m_PrefabInstance: {fileID: 12922702}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &18856449
@@ -7068,7 +7089,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -611.33, y: -0.65, z: 4.2155795}
   m_LocalScale: {x: 6, y: 5, z: 0.1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1159154876}
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -7098,9 +7120,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     name: 
-    sentences: []
+    sentences:
+    - Drat! A Wall!
+    - If only I had a key...
+    - I'm sure one is lying around somewhere.
   player: {fileID: 1202011409}
-  dialogueSprite: {fileID: 0}
+  dialogueSprite: {fileID: 8957672667280489215, guid: 48df82f11539c1146a4ca3e3746f2277, type: 3}
 --- !u!1 &279381296
 GameObject:
   m_ObjectHideFlags: 0
@@ -19860,7 +19885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 444495707111372586, guid: 56d1d4476fe86e74795dafd5552b3b76, type: 3}
       propertyPath: m_Radius
-      value: 0.35
+      value: 0.58
       objectReference: {fileID: 0}
     - target: {fileID: 444495707111372586, guid: 56d1d4476fe86e74795dafd5552b3b76, type: 3}
       propertyPath: m_Direction
@@ -19870,6 +19895,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1202011409}
+    - target: {fileID: 660727554911078233, guid: 56d1d4476fe86e74795dafd5552b3b76, type: 3}
+      propertyPath: keyInfo
+      value: 
+      objectReference: {fileID: 1999956746}
     - target: {fileID: 660727554911078233, guid: 56d1d4476fe86e74795dafd5552b3b76, type: 3}
       propertyPath: theWall
       value: 
@@ -30431,6 +30460,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1866529130585483039, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: talking
+      value: 
+      objectReference: {fileID: 1202011413}
+    - target: {fileID: 1866529130585483039, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: forwardWall
       value: 
       objectReference: {fileID: 2037949136}
@@ -30438,6 +30471,18 @@ PrefabInstance:
       propertyPath: backwardWall
       value: 
       objectReference: {fileID: 758336474}
+    - target: {fileID: 7788074241326978322, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: panel
+      value: 
+      objectReference: {fileID: 12922706}
+    - target: {fileID: 7788074241326978322, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 12922705}
+    - target: {fileID: 7788074241326978322, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+      propertyPath: dialogueSprite
+      value: 
+      objectReference: {fileID: 12922704}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
 --- !u!1 &1104791349
@@ -31306,6 +31351,71 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 274
   m_LocalEulerAnglesHint: {x: 0.402, y: 180.572, z: -0.844}
+--- !u!1 &1159154875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1159154876}
+  - component: {fileID: 1159154878}
+  - component: {fileID: 1159154877}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1159154876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159154875}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: -11.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 274459740}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1159154877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159154875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2dac34169b40544a5c676e319973b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - Drat! A Wall!
+    - If only I had a key...
+    - I'm sure one is lying around somewhere.
+  player: {fileID: 1202011409}
+  dialogueSprite: {fileID: 8957672667280489215, guid: 48df82f11539c1146a4ca3e3746f2277, type: 3}
+--- !u!65 &1159154878
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159154875}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 22.77}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1160747912
 GameObject:
   m_ObjectHideFlags: 0
@@ -33070,6 +33180,17 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   dialogueSprite: {fileID: 0}
   isTalking: 0
+--- !u!114 &1202011413 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7788074241326978322, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+  m_PrefabInstance: {fileID: 1102188121}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202011409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c3ccff358eb904e9cb0134baa7751e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1203406882
 GameObject:
   m_ObjectHideFlags: 0
@@ -51765,6 +51886,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 331
   m_LocalEulerAnglesHint: {x: 0.402, y: 180.572, z: -0.844}
+--- !u!224 &1939174775 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1804621305766932079, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
+  m_PrefabInstance: {fileID: 12922702}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1943164959
 GameObject:
   m_ObjectHideFlags: 0
@@ -53718,6 +53844,86 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1999956744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1999956745}
+  - component: {fileID: 1999956747}
+  - component: {fileID: 1999956746}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1999956745
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999956744}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1939174775}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 102.84, y: -428.53}
+  m_SizeDelta: {x: 1514.3, y: 222.9427}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1999956746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999956744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 68
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 68
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: You found a key. If you use it while you are close to a wall, then that
+    wall will disappear.
+--- !u!222 &1999956747
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999956744}
+  m_CullTransparentMesh: 1
 --- !u!1 &2001723844
 GameObject:
   m_ObjectHideFlags: 0

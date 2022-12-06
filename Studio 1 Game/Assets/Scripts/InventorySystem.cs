@@ -24,6 +24,7 @@ public class InventorySystem : MonoBehaviour
         //Bandaid.itemSlot = 0;
         //Bandage.itemSlot = 0;
         IS = GameObject.FindGameObjectWithTag("Player").GetComponent<InventorySystem>();
+        
     }
     public void Update()
     {
@@ -171,6 +172,7 @@ public class InventorySystem : MonoBehaviour
                 {
                     Debug.Log("PLAYER HAS A " + item.itemName);
                     hasKey = true;
+                    
                 }
                 break;
             }
