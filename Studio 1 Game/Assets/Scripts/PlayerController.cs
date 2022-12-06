@@ -165,7 +165,7 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("VSpeed", direction.z);
             animator.SetFloat("Speed", direction.x);
             animator.SetInteger("Position", 0); //position = 0 for left
-            if (Input.GetButtonDown("Fire1") == true || Input.GetKeyDown(KeyCode.Comma))
+            if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.Comma))
             {
                 //if ((Input.mousePosition.x > Screen.width / 2.0f) || Input.GetKeyDown(KeyCode.Period))
                 //{
@@ -175,18 +175,17 @@ public class PlayerController : MonoBehaviour
 
                 //}
                 animator.SetBool("isAttacking", true);
-//                    leftAttack.enabled = true;
-                    rightAttack.enabled = false;
-                    speed = 6;
+                rightAttack.enabled = false;
+                speed = 6;
             }
-            else if (Input.GetButtonUp("Fire1") == true || Input.GetKeyUp(KeyCode.Comma) || Input.GetKeyUp(KeyCode.Period))
+            else if (Input.GetButtonUp("Fire1") || Input.GetKeyUp(KeyCode.Comma) || Input.GetKeyUp(KeyCode.Period))
             {
                 animator.SetBool("isAttacking", false);
                 leftAttack.enabled = false;
                 speed = 8;
 
             }
-            else if (Input.GetButtonDown("Fire2") == true && hasChemical == true)
+            else if (Input.GetButtonDown("Fire2") && hasChemical)
             {
                 animator.SetBool("isRangedAttacking", true);
                 Rigidbody clone;
@@ -195,7 +194,7 @@ public class PlayerController : MonoBehaviour
                 hasChemical = false;
                 speed = 4;
             }
-            else if (Input.GetButtonUp("Fire2") == true )
+            else if (Input.GetButtonUp("Fire2"))
             {
                 animator.SetBool("isRangedAttacking", false);
                 speed = 8;
