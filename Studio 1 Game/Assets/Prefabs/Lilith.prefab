@@ -138,6 +138,7 @@ MonoBehaviour:
   npcSaved: 0
   killCount: 0
   BossSource: {fileID: 8754414158581662278}
+  PickUpSound: {fileID: 3266426426456288254}
   ableToMakeADoubleJump: 0
   currentHealth: 12
   level: 1

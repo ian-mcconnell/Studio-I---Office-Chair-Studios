@@ -3866,6 +3866,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1235889853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 581474557960834954, guid: 0409a28845c4b734aa80ae8b90689629, type: 3}
+  m_PrefabInstance: {fileID: 393870924}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1239577998
 GameObject:
   m_ObjectHideFlags: 0
@@ -6846,6 +6851,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss Scientist
       objectReference: {fileID: 0}
+    - target: {fileID: 3155102412053999116, guid: d53db9c6e6bc34649b35f38630518f08, type: 3}
+      propertyPath: endProp
+      value: 
+      objectReference: {fileID: 1235889853}
     - target: {fileID: 3155102412053999116, guid: d53db9c6e6bc34649b35f38630518f08, type: 3}
       propertyPath: healthBar
       value: 

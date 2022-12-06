@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     public int killCount = 0;
 
     public AudioSource BossSource;
+    public AudioSource PickUpSound;
 
     public bool ableToMakeADoubleJump = false; //here if we consider to add it
 
@@ -227,6 +228,7 @@ public class PlayerController : MonoBehaviour
     public void SetHasChemical()
     {
         hasChemical = true;
+        PickUpSound.Play();
     }
     private void Update()
     {
