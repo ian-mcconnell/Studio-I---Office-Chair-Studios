@@ -14247,6 +14247,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 3575907179017604030, guid: 2e187211e89e09e4aa263afcc2e950c3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575907179017604030, guid: 2e187211e89e09e4aa263afcc2e950c3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575907179017604030, guid: 2e187211e89e09e4aa263afcc2e950c3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 521296307
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e187211e89e09e4aa263afcc2e950c3, type: 3}
 --- !u!1001 &9125200940853084890
