@@ -398,6 +398,7 @@ public class PlayerController : MonoBehaviour
         {
             UpdateLevel();
             SavePlayer();
+            collision.gameObject.SetActive(false);
         }
         if (collision.gameObject.tag == "End")
         {

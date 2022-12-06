@@ -70,9 +70,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 521296307
+  m_SortingLayer: 3
+  m_SortingOrder: 2
   m_Sprite: {fileID: 4834142605007623342, guid: e335c3088f157974a97ae4726e5cb3e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -93,7 +93,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 4602964935814318756}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.28
   m_Height: 1.08
   m_Direction: 1
@@ -111,5 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemButton: {fileID: 8641146763529658161, guid: d46417bb287ead44593cedbc5efcbe3d, type: 3}
+  isActive: 0
   itemName: Key
-  itemSlot: 0
+  itemSlot: 2
+  theWall: []
