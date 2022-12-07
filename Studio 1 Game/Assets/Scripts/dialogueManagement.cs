@@ -20,6 +20,10 @@ public class dialogueManagement : MonoBehaviour
 
     void Update()
     {
+        if (dialogueText.IsActive())
+        {
+            Time.timeScale = 0.0001f;
+        }
         if (Input.GetKeyDown(KeyCode.E))
         {   
             DisplayNextSentence();
@@ -28,8 +32,9 @@ public class dialogueManagement : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue, Sprite sprite)
     {
-        Time.timeScale = 0.0f;
+        Time.timeScale = 0.0001f;
         sentences.Clear();
+        
 
         panel.gameObject.SetActive(true);
         icon = dialogueSprite.GetComponent<Image>();
@@ -55,6 +60,7 @@ public class dialogueManagement : MonoBehaviour
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
+        Time.timeScale = 0.0001f;
     }
 
     IEnumerator TypeSentence(string sentence)

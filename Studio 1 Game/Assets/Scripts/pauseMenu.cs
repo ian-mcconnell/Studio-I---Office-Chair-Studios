@@ -52,7 +52,7 @@ public class pauseMenu : MonoBehaviour
 
     bool togglePause()
     {
-        if (Time.timeScale == 0f)
+        if (Time.timeScale == 0.0f)
         {
             Time.timeScale = 1f;
             PauseMenu.SetActive(false);
