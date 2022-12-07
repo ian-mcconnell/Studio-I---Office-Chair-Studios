@@ -824,6 +824,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4123284493942298725, guid: b2f0eb3433b26de44a10c4b059e04333, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9163945658674108564, guid: b2f0eb3433b26de44a10c4b059e04333, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -14840,6 +14844,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 639981130108141132, guid: 2e187211e89e09e4aa263afcc2e950c3, type: 3}
+      propertyPath: checkSprite
+      value: 
+      objectReference: {fileID: -8204594740502215842, guid: fe8ae8e9847fe4940bb90cf69bf5cea1, type: 3}
     - target: {fileID: 3575907179017604017, guid: 2e187211e89e09e4aa263afcc2e950c3, type: 3}
       propertyPath: m_RootOrder
       value: 27
