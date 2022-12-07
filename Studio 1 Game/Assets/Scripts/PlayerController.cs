@@ -120,7 +120,7 @@ public class PlayerController : MonoBehaviour
     
         controller.Move(direction * Time.deltaTime);
         //right 
-        if(direction.x > 0 || ((Input.mousePosition.x > Screen.width / 2.0f) && !leftAttack.enabled)|| Input.GetKeyDown(KeyCode.Period))
+        if(direction.x > 0 || ((Input.mousePosition.x > Screen.width / 2.0f))|| Input.GetKeyDown(KeyCode.Period))
         {
             animator.SetFloat("VSpeed", direction.z);
             animator.SetFloat("Speed",direction.x);
@@ -138,10 +138,11 @@ public class PlayerController : MonoBehaviour
                 leftAttack.enabled = false;
                 speed = 6;
             }
-            else if(Input.GetButtonUp("Fire1") == true || Input.GetKeyUp(KeyCode.Period) || Input.GetKeyUp(KeyCode.Comma))
+            else if(Input.GetButtonUp("Fire1") == true || Input.GetKeyUp(KeyCode.Period))
             {
                 animator.SetBool("isAttacking", false);
                 rightAttack.enabled = false;
+                leftAttack.enabled = false;
                 speed = 8;
             }
             else if (Input.GetButtonDown("Fire2") == true && hasChemical == true)
@@ -160,12 +161,12 @@ public class PlayerController : MonoBehaviour
                 speed = 8;
             }
         }//left
-        else if(direction.x < 0 || ((Input.mousePosition.x < Screen.width / 2.0f) && !rightAttack.enabled) || Input.GetKeyDown(KeyCode.Comma))
+        else if(direction.x < 0 || ((Input.mousePosition.x < Screen.width / 2.0f) ) || Input.GetKeyDown(KeyCode.Period))
         {
             animator.SetFloat("VSpeed", direction.z);
             animator.SetFloat("Speed", direction.x);
             animator.SetInteger("Position", 0); //position = 0 for left
-            if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.Comma))
+            if (Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.Period))
             {
                 //if ((Input.mousePosition.x > Screen.width / 2.0f) || Input.GetKeyDown(KeyCode.Period))
                 //{
@@ -178,10 +179,11 @@ public class PlayerController : MonoBehaviour
                 rightAttack.enabled = false;
                 speed = 6;
             }
-            else if (Input.GetButtonUp("Fire1") || Input.GetKeyUp(KeyCode.Comma) || Input.GetKeyUp(KeyCode.Period))
+            else if (Input.GetButtonUp("Fire1") || Input.GetKeyUp(KeyCode.Period))
             {
                 animator.SetBool("isAttacking", false);
                 leftAttack.enabled = false;
+                rightAttack.enabled = false;
                 speed = 8;
 
             }
@@ -279,7 +281,7 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Keypad9))
         {
-            SceneManager.LoadScene(9);
+            SceneManager.LoadScene(16);
         }
 
         bool isGrounded = Physics.CheckSphere(groundCheck.position, 0.15f, groundLayer);
