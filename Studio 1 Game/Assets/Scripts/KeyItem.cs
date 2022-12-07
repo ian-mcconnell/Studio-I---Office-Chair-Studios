@@ -16,8 +16,8 @@ public class KeyItem : Item
     Wall keyWall;
     public GameObject[] theWall;
     private GameObject player;
-    public Text keyInfo;
-   
+
+
     //    public Item MedKit;
     //public HealthSystem hs;
     //public Image[] healthImages;
@@ -31,7 +31,12 @@ public class KeyItem : Item
         inventory = FindObjectOfType<InventorySystem>();
         theWall = GameObject.FindGameObjectsWithTag("Wall");
         player = GameObject.FindGameObjectWithTag("Player");
-        keyInfo.gameObject.SetActive(false);
+
+         
+        
+  
+        
+
         
         //itemSlot = 0;
     }
@@ -126,19 +131,6 @@ public class KeyItem : Item
     //        keywall.Open();
     //    }
     //}
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "Player")
-        {
-            keyInfo.gameObject.SetActive(true);
-            StartCoroutine("WaitForSec");
 
-        }
-    }
-    IEnumerator WaitForSec()
-    {
-        yield return new WaitForSeconds(7);
-        Destroy(keyInfo);
-    }
 }
 
