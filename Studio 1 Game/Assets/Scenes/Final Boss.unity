@@ -666,7 +666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4132848221462031283, guid: 100ff0f944c9eb14b962184f9fdfbd41, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.551
+      value: 1.226
       objectReference: {fileID: 0}
     - target: {fileID: 4132848221462031283, guid: 100ff0f944c9eb14b962184f9fdfbd41, type: 3}
       propertyPath: m_LocalPosition.z
@@ -736,7 +736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4132848221462031283, guid: 100ff0f944c9eb14b962184f9fdfbd41, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.551
+      value: 1.21
       objectReference: {fileID: 0}
     - target: {fileID: 4132848221462031283, guid: 100ff0f944c9eb14b962184f9fdfbd41, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3020,6 +3020,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+--- !u!1 &876569316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1866529130585483011, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
+  m_PrefabInstance: {fileID: 876569315}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &899096018
 GameObject:
   m_ObjectHideFlags: 0
@@ -3342,6 +3347,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1003061656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1003061659}
+  - component: {fileID: 1003061658}
+  - component: {fileID: 1003061657}
+  m_Layer: 0
+  m_Name: Rope Text
+  m_TagString: Text
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1003061657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003061656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2dac34169b40544a5c676e319973b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'Voice: HEY Y''ALL GOOD DOWN THERE?'
+    - 'Lilith: YEA! GET US OUT OF HERE!'
+    - 'Voice: TAKE THE ROPE UP!'
+  player: {fileID: 876569316}
+  dialogueSprite: {fileID: 0}
+--- !u!65 &1003061658
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003061656}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1003061659
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003061656}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.96, y: 7.15, z: 7.73}
+  m_LocalScale: {x: 36.773342, y: 13.293319, z: 0.95419097}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1041934382 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4512674832678701877, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
@@ -3579,7 +3649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4132848221462031283, guid: 100ff0f944c9eb14b962184f9fdfbd41, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.551
+      value: 1.287
       objectReference: {fileID: 0}
     - target: {fileID: 4132848221462031283, guid: 100ff0f944c9eb14b962184f9fdfbd41, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6215,6 +6285,88 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928373648}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1984459125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1984459127}
+  - component: {fileID: 1984459126}
+  m_Layer: 0
+  m_Name: rope
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!212 &1984459126
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984459125}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 521296307
+  m_SortingLayer: 3
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 8995528322912623685, guid: d28de617d04d52e4c9a35f4a82a9467a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.28, y: 2.38}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1984459127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984459125}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.77, y: 8.09, z: 9.37}
+  m_LocalScale: {x: 3.8439, y: 5.819536, z: 3.8439}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2015041700
 GameObject:
   m_ObjectHideFlags: 0
@@ -6856,9 +7008,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3155102412053999116, guid: d53db9c6e6bc34649b35f38630518f08, type: 3}
+      propertyPath: rope
+      value: 
+      objectReference: {fileID: 1984459125}
+    - target: {fileID: 3155102412053999116, guid: d53db9c6e6bc34649b35f38630518f08, type: 3}
       propertyPath: endProp
       value: 
       objectReference: {fileID: 1235889853}
+    - target: {fileID: 3155102412053999116, guid: d53db9c6e6bc34649b35f38630518f08, type: 3}
+      propertyPath: ropeText
+      value: 
+      objectReference: {fileID: 1003061656}
     - target: {fileID: 3155102412053999116, guid: d53db9c6e6bc34649b35f38630518f08, type: 3}
       propertyPath: healthBar
       value: 
@@ -6930,7 +7090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4132848221462031283, guid: 100ff0f944c9eb14b962184f9fdfbd41, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.551
+      value: 1.372
       objectReference: {fileID: 0}
     - target: {fileID: 4132848221462031283, guid: 100ff0f944c9eb14b962184f9fdfbd41, type: 3}
       propertyPath: m_LocalPosition.z

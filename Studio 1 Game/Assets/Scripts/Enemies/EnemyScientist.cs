@@ -38,6 +38,8 @@ public class EnemyScientist : Enemy
     public Sprite sprite6;
 
     public GameObject endProp;
+    public GameObject rope;
+    public GameObject ropeText;
 
     public enum ScientistStates
     {
@@ -413,6 +415,8 @@ public class EnemyScientist : Enemy
             case 0f:
                 healthBar.sprite = sprite6;
                 endProp.SetActive(true);
+                rope.SetActive(true);
+                ropeText.SetActive(true);
                 break;
         }
     }

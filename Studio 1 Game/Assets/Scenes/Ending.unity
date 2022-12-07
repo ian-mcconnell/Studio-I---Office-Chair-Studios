@@ -236,7 +236,7 @@ Transform:
   - {fileID: 359012929}
   - {fileID: 1294464679}
   - {fileID: 146002955}
-  - {fileID: 1246450652}
+  - {fileID: 1329282642}
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -511,6 +511,50 @@ Transform:
   m_Father: {fileID: 168606340}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &64824331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 64824333}
+  - component: {fileID: 64824332}
+  m_Layer: 0
+  m_Name: Block Hole
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &64824332
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64824331}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &64824333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64824331}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 55, y: 0.09, z: 11.84}
+  m_LocalScale: {x: 4.9927, y: 4.9927, z: 4.9927}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 53
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &71832826
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,7 +665,7 @@ GameObject:
   - component: {fileID: 101197057}
   m_Layer: 0
   m_Name: NPC (1)
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -685,7 +729,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101197056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.792572, y: 0.48, z: 3.22}
+  m_LocalPosition: {x: 53.6, y: 0.48, z: 2.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1198,9 +1242,11 @@ GameObject:
   m_Component:
   - component: {fileID: 130528959}
   - component: {fileID: 130528958}
+  - component: {fileID: 130528960}
+  - component: {fileID: 130528961}
   m_Layer: 0
-  m_Name: NPC (10)
-  m_TagString: Untagged
+  m_Name: Punk Rock Kid
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1264,12 +1310,45 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130528957}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 57.529175, y: 0.43, z: 5.153873}
+  m_LocalPosition: {x: 53.43, y: 0.43, z: 5.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &130528960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130528957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2dac34169b40544a5c676e319973b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'Punk Rock Kid: Huh, I guess you''re worth something. '
+    - 'Lilith: Thanks? I guess?'
+  player: {fileID: 140971419}
+  dialogueSprite: {fileID: -8636177853578166494, guid: 88d53d5ea64b0a64eb818e50379f6177, type: 3}
+--- !u!136 &130528961
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130528957}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.36
+  m_Height: 2.04
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &140130602
 GameObject:
   m_ObjectHideFlags: 0
@@ -1810,8 +1889,8 @@ GameObject:
   - component: {fileID: 189653192}
   - component: {fileID: 189653191}
   m_Layer: 0
-  m_Name: NPC (11)
-  m_TagString: Untagged
+  m_Name: Emo kid
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1875,7 +1954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189653190}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.18, y: 0.48, z: 4.81}
+  m_LocalPosition: {x: 56.23, y: 0.48, z: 5.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2450,9 +2529,11 @@ GameObject:
   m_Component:
   - component: {fileID: 289298415}
   - component: {fileID: 289298414}
+  - component: {fileID: 289298416}
+  - component: {fileID: 289298417}
   m_Layer: 0
-  m_Name: NPC (15)
-  m_TagString: Untagged
+  m_Name: "Jos\xE9"
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2516,12 +2597,47 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289298413}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50.8, y: 0.48, z: 6.42}
+  m_LocalPosition: {x: 50.06, y: 0.48, z: 5.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &289298416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289298413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2dac34169b40544a5c676e319973b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - "Jos\xE9: Thanks for taking us with you and not leaving us down there."
+    - 'Lilith: What? You think I''m that much of a jerk?'
+    - "Jos\xE9: No?"
+    - 'Lilith: Hmph..'
+  player: {fileID: 140971419}
+  dialogueSprite: {fileID: -2045146529350306229, guid: f2a3acabbb13218499ad47d553b9da32, type: 3}
+--- !u!136 &289298417
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289298413}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.36
+  m_Height: 1.96
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &299643868
 GameObject:
   m_ObjectHideFlags: 0
@@ -3055,8 +3171,8 @@ GameObject:
   - component: {fileID: 323066206}
   - component: {fileID: 323066205}
   m_Layer: 0
-  m_Name: NPC (3)
-  m_TagString: Untagged
+  m_Name: Donald
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3120,7 +3236,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323066204}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 48.800827, y: 0.48, z: 4.576127}
+  m_LocalPosition: {x: 51.91, y: 0.48, z: 1.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3138,7 +3254,7 @@ GameObject:
   - component: {fileID: 336437951}
   m_Layer: 0
   m_Name: floor breaking_13
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3183,12 +3299,12 @@ SpriteRenderer:
   m_SortingLayerID: 521296307
   m_SortingLayer: 3
   m_SortingOrder: 2
-  m_Sprite: {fileID: -1534325127075171245, guid: 17e87417e78395e4586b033f4a068742, type: 3}
+  m_Sprite: {fileID: 1806935270274187347, guid: d28de617d04d52e4c9a35f4a82a9467a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.44}
+  m_Size: {x: 2.56, y: 2.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3764,9 +3880,11 @@ GameObject:
   m_Component:
   - component: {fileID: 454141721}
   - component: {fileID: 454141720}
+  - component: {fileID: 454141722}
+  - component: {fileID: 454141723}
   m_Layer: 0
-  m_Name: NPC (5)
-  m_TagString: Untagged
+  m_Name: Dinkleberg
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3830,12 +3948,48 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454141719}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 48.800827, y: 0.48, z: 1.04}
+  m_LocalPosition: {x: 48.800827, y: 0.67, z: 1.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &454141722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454141719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2dac34169b40544a5c676e319973b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'Principle: HI LILITH!'
+    - Principle:You did wonderful saving the school!
+    - 'Principle: But, you still have school tomorrow.'
+    - 'Lilith: Yeah no...I''m done with school.'
+    - 'Principle: Wha?...'
+  player: {fileID: 140971419}
+  dialogueSprite: {fileID: -5943692017916486123, guid: 06ee6816f2f7ab24da9f94780038632e, type: 3}
+--- !u!136 &454141723
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454141719}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.48
+  m_Height: 2.32
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &466356227
 GameObject:
   m_ObjectHideFlags: 0
@@ -6447,8 +6601,8 @@ GameObject:
   - component: {fileID: 783824397}
   - component: {fileID: 783824396}
   m_Layer: 0
-  m_Name: NPC (6)
-  m_TagString: Untagged
+  m_Name: Carl
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6512,7 +6666,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783824395}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.149174, y: 0.43, z: 1.383873}
+  m_LocalPosition: {x: 55.41, y: 0.43, z: 3.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7248,8 +7402,8 @@ GameObject:
   - component: {fileID: 906884679}
   - component: {fileID: 906884678}
   m_Layer: 0
-  m_Name: NPC (8)
-  m_TagString: Untagged
+  m_Name: Same
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7313,7 +7467,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906884677}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 57.18, y: 0.43, z: 1.383873}
+  m_LocalPosition: {x: 55.51, y: 0.43, z: 0.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7541,8 +7695,8 @@ GameObject:
   - component: {fileID: 1035638547}
   - component: {fileID: 1035638546}
   m_Layer: 0
-  m_Name: NPC (13)
-  m_TagString: Untagged
+  m_Name: Meghann
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7606,7 +7760,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035638545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 62.92, y: 0.48, z: 2.85}
+  m_LocalPosition: {x: 59.27, y: 0.48, z: 2.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7869,7 +8023,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1096501392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7885,9 +8039,8 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - Hmm, Mireska said there was a key in the library.
-    - Guess I'll check it out.
-    - Wait, who is that over there?
+    - I'm done with that.
+    - Now I officially hate reading.
   player: {fileID: 140971419}
   dialogueSprite: {fileID: 8957672667280489215, guid: 48df82f11539c1146a4ca3e3746f2277, type: 3}
 --- !u!65 &1096501393
@@ -7910,13 +8063,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096501390}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -46.61, y: 1.25, z: -19.69}
-  m_LocalScale: {x: 0.46068, y: 3.736417, z: 7.08162}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.37, y: 1.83, z: 0.55}
+  m_LocalScale: {x: 0.46068, y: 4.4201813, z: 7.08162}
   m_Children: []
   m_Father: {fileID: 4429268}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1138339631
 GameObject:
   m_ObjectHideFlags: 0
@@ -7927,9 +8080,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1138339633}
   - component: {fileID: 1138339632}
+  - component: {fileID: 1138339634}
+  - component: {fileID: 1138339635}
   m_Layer: 0
-  m_Name: NPC (14)
-  m_TagString: Untagged
+  m_Name: Mindy
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7993,12 +8148,45 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1138339631}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.149174, y: 0.43, z: 6.763873}
+  m_LocalPosition: {x: 58.01, y: 0.43, z: 5.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1138339634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138339631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2dac34169b40544a5c676e319973b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'Mindy: So you''re not a monster.'
+    - 'Lilith: HAUBWELGIRSEN! JUST BECAUSE I''M SCARY I''M NOT A MONSTER!'
+  player: {fileID: 140971419}
+  dialogueSprite: {fileID: -8593085212603977960, guid: f2a3acabbb13218499ad47d553b9da32, type: 3}
+--- !u!136 &1138339635
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138339631}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.44
+  m_Height: 1.84
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1156598934
 GameObject:
   m_ObjectHideFlags: 0
@@ -8362,7 +8550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1866529130585483036, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 54.94
+      value: 55.04
       objectReference: {fileID: 0}
     - target: {fileID: 1866529130585483036, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8370,7 +8558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1866529130585483036, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.37
+      value: 7.6
       objectReference: {fileID: 0}
     - target: {fileID: 1866529130585483036, guid: 518c68521aeb7904ca92c9912d821aac, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8449,70 +8637,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fedcaa17aa2290840bf5fc207267defe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1246450651
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1246450652}
-  - component: {fileID: 1246450654}
-  - component: {fileID: 1246450653}
-  m_Layer: 0
-  m_Name: EmptyHallNoStairs (1)
-  m_TagString: NPC
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1246450652
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1246450651}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4429268}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1246450653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1246450651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab2dac34169b40544a5c676e319973b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - I've been down there already.
-    - Not going through that again.
-  player: {fileID: 140971419}
-  dialogueSprite: {fileID: 8957672667280489215, guid: 48df82f11539c1146a4ca3e3746f2277, type: 3}
---- !u!65 &1246450654
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1246450651}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.6263657, y: 4.802369, z: 0.18863869}
-  m_Center: {x: -0.74056244, y: 1.9011841, z: 0.40568066}
 --- !u!1 &1246496482 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5593282502695931516, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
@@ -8529,9 +8653,11 @@ GameObject:
   - component: {fileID: 1280036067}
   - component: {fileID: 1280036066}
   - component: {fileID: 1280036069}
+  - component: {fileID: 1280036068}
+  - component: {fileID: 1280036070}
   m_Layer: 0
   m_Name: scared npc_0
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8601,7 +8727,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1280036068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280036065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2dac34169b40544a5c676e319973b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'Scared kid: Is...is it over?'
+    - 'Lilith: Yeah, it is. '
+    - 'Scared kid: (runs forward and hugs Lilith*) THANK YOU!'
+    - 'Lilith: AGH, GET OFF ME, NO HUGS!'
+  player: {fileID: 140971419}
+  dialogueSprite: {fileID: 8462984722985806040, guid: 75276873049d51f41a2a2e56c67e6e82, type: 3}
 --- !u!136 &1280036069
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280036065}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.36
+  m_Height: 1.36
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &1280036070
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8803,9 +8964,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1293251644}
   - component: {fileID: 1293251643}
+  - component: {fileID: 1293251645}
+  - component: {fileID: 1293251646}
   m_Layer: 0
-  m_Name: NPC (4)
-  m_TagString: Untagged
+  m_Name: Steve
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8869,12 +9032,45 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293251642}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.15, y: 0.43, z: 1.383873}
+  m_LocalPosition: {x: 59.31, y: 0.43, z: 4.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1293251645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293251642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2dac34169b40544a5c676e319973b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - I still don't know what I'm doing here.
+    - 'I don''t even think I go to this school. '
+  player: {fileID: 140971419}
+  dialogueSprite: {fileID: -1125847079376524468, guid: 06ee6816f2f7ab24da9f94780038632e, type: 3}
+--- !u!136 &1293251646
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293251642}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.36
+  m_Height: 1.88
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1294464678
 GameObject:
   m_ObjectHideFlags: 0
@@ -8888,7 +9084,7 @@ GameObject:
   - component: {fileID: 1294464680}
   m_Layer: 0
   m_Name: Entrance Door text
-  m_TagString: NPC
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8901,7 +9097,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294464678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -75.91, y: 2.11, z: -19.683}
+  m_LocalPosition: {x: -76.31, y: 2.11, z: -19.683}
   m_LocalScale: {x: 0.48493, y: 5.1330156, z: 6.1827}
   m_Children: []
   m_Father: {fileID: 4429268}
@@ -9196,6 +9392,78 @@ Transform:
   m_Father: {fileID: 168606340}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1329282641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1329282642}
+  - component: {fileID: 1329282644}
+  - component: {fileID: 1329282643}
+  m_Layer: 0
+  m_Name: Celebratory shout
+  m_TagString: Text
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1329282642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329282641}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 5, y: 1.83, z: -13.19}
+  m_LocalScale: {x: 0.46068, y: 4.4201813, z: 43.5}
+  m_Children: []
+  m_Father: {fileID: 4429268}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1329282643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329282641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2dac34169b40544a5c676e319973b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'Everyone: WOOOOO! YEEEAAAAHHH! GO LILITH!'
+    - 'Lilith: Calm down people. Did we get everyone?'
+    - 'Mireska: I think so.'
+    - 'Lilith: Wait, did you get Johnny?'
+    - 'Emo Kid: Yea we brought him up here.'
+    - 'Lilith: Tell me, why is he still in the book return?'
+    - 'Lizzie: He''s too scared to come out.'
+    - 'Lilith: And you just ripped the book return out of the wall?'
+    - 'Punk Rock Kid: Yep.'
+    - 'Lilith: Meh, checks out.'
+  player: {fileID: 140971419}
+  dialogueSprite: {fileID: -8796249697311158422, guid: 201d86db657aad9448293d3ce7b94afe, type: 3}
+--- !u!65 &1329282644
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329282641}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1334938528
 GameObject:
   m_ObjectHideFlags: 0
@@ -9901,7 +10169,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392937417}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.88, y: 0.48, z: 20.22}
+  m_LocalPosition: {x: 51.07, y: 0.48, z: 9.579}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10037,7 +10305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1697781776}
-  offset: {x: 0, y: 1.5, z: -7}
+  offset: {x: 0, y: 2.5, z: -7}
   followX: 1
   followXandY: 0
   followXandZ: 1
@@ -10112,13 +10380,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1439644050}
-  m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
+  m_LocalRotation: {x: 0.14939168, y: -0, z: -0, w: 0.9887782}
   m_LocalPosition: {x: -20.33, y: 1.26, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 17.183, y: 0, z: 0}
 --- !u!136 &1439644055
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10157,9 +10425,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1444294720}
   - component: {fileID: 1444294719}
+  - component: {fileID: 1444294721}
+  - component: {fileID: 1444294722}
   m_Layer: 0
-  m_Name: NPC (2)
-  m_TagString: Untagged
+  m_Name: Mireska
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10223,12 +10493,44 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444294718}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.15, y: 0.43, z: 4.92}
+  m_LocalPosition: {x: 52.05, y: 0.43, z: 4.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1444294721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444294718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2dac34169b40544a5c676e319973b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'Mireska: You did wonderful friend. Thank you.'
+  player: {fileID: 140971419}
+  dialogueSprite: {fileID: -2641958299150416328, guid: 201d86db657aad9448293d3ce7b94afe, type: 3}
+--- !u!136 &1444294722
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444294718}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.44
+  m_Height: 1.92
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1473490530 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2311876822288808976, guid: 4b986b60aa2c4344ebc170449d1145ac, type: 3}
@@ -11346,9 +11648,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1619700436}
   - component: {fileID: 1619700435}
+  - component: {fileID: 1619700437}
+  - component: {fileID: 1619700438}
   m_Layer: 0
-  m_Name: NPC (12)
-  m_TagString: Untagged
+  m_Name: Lizzie
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11412,12 +11716,46 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619700434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61.269173, y: 0.43, z: 3.193873}
+  m_LocalPosition: {x: 53.53, y: 0.43, z: 0.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1619700437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619700434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2dac34169b40544a5c676e319973b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'Lizzie: Hey you did it! You seem really reliable. I could use your help with
+      projects and all that.'
+    - 'Lilith: Nope. I''m done with school. Screw this place.'
+  player: {fileID: 140971419}
+  dialogueSprite: {fileID: 4289250443007927100, guid: 88d53d5ea64b0a64eb818e50379f6177, type: 3}
+--- !u!136 &1619700438
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619700434}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.44
+  m_Height: 1.84
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1619915116
 GameObject:
   m_ObjectHideFlags: 0
@@ -12381,9 +12719,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1826830605}
   - component: {fileID: 1826830604}
+  - component: {fileID: 1826830606}
+  - component: {fileID: 1826830607}
   m_Layer: 0
-  m_Name: NPC (9)
-  m_TagString: Untagged
+  m_Name: Miya
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12447,12 +12787,45 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826830603}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.830826, y: 0.48, z: 1.04}
+  m_LocalPosition: {x: 57.95, y: 0.48, z: 0.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1826830606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826830603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2dac34169b40544a5c676e319973b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'Miya: Ummm...Thank you'
+    - 'Miya: You''re really brave.'
+  player: {fileID: 140971419}
+  dialogueSprite: {fileID: -1085467102973165171, guid: 06ee6816f2f7ab24da9f94780038632e, type: 3}
+--- !u!136 &1826830607
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826830603}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.96
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1831267541
 GameObject:
   m_ObjectHideFlags: 0
@@ -12547,7 +12920,7 @@ GameObject:
   - component: {fileID: 1844865404}
   m_Layer: 0
   m_Name: NPC
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12611,7 +12984,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844865403}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 53.141747, y: 0.43, z: 3.563873}
+  m_LocalPosition: {x: 50, y: 0.43, z: 2.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13947,9 +14320,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2102806889}
   - component: {fileID: 2102806888}
+  - component: {fileID: 2102806890}
+  - component: {fileID: 2102806891}
   m_Layer: 0
-  m_Name: NPC (7)
-  m_TagString: Untagged
+  m_Name: Tony
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14013,12 +14388,46 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102806887}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.8, y: 0.48, z: 1.04}
+  m_LocalPosition: {x: 57.54, y: 0.48, z: 2.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2102806890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102806887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab2dac34169b40544a5c676e319973b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'Tony: Aww, I never got my ramen...'
+    - 'Lilith: Dude, just go out and get some ramen. We''re escaping.'
+    - 'Tony: Hey! You''re right! RAMEN ON ME EVERYONE!'
+  player: {fileID: 140971419}
+  dialogueSprite: {fileID: 2067210397876892723, guid: 06ee6816f2f7ab24da9f94780038632e, type: 3}
+--- !u!136 &2102806891
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102806887}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.48
+  m_Height: 1.88
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2103223743
 GameObject:
   m_ObjectHideFlags: 0

@@ -13354,7 +13354,7 @@ GameObject:
   - component: {fileID: 976743670}
   - component: {fileID: 976743669}
   m_Layer: 0
-  m_Name: science lab npc's_2
+  m_Name: Mindy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21035,7 +21035,7 @@ GameObject:
   - component: {fileID: 1574782677}
   - component: {fileID: 1574782676}
   m_Layer: 0
-  m_Name: science lab npc's_3
+  m_Name: "Jos\xE9 (initial)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
